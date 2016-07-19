@@ -156,11 +156,15 @@ sup {
 <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
+<p>$$$\require{cancel}$$$</p>
+
 <h1>18.03</h1>
 
 <h5>Recitation 1 -</h5>
 
 <h6>Introduction, natural growth and decay, review of logarithm.</h6>
+
+<p><a href="http://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/recitations/MIT18_03S10_rec_01.pdf">Problem Source</a></p>
 
 <ol>
 <li><p>A model of the oryx population can be as follows:
@@ -173,10 +177,14 @@ $$t => year$$
 $$a => oryxes / year $$
 $$\Delta t => year $$
 $$f(t) => oryxes$$
-Dimensional Analysis: $$oryxes = {oryxes \over oryxes * year} * oryxes * year - {oryxes \over year} * year + oryxes $$
+Dimensional Analysis: $$oryxes = {\cancel{oryxes} \over \cancel{oryxes} * \cancel{year}} * oryxes * \cancel{year} - {oryxes \over \cancel{year}} * \cancel{year} + oryxes $$
 which results in
 $$oryxes = oryxes$$</p></li>
-<li></li>
+<li><p>In (1), we gave a model for modeling oryx populations at time $$$t + \Delta t$$$. Now, the problem revolves around finding the value of t that doubles the population. As in, we are looking for
+$$f(t + \Delta t) = 2 f(t)$$
+We have a bit of a differential equation, as we can rewrite the original model to have a differential form, reproduced below with $$$a=0$$$:
+$${d\over dt}f(t) = kf(t)$$
+If we had the function $$$f(t)$$$, then we could solve the desired equation by plugging in $$$t$$$ and $$$\Delta t$$$.</p></li>
 </ol>
 
 </body>
