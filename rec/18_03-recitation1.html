@@ -184,7 +184,34 @@ $$oryxes = oryxes$$</p></li>
 $$f(t + \Delta t) = 2 f(t)$$
 We have a bit of a differential equation, as we can rewrite the original model to have a differential form, reproduced below with $$$a=0$$$:
 $${d\over dt}f(t) = kf(t)$$
-If we had the function $$$f(t)$$$, then we could solve the desired equation by plugging in $$$t$$$ and $$$\Delta t$$$.</p></li>
+If we had the function $$$f(t)$$$, then we could solve the desired equation by plugging in $$$t$$$ and $$$\Delta t$$$.
+Rewrite the function as:
+$${1 \over f(t)}{d\over dt}f(t) = k$$
+Take integral with respect to $$$dt$$$ on both sides:
+$$\int {1\over f(t)}{d\over dt}f(t)\; dt = \int k\; dt$$
+Now we can notice that the left side can be expressed as:
+$$ {d \over df(t)}g(f(t)){d\over dt}f(t) = {d\over dt}g(f(t))$$
+If we make the substitution:
+$$ {d \over df(t)}g(f(t)) = {1 \over f(t)}$$
+we can rewrite the left integral as:
+$$ \int {d \over dt}g(f(t))\; dt$$
+By the first fundamental theorem of calculus this reduces to:
+$$ g(f(t)) $$
+To solve for $$$g(f(t))$$$, we have:
+$$ {d \over df(t)}g(f(t)) = {1 \over f(t)}$$
+$$ \int {d \over df(t)} g(f(t))\; df(t) = \int {1 \over f(t)}\; df(t)$$
+Again using the first fundamental theorem of calculus:
+$$ g(f(t)) = ln(f(t)) + C$$
+Which is the solution for the left side integral, so we have:
+$$ ln(f(t)) = kt + C$$
+Solving for f(t):
+$$ f(t) = e^{C}e^{kt}$$
+We want a factor of 2 between the f(t)s:
+$$ {f(t + \Delta t) \over f(t)} = {e^{C}e^{k(t + \Delta t)} \over e^{C}e^{kt}}$$
+$$ 2 = e^{k(t + \Delta t) - kt} $$
+$$ 2 = e^{k\Delta t} $$
+$$ \bbox[5px, border:2px solid black] { {ln(2) \over k} = \Delta t }$$
+And we have our solution.</p></li>
 </ol>
 
 </body>
