@@ -236,8 +236,16 @@ $${df(t)\over dt} = kf(t) - a$$
 Plugging in $$$(3)$$$ we end up with:
 $${df(t)\over dt} = k\left(Ce^{kt} + {a\over k}\right) - a$$
 $${df(t)\over dt} = kCe^{kt} + k{a\over k} - a$$
-$$\bbox[5px, border:2px solid black] {{df(t)\over dt} = Ce^{kt}\quad\checkmark}$$
-And thus the solution $$$(3)$$$ is valid for the ODE presented in $$$(1)$$$.</li>
+$$\bbox[5px, border:2px solid black] {{df(t)\over dt} = Ce^{kt}\quad\checkmark}$$</li>
+<li>Steady state happens when derivative is zero.
+$$0 = kf(t)-a$$
+$$\bbox[5px, border:2px solid black] {f(t) = {a\over k}}$$
+Using the general solution from $$$(3)$$$ for $$$f(t)$$$, we can even find out $$$t$$$:
+$$Ce^{kt} + {a\over k} = {k\over a}$$
+$$Ce^{kt} = {k\over a} - {a\over k}$$
+$$Ce^{kt} = {\left( k^2 - a^2 \right) \over ak}$$
+$$kt = ln(k^2-a^2) - ln(C)$$
+$$t = {ln(k^2-a^2) - ln(C)\over k}$$</li>
 </ol>
 
 </body>
