@@ -1,5 +1,12 @@
+# graphing slope fields
 [x,y] = meshgrid([-2:0.5:2],[-2:0.5:2]);
 dx = 0.05*ones(size(x));
 dy = <diffeq>;
 quiver(x, y, dx, dy);
 contour(x, y, dx, dy, [-2, -1, 0, 1]);
+
+# graphing diffeq
+function z = fn(t,y)
+z = <diffeq>
+endfunction
+ode45(@fn, [trange], <initial cond>)
