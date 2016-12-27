@@ -31,3 +31,8 @@ $${d^2x\over dx^2} = 1$$
 
 Which means that the second derivative is positive at the critical point, which in turn means that the curve must be concave-up (i.e. that the critical point is a minimum).
 ######6)
+![image](r2p6.png =500x500)
+######7)
+![image](r2p7.png =500x500)
+It's pretty clear here that the solutions above the separatrix shoot off to great heights and solutions below crash down to become asymptotic to the lower half of a hyperbola.
+######8)
