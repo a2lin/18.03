@@ -34,5 +34,9 @@ Which means that the second derivative is positive at the critical point, which 
 ![image](r2p6.png =500x500)
 ######7)
 ![image](r2p7.png =500x500)
-It's pretty clear here that the solutions above the separatrix shoot off to great heights and solutions below crash down to become asymptotic to the lower half of a hyperbola.
+It's pretty clear here that the solutions above the separatrix shoot off to great heights and solutions below crash down to become asymptotic to the lower half of a hyperbola. The separatrix is the solution that the other solutions are seemingly branching off of.
 ######8)
+It appears as if the funnel is the line $$$y=-x+1$$$.
+
+
+
