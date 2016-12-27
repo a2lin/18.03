@@ -3,10 +3,12 @@
 dx = 0.05*ones(size(x));
 dy = <diffeq>;
 quiver(x, y, dx, dy);
-contour(x, y, dx, dy, [-2, -1, 0, 1]);
+contour(x, y, dx, dy, [-2, -1, 0, 1], 'Linecolor', 'r'); # contour in red
 
 # graphing diffeq
 function z = fn(t,y)
 z = <diffeq>
 endfunction
-ode45(@fn, [trange], <initial cond>)
+# ode45(@fn, [trange], <initial cond>)
+[t,y] = ode45(@fn, [trange], <initial cond>);
+plot(t,y, 'Color', 'k'); # plot in black
