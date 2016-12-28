@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>18.03</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<h1>18.03</h1>
+
+<h3>Recitation 2</h3>
+
+<h6>1)</h6>
+
+<p><img src="r2p1.png" height="500" width="500" alt="image" /></p>
+
+<h6>2)</h6>
+
+<p>Yes, it is true that one of the integral curves is a straight line.</p>
+
+<p>An integral curve can be a straight line if the derivative does not change (since the derivative of the integral curve represents the slope of the line). The change of the derivative is represented by the derivative of the derivative, so we can write:
+$${d\over dx}{d\over dx}y(x) = {d\over dx} \left(x - 2*y\right)$$
+$${d^2x\over dx^2} = 1 - 2 * {d\over dx}y(x)$$
+$${d^2x\over dx^2} = 1 - 2 * (x - 2 * y(x))$$
+$${d^2x\over dx^2} = 1 - 2x + 4y(x)$$
+We want these values when the second derivative is zero (i.e. the first derivative is not changing), so:
+$$0 = 1 - 2x + 4y(x)$$
+$$-4y(x) = 1 - 2x$$
+$$y(x) = -{1\over 4} + {1\over 2}x$$
+Rewriting this in $$$y=mx+b$$$ form we have:
+$$y(x) = {1\over 2}x - {1\over 4}$$
+$$\therefore \bbox[5px, border:2px solid black] {m={1\over 2}, b=-{1\over 4}}$$</p>
+
+<h6>3)</h6>
+
+<p>If a straight line is an integral curve, it must share the same graph as one of the isoclines of the lines. This is because the equation $$$y=mx+b$$$ identifies a line with slope $$$m$$$, which is represented by an isocline with value $$$m$$$. In our example it shares the same graph as the isocline with value $$$1\over 2$$$.</p>
+
+<h6>4)</h6>
+
+<p>The double derivative of the equation shows that the slope of the line no longer changes if it meets the line $$$y(x) = {1\over 2} x - {1\over 4}$$$, meaning that the curves become a line at that point. Therefore, the solutions are trapped in there and cannot escape, as the slope cannot change.</p>
+
+<h6>5)</h6>
+
+<p>Critical points are points where the derivative is zero. Therefore it's pretty clear that these points can only occur if $$$x = 2*y$$$.</p>
+
+<p>We can apply the second derivative test to these critical points:
+$${d^2x\over dx^2} = 1 - 2x + 4y(x)$$
+$${d^2x\over dx^2} = 1 - 4*y(x) + 4*y(x)$$
+$${d^2x\over dx^2} = 1$$</p>
+
+<p>Which means that the second derivative is positive at the critical point, which in turn means that the curve must be concave-up (i.e. that the critical point is a minimum).</p>
+
+<h6>6)</h6>
+
+<p><img src="r2p6.png" height="500" width="500" alt="image" /></p>
+
+<h6>7)</h6>
+
+<p><img src="r2p7.png" height="500" width="500" alt="image" />
+It's pretty clear here that the solutions above the separatrix shoot off to great heights and solutions below crash down to become asymptotic to the lower half of a hyperbola. The separatrix is the solution that the other solutions are seemingly branching off of.</p>
+
+<h6>8)</h6>
+
+<p>It appears as if the funnel is the line $$$y=-x+1$$$.</p>
+</body>
+</html>
