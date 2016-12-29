@@ -82,6 +82,24 @@ $$\bbox[5px, border:2px solid black] {
 {d\over dt}y(t) = 2\left({c(1-e^{-2t})-y(t)}\right)}$$
 
 ######6)
+$$R{d\over dt}I(t) + {1\over C}I(t) = {d\over dt}V(t)$$
+Since $$$V(t)$$$ is constant, $$${d\over dt}V(t)$$$ is 0:
+$$R{d\over dt}I(t) + {1\over C}I(t) = 0 $$
+$$R{d\over dt}I(t) = -{1\over C}I(t)$$
+$${d\over dt}I(t) = -{1\over RC}I(t)$$
+We can solve this differential equation for $$$I(t)$$$:
+$$\int {1\over I(t)}\ dI(t) = \int -{1\over RC}\ dt$$
+$$ln(I(t)) = -{t\over RC} + K_1$$
+$$I(t) = Ke^{-{t\over RC}}$$
+With initial condition $$$I(0) = I_0$$$:
+$$I(0) = Ke^0$$
+$$I(0) = K$$
+$$\therefore I_0 = I(0) = K$$
+$$\bbox[5px, border:2px solid black]{I(t) = I_0e^{-{t\over RC}}}$$
+$$\bbox[5px, border:2px solid black]{c = I_0, \tau=RC}$$
+$$I(t + \tau) = I_0e^{-{t + \tau\over RC}}$$
+$$I(t + \tau) = I_0e^{-{t\over RC}}e^{-{\tau\over RC}}$$
+$$\bbox[5px, border:2px solid black]{I(t + \tau) = I(t)e^{-{\tau \over RC}}}$$
 
 
 
