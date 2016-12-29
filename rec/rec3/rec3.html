@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>18.03</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<p>$$$\require{cancel}$$$</p>
+
+<h1>18.03</h1>
+
+<h3>Recitation 3</h3>
+
+<h6>1)</h6>
+
+<table>
+<thead>
+<tr>
+<th> n </th>
+<th> $$$x_n$$$</th>
+<th> $$$y_n$$$ </th>
+<th> $$$f(x_n, y_n)$$$ </th>
+<th> $$$hf(x_n, y_n)$$$ </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>-1</td>
+<td>1</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0.5</td>
+<td>-0.5</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>-0.5</td>
+<td>-0.75</td>
+<td>-0.375</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1.5</td>
+<td>-0.875</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><img src="r3p1.png" height="250" width="250" alt="image" /></p>
+
+<h6>2)</h6>
+
+<p>To figure this out we can find out the double derivative at the target value of $$$x=1.5$$$.</p>
+
+<p>$$y'' = (y^2 - x^2)'$$
+$$y'' = 2y' - 2x$$
+$$y'' = 2(y^2-x^2) - 2x$$
+$$y'' = 2y^2 - x^2 - 2x$$
+$$y'' = 2y^2 - (1.5)^2 - 2(1.5)$$</p>
+
+<p>We can see that the second derivative is negative, indicating that the curve is concave-down, and therefore the euler's approximation going to be too large.
+This is confirmed by the image from problem (1) where we can see that the red line (euler's approximation) is above the approximated solution curve for the given differential equation.</p>
+
+<h6>3)</h6>
+
+<p>Equation:
+$${d\over dt}x(t) = r\left(c - {x(t)\over V}\right)$$
+In standard form:
+$$\bbox[5px, border:2px solid black] {{d\over dt}x(t) + {r\over V}x(t) = rc}$$
+Checking this via dimensional reduction:
+$${\text{gram}\over \text{minute}} = {\text{liter}\over \text{minute}}\left({\text{gram}\over \text{liter}}-{\text{gram}\over \text{liter}}\right)$$
+$${\text{gram}\over \text{minute}} = {\cancel{\text{liter}}\over \text{minute}}\cdot{\text{gram}\over \cancel{\text{liter}}}$$
+$${\text{gram}\over \text{minute}} = {\text{gram}\over \text{minute}} \ \checkmark$$</p>
+
+<h6>4)</h6>
+
+<p>Givens:
+$$V = 1,\ r = 2,\ x(0) = 0$$
+From (3):
+$${d\over dt}x(t) + {r\over V}x(t) = rc$$
+$${d\over dt}x(t) + {2\over 1}x(t) = 2c$$
+Notice that the method of integrating factors can be applied here:
+$${d\over dt}x(t)a(t) + 2x(t)a(t) = 2ca(t)$$
+If we pick $$$2a(t) = {d\over dt}a(t)$$$, we can write the LHS as $$${d\over dt}\left(x(t)\cdot a(t)\right)$$$.
+$$2a(t) = {d\over dt}a(t)$$
+Separate variables:
+$$\int {1\over a(t)} da(t) = \int 2\ dt$$
+$$ln(a(t)) = 2t + C_1$$
+$$a(t) = C_2e^{2t}$$
+We can drop the C as we are using this as an integrating factor. Multiplying over the differential equation we have:
+$${d\over dt}x(t)e^{2t} + 2x(t)e^{2t} = 2ce^{2t}$$
+$${d\over dt}\left(x(t)e^{2t}\right) = 2ce^{2t}$$
+$$\int {d\over dt}\left(x(t)e^{2t}\right)\ dt = \int 2ce^{2t}\ dt$$
+$$x(t)e^{2t} = ce^{2t} + C$$
+$$x(t) = c + Ce^{-2t}$$
+Using the initial condition of x(0) = 0:
+$$0 = c + Ce^{0}$$
+$$-c = C$$
+Plugging this back into the solution:
+$$x(t) = c + -ce^{-2t}$$
+$$\bbox[5px, border:2px solid black] {x(t) = c(1-e^{-2t})}$$</p>
+
+<p>The limiting amount of salt in the tank is $$$c$$$ which makes sense, as the maximum concentration of salt cannot exceed the concentration of the salt entering the tank.</p>
+
+<p>To figure out when the tank will contain half this amount, the equation for $$$x(t)$$$ can be solved for $$$x(t) = {c\over 2}$$$:
+$${c\over 2} = c(1-e^{-2t})$$
+$${1\over 2} = (1-e^{-2t})$$
+$$-{1\over 2} = -e^{-2t}$$
+$${1\over 2} = e^{-2t}$$
+$$ln({1\over 2}) = -2t$$
+$$\bbox[5px, border:2px solid black] {t=-{1\over 2}ln({1\over 2})}$$
+$$\bbox[5px, border:2px solid black] {t\approx 0.3466\ \text{minutes}}$$</p>
+
+<h6>5)</h6>
+
+<p>Representing the amount of salt in the second tank as $$$y(t)$$$:
+$${d\over dt}y(t) = r\left({x(t)\over V}-{y(t)\over V}\right)$$
+In english: the rate of change of salt in the second tank is the concentration of salt flowing out of the first tank minus the concentration of salt flowing out of the second tank multiplied by the flow rate.</p>
+
+<p>Plugging in $$$x(t)$$$ from $$$(4)$$$, and using the initial conditions of $$$ V=1,\  y(1) = 0 $$$:</p>
+
+<p>$$\bbox[5px, border:2px solid black] {
+{d\over dt}y(t) = 2\left({c(1-e^{-2t})-y(t)}\right)}$$</p>
+
+<h6>6)</h6>
+
+<p>$$R{d\over dt}I(t) + {1\over C}I(t) = {d\over dt}V(t)$$
+Since $$$V(t)$$$ is constant, $$${d\over dt}V(t)$$$ is 0:
+$$R{d\over dt}I(t) + {1\over C}I(t) = 0 $$
+$$R{d\over dt}I(t) = -{1\over C}I(t)$$
+$${d\over dt}I(t) = -{1\over RC}I(t)$$
+We can solve this differential equation for $$$I(t)$$$:
+$$\int {1\over I(t)}\ dI(t) = \int -{1\over RC}\ dt$$
+$$ln(I(t)) = -{t\over RC} + K_1$$
+$$I(t) = Ke^{-{t\over RC}}$$
+With initial condition $$$I(0) = I_0$$$:
+$$I(0) = Ke^0$$
+$$I(0) = K$$
+$$\therefore I_0 = I(0) = K$$
+$$\bbox[5px, border:2px solid black]{I(t) = I_0e^{-{t\over RC}}}$$
+$$\bbox[5px, border:2px solid black]{c = I_0, \tau=RC}$$
+$$I(t + \tau) = I_0e^{-{t + \tau\over RC}}$$
+$$I(t + \tau) = I_0e^{-{t\over RC}}e^{-{\tau\over RC}}$$
+$$I(t + \tau) = I(t)e^{-{\tau \over RC}}$$
+$$I(t + \tau) = I(t)e^{-{RC \over RC}}$$
+$$\bbox[5px, border:2px solid black]{I(t + \tau) = I(t)e^{-1}}$$</p>
+</body>
+</html>

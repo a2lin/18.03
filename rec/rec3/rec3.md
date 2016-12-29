@@ -99,7 +99,9 @@ $$\bbox[5px, border:2px solid black]{I(t) = I_0e^{-{t\over RC}}}$$
 $$\bbox[5px, border:2px solid black]{c = I_0, \tau=RC}$$
 $$I(t + \tau) = I_0e^{-{t + \tau\over RC}}$$
 $$I(t + \tau) = I_0e^{-{t\over RC}}e^{-{\tau\over RC}}$$
-$$\bbox[5px, border:2px solid black]{I(t + \tau) = I(t)e^{-{\tau \over RC}}}$$
+$$I(t + \tau) = I(t)e^{-{\tau \over RC}}$$
+$$I(t + \tau) = I(t)e^{-{RC \over RC}}$$
+$$\bbox[5px, border:2px solid black]{I(t + \tau) = I(t)e^{-1}}$$
 
 
 
