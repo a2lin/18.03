@@ -6,38 +6,6 @@ $$$\require{cancel}$$$
 [Part 1](#part1)  
 ####[Part I.](id:part1)
 ===
-#####Section 2
-===
-######2E-1a)
-$$-1 + i$$
-$$\begin{split}r=\sqrt{(-1)^2 + 1^2}\end{split},\quad\begin{split}tan(\theta)={1\over-1}\end{split}$$
-$$\begin{split}r = \sqrt{2}\end{split} ,\quad\begin{split}\theta=-{\pi\over 4}\end{split}$$
-$$\sqrt {2}\left(\cos\left(-{\pi\over4}\right)+i\sin\left(-{\pi\over 4}\right)\right)$$
-$$\bbox[5px, border:2px solid black]{\sqrt2e^{{-{\pi\over 4}}i}}$$
-######2E-1b)
-$$\sqrt{3} - i$$
-$$\begin{split}r=\sqrt{(\sqrt{3})^2 + (-1)^2}\end{split},\quad\begin{split}tan(\theta)={-1\over\sqrt{3}}\end{split}$$
-$$\begin{split}r = 2\end{split} ,\quad\begin{split}\theta=-{\pi\over 6}\end{split}$$
-$$2\left(\cos\left(-{\pi\over6}\right)+i\sin\left(-{\pi\over 6}\right)\right)$$
-$$\bbox[5px, border:2px solid black]{2e^{-{\pi\over 6}i}}$$
-######2E-2)
-$${1-i\over 1+i}$$
-Rectangular:
-$${1-i\over 1+i} = {(1-i)\cdot(1-i)\over (1+i)\cdot(1-i)}$$
-$${1-i\over 1+i} = -2i\over 2$$
-$$\bbox[5px, border:2px solid black]{{1-i\over 1+i} = -i}$$
-Polar:
-$$1-i \rightarrow \sqrt2 \left(\cos\left(-{\pi\over 4}\right)+i\sin\left(-{\pi\over 4}\right)\right) \rightarrow \sqrt2e^{{-{\pi\over 4}i}}$$
-$$1+i \rightarrow \sqrt2 \left(\cos\left({\pi\over 4}\right)+i\sin\left({\pi\over 4}\right)\right)\rightarrow \sqrt2e^{{\pi\over 4}i}$$
-$${1-i\over 1+i} = {\cancel{\sqrt2}e^{-{\pi\over 4}i} \over \cancel{\sqrt2}e^{{\pi\over 4}i}}$$
-$${1-i\over 1+i} = e^{-{\pi\over 4}i}e^{-{\pi\over 4}i}$$
-$${1-i\over 1+i} = e^{-{\pi\over 2}i}$$
-$${1-i\over 1+i} = \cos(-{\pi\over2}) + i \sin(-{\pi\over2})$$
-$${1-i\over 1+i} = 0 + i (-1)$$
-$$\bbox[5px, border:2px solid black]{{1-i\over 1+i} = -i}$$
-Comparing the answers from the rectangular method and the polar method we find that they are the same:
-$$-i=-i\quad\checkmark$$
-
 #####Section 1
 ===
 ######1.5 #1)
@@ -91,3 +59,67 @@ $$5 = 1 + C$$
 $$C = 4$$
 $$\bbox[5px, border:2px solid black]{\therefore y(x) = x + 4x^{-2}}$$
 
+#####Section 2
+===
+######2E-1a)
+$$-1 + i$$
+$$\begin{split}r=\sqrt{(-1)^2 + 1^2}\end{split},\quad\begin{split}tan(\theta)={1\over-1}\end{split}$$
+$$\begin{split}r = \sqrt{2}\end{split} ,\quad\begin{split}\theta=-{\pi\over 4}\end{split}$$
+$$\sqrt {2}\left(\cos\left(-{\pi\over4}\right)+i\sin\left(-{\pi\over 4}\right)\right)$$
+$$\bbox[5px, border:2px solid black]{\sqrt2e^{{-{\pi\over 4}}i}}$$
+######2E-1b)
+$$\sqrt{3} - i$$
+$$\begin{split}r=\sqrt{(\sqrt{3})^2 + (-1)^2}\end{split},\quad\begin{split}tan(\theta)={-1\over\sqrt{3}}\end{split}$$
+$$\begin{split}r = 2\end{split} ,\quad\begin{split}\theta=-{\pi\over 6}\end{split}$$
+$$2\left(\cos\left(-{\pi\over6}\right)+i\sin\left(-{\pi\over 6}\right)\right)$$
+$$\bbox[5px, border:2px solid black]{2e^{-{\pi\over 6}i}}$$
+######2E-2)
+$${1-i\over 1+i}$$
+Rectangular:
+$${1-i\over 1+i} = {(1-i)\cdot(1-i)\over (1+i)\cdot(1-i)}$$
+$${1-i\over 1+i} = -2i\over 2$$
+$$\bbox[5px, border:2px solid black]{{1-i\over 1+i} = -i}$$
+Polar:
+$$1-i \rightarrow \sqrt2 \left(\cos\left(-{\pi\over 4}\right)+i\sin\left(-{\pi\over 4}\right)\right) \rightarrow \sqrt2e^{{-{\pi\over 4}i}}$$
+$$1+i \rightarrow \sqrt2 \left(\cos\left({\pi\over 4}\right)+i\sin\left({\pi\over 4}\right)\right)\rightarrow \sqrt2e^{{\pi\over 4}i}$$
+$${1-i\over 1+i} = {\cancel{\sqrt2}e^{-{\pi\over 4}i} \over \cancel{\sqrt2}e^{{\pi\over 4}i}}$$
+$${1-i\over 1+i} = e^{-{\pi\over 4}i}e^{-{\pi\over 4}i}$$
+$${1-i\over 1+i} = e^{-{\pi\over 2}i}$$
+$${1-i\over 1+i} = \cos(-{\pi\over2}) + i \sin(-{\pi\over2})$$
+$${1-i\over 1+i} = 0 + i (-1)$$
+$$\bbox[5px, border:2px solid black]{{1-i\over 1+i} = -i}$$
+Comparing the answers from the rectangular method and the polar method we find that they are the same:
+$$-i=-i\quad\checkmark$$
+######2E-7a)
+$$(1-i)^4$$
+De Moivre's formula:
+$$1-i = \sqrt2e^{-{\pi\over4}i}$$
+$$(1-i)^4 = \left(\sqrt2e^{-{\pi\over4}i}\right)^4$$
+$$(1-i)^4 = 4e^{-\pi i}$$
+$$(1-i)^4 = 4\left(\cos(-\pi) + i\sin(-\pi)\right)$$
+$$(1-i)^4 = 4(-1+i(0))$$
+$$\bbox[5px, border:2px solid black]{(1-i)^4 = -4}$$
+
+Binomial theorem:
+$$(1-i)^4 = 1\cdot1^4 + 4\cdot1^3(-i)^1 + 6\cdot1^2(-i)^2 + 4\cdot1(-i)^3 + 1\cdot(-i)^4$$
+$$(1-i)^4 = 1\cdot1 + 4\cdot(-i) + 6\cdot1(-1) + 4\cdot1(-i) + 1\cdot1$$
+$$(1-i)^4 = 1 - 4i - 6 + 4i + 1$$
+$$\bbox[5px, border:2px solid black]{(1-i)^4 = -4}$$
+Comparing the two solution methods we find that:
+$$-4 = -4\quad\checkmark$$
+
+######2E-7b)
+$$(1+i\sqrt3)^3$$
+De Moivre's formula:
+$$1+i\sqrt3 = 2e^{{\pi\over 3}i}$$
+$$(1+i\sqrt3)^3 = 8e^{{\pi}i}$$
+$$(1+i\sqrt3)^3 = 8(\cos(\pi) + i\sin(\pi))$$
+$$\bbox[5px, border:2px solid black]{(1+i\sqrt3)^3 = -8}$$
+
+Binomial theorem:
+$$(1+i\sqrt3)^3 = 1\cdot1^3 + 3\cdot1^2(i\sqrt3) + 3\cdot1(i\sqrt3)^2 + 1\cdot(i\sqrt3)^3$$
+$$(1+i\sqrt3)^3 = 1 + \cancel{3i\sqrt3} + 9(-1) - \cancel{3i\sqrt3}$$
+$$\bbox[5px, border:2px solid black]{(1+i\sqrt3)^3 = -8}$$
+
+Comparing the two solution methods we find that:
+$$-8 = -8\quad\checkmark$$
