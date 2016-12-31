@@ -12,6 +12,16 @@ $$$\require{cancel}$$$
 #####Section 1
 ===
 ######1)
+![image](2_1ax.png =400x300)
+![image](2_1ay.png =400x300)
+![image](2_1az.png =400x300)
+
+The limiting values as $$$t\rightarrow\infty$$$ should be:
+$$\begin{align}
+x(\infty)&\rightarrow0 \\\
+y(\infty)&\rightarrow0 \\\
+z(\infty)&\rightarrow x(t_0)
+\end{align}$$
 
 
 ####[Part I.](id:part1)
