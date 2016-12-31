@@ -1,11 +1,35 @@
 $$$\require{cancel}$$$
+
 # 18.03
-### Pset 1
+### Pset 2
 [Problem Source](https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/assignments/MIT18_03S10_ps2.pdf)
 ###Table of Contents:
 [Part 1](#part1)  
 ####[Part I.](id:part1)
 ===
+#####Section 4
+===
+######2E-15a)
+$$\int e^{2x}\sin x\ dx = Im\left\\{ \int e^{2x}e^{ix} dx\right\\}$$
+$$
+\begin{align}
+\int e^{2x}e^{ix} dx &= {1 \over (2+i)}e^{x(2+i)} \\\
+&= {e^{2x}\over (2+i)}e^{ix}\\\
+&= {e^{2x}(2-i)\over 5}e^{ix}\\\
+&= {e^{2x}(2-i)\over 5}(\cos\ x + i\sin\ x)\\\
+\end{align}
+$$
+Note that we want only the imaginary component:
+$$
+\begin{align}
+Im\left\\{ {e^{2x}(2-i)\over 5}(\cos\ x + i\sin\ x) \right\\} &= 
+Im\left\\{ {2e^{2x}-ie^{2x}\over 5}(\cos\ x + i\sin\ x) \right\\} \\\
+&=Im\left\\{i\left({-e^{2x}\cos\ x\over 5} + {2e^{2x}\sin\ x\over 5}\right)\right\\} \\\
+&=\bbox[5px, border:2px solid black]{{-e^{2x}\cos\ x\over 5} + {2e^{2x}\sin\ x\over 5}}
+\end{align}$$
+
+######2E-15b)
+
 #####Section 1
 ===
 ######1.5 #1)
@@ -123,3 +147,32 @@ $$\bbox[5px, border:2px solid black]{(1+i\sqrt3)^3 = -8}$$
 
 Comparing the two solution methods we find that:
 $$-8 = -8\quad\checkmark$$
+
+#####Section 3
+===
+######2E-9)
+$$1=e^{2\pi i}$$
+$$1^{1\over 6} = e^{2\pi i\over 6}$$
+We can write down all the roots:
+$$e^{\pi i\over3}, e^{2\pi i\over3}, e^{\pi i}, e^{4\pi i\over3}, e^{5\pi i\over3}, e^{2\pi i}$$
+In a+bi format:
+$$\bbox[5px, border:2px solid black]{{1\over 2} + {\sqrt3\over2}i,\ -{1\over 2} + {\sqrt3\over2}i,\ -1,\ -{1\over 2} - {\sqrt3\over2},\ i,\ {1\over 2} - {\sqrt3\over2}i,\ 1\ }$$
+
+######2E-10)
+$$x^4 + 16 = 0$$
+$$x^4 = -16$$
+$$x^4 = 16(\cos(\pi) + i\sin(\pi))$$
+$$x^4 = 16e^{\pi i}$$
+$$x = 16^{1\over 4}e^{{\pi\over 4} i}$$
+There are four roots:
+$$x = 2e^{{\pi\over 4}i},\ 2e^{{3\pi\over 4}i},\ 2e^{{5\pi\over 4}i},\ 2e^{{7\pi\over 4}i}$$
+Written in the $$$a+bi$$$ format:
+$$\bbox[5px, border:2px solid black]{x = \sqrt2 + \sqrt2 i,\ -\sqrt2 + \sqrt2 i,\ -\sqrt2 - \sqrt2 i,\ \sqrt2 - \sqrt2 i}$$
+
+######i)
+$$Acos(\theta) + Bsin(\theta) = Ccos(\theta-\phi), C=\sqrt{A^2+B^2}, \phi=\tan^{-1}\left({B\over A}\right)$$
+$$\bbox[5px, border:2px solid black]{\cos(2t) + \sin(2t) = \sqrt2\cos\left(2t-{\pi\over 4}\right)}$$
+######ii)
+$$\bbox[5px, border:2px solid black]{\cos(\pi t)-\sqrt3\sin(\pi t) = 2\cos\left(\pi t - {\pi\over 3}\right)}$$
+######iii)
+$$\bbox[5px, border:2px solid black]{\cos\left(t-{\pi\over 8}\right) + \sin\left(t-{\pi\over 8}\right) = \sqrt2\cos\left(t-{3\pi\over 8}\right)}$$
