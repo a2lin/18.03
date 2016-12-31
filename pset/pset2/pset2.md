@@ -4,32 +4,18 @@ $$$\require{cancel}$$$
 ### Pset 2
 [Problem Source](https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/assignments/MIT18_03S10_ps2.pdf)
 ###Table of Contents:
-[Part 1](#part1)  
+[Part 1](#part1)
+[Part 1](#part2) 
+
+####[Part II.](id:part2)
+===
+#####Section 1
+===
+######1)
+
+
 ####[Part I.](id:part1)
 ===
-#####Section 4
-===
-######2E-15a)
-$$\int e^{2x}\sin x\ dx = Im\left\\{ \int e^{2x}e^{ix} dx\right\\}$$
-$$
-\begin{align}
-\int e^{2x}e^{ix} dx &= {1 \over (2+i)}e^{x(2+i)} \\\
-&= {e^{2x}\over (2+i)}e^{ix}\\\
-&= {e^{2x}(2-i)\over 5}e^{ix}\\\
-&= {e^{2x}(2-i)\over 5}(\cos\ x + i\sin\ x)\\\
-\end{align}
-$$
-Note that we want only the imaginary component:
-$$
-\begin{align}
-Im\left\\{ {e^{2x}(2-i)\over 5}(\cos\ x + i\sin\ x) \right\\} &= 
-Im\left\\{ {2e^{2x}-ie^{2x}\over 5}(\cos\ x + i\sin\ x) \right\\} \\\
-&=Im\left\\{i\left({-e^{2x}\cos\ x\over 5} + {2e^{2x}\sin\ x\over 5}\right)\right\\} \\\
-&=\bbox[5px, border:2px solid black]{{-e^{2x}\cos\ x\over 5} + {2e^{2x}\sin\ x\over 5}}
-\end{align}$$
-
-######2E-15b)
-
 #####Section 1
 ===
 ######1.5 #1)
@@ -176,3 +162,40 @@ $$\bbox[5px, border:2px solid black]{\cos(2t) + \sin(2t) = \sqrt2\cos\left(2t-{\
 $$\bbox[5px, border:2px solid black]{\cos(\pi t)-\sqrt3\sin(\pi t) = 2\cos\left(\pi t - {\pi\over 3}\right)}$$
 ######iii)
 $$\bbox[5px, border:2px solid black]{\cos\left(t-{\pi\over 8}\right) + \sin\left(t-{\pi\over 8}\right) = \sqrt2\cos\left(t-{3\pi\over 8}\right)}$$
+
+#####Section 4
+===
+######2E-15a)
+$$\int e^{2x}\sin x\ dx = Im\left\\{ \int e^{2x}e^{ix} dx\right\\}$$
+$$
+\begin{align}
+\int e^{2x}e^{ix} dx &= {1 \over (2+i)}e^{x(2+i)} \\\
+&= {e^{2x}\over (2+i)}e^{ix}\\\
+&= {e^{2x}(2-i)\over 5}e^{ix}\\\
+&= {e^{2x}(2-i)\over 5}(\cos\ x + i\sin\ x)\\\
+\end{align}
+$$
+Note that we want only the imaginary component:
+$$
+\begin{align}
+Im\left\\{ {e^{2x}(2-i)\over 5}(\cos\ x + i\sin\ x) \right\\} &= 
+Im\left\\{ {2e^{2x}-ie^{2x}\over 5}(\cos\ x + i\sin\ x) \right\\} \\\
+&=Im\left\\{i\left({-e^{2x}\cos\ x\over 5} + {2e^{2x}\sin\ x\over 5}\right)\right\\} \\\
+&=\bbox[5px, border:2px solid black]{{-e^{2x}\cos\ x\over 5} + {2e^{2x}\sin\ x\over 5}}
+\end{align}$$
+
+######bi)
+$${d\over dt}x(t) + 2x(t) = e^{3t}$$
+$${d\over dt}x(t)e^{2t} + 2x(t)e^{2t} = e^{3t}e^{2t}$$
+$${d\over dt}\left(x(t)e^{2t}\right) = e^{5t}$$
+$$\int {d\over dt}\left(x(t)e^{2t}\right) \ dt =\int e^{5t} \ dt$$
+$$x(t)e^{2t} = {1\over 5}e^{5t} + C$$
+$$\bbox[5px, border:2px solid black]{x(t) = e^{-2t}\left\[{1\over 5}e^{5t} + C\right\]}$$
+
+######bii)
+$${d\over dt}x(t) + 2x(t) = e^{3it}$$
+$${d\over dt}x(t)e^{2t} + 2x(t)e^{2t} = e^{3it}e^{2t}$$
+$${d\over dt}\left(x(t)e^{2t}\right) = e^{t(2+3i)}$$
+$$\int {d\over dt}\left(x(t)e^{2t}\right)\ dt = \int e^{t(2+3i)}\ dt$$
+$$x(t)e^{2t} = {1\over (2+3i)}e^{t(2+3i)} + C$$
+$$\bbox[5px, border:2px solid black]{x(t) = e^{-2t}\left\[{1\over(2+3i)}e^{t(2+3i)}+C\right\]}$$
