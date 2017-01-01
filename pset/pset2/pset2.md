@@ -4,14 +4,14 @@ $$$\require{cancel}$$$
 ### Pset 2
 [Problem Source](https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/assignments/MIT18_03S10_ps2.pdf)
 ###Table of Contents:
-[Part 1](#part1)
-[Part 1](#part2) 
+[Part 1](#part1)  
+[Part 2](#part2) 
 
 ####[Part II.](id:part2)
 ===
 #####Section 1
 ===
-######1)
+######1a)
 ![image](2_1ax.png =400x300)
 ![image](2_1ay.png =400x300)
 ![image](2_1az.png =400x300)
@@ -22,6 +22,68 @@ x(\infty)&\rightarrow0 \\\
 y(\infty)&\rightarrow0 \\\
 z(\infty)&\rightarrow x(t_0)
 \end{align}$$
+######1b)
+$$
+\begin{align}
+{dx\over dt} &= -{1\over 2t_s}x(t)\\\
+{dx\over dt} &= -\sigma x(t),\ \sigma = {1\over 2t_s} \\\ \\\
+{dy\over dt} &= -{1\over 2}{dx\over dt} - {1\over 2t_M}y(t) \\\
+{dy\over dt} &= {1\over 2}\sigma x(t) - \mu y(t),\ \mu = {1\over 2t_M} \\\ \\\
+{dz\over dt} &= {1\over 2}\sigma x(t) + \mu y(t)
+\end{align}
+$$
+######1c)
+Solving for $$$x(t)$$$:
+
+$$
+\begin{align}
+{dx\over dt} &= -\sigma x(t) \\\
+\int {1\over x(t)} dx &= \int -\sigma dt \\\
+ln(x(t)) &= -\sigma t + C \\\
+x(t) &= Ce^{-\sigma t}
+\end{align}
+$$
+Using initial condition x(0) = 1:
+$$x(0) = Ce^{-\sigma (0)}$$
+$$1 = C$$
+$$\therefore \bbox[5px, border:2px solid black]{x(t) = e^{-\sigma t}}$$
+
+Solving for $$$y(t)$$$:
+
+$$
+\begin{align}
+{dy\over dt} &= -{1\over 2}\sigma x(t) - \mu y(t) \\\
+{dy\over dt} &= -{1\over 2}\sigma e^{-\sigma t} - \mu y(t)
+\end{align}
+$$
+Using the method of integrating factors:
+$$
+\begin{align}
+{dy\over dt} + \mu y(t) &= -{1\over 2}\sigma e^{-\sigma t} \\\
+{dy\over dt}e^{\mu t} + \mu y(t) e^{\mu t} &= -{1\over 2}\sigma e^{-\sigma t}e^{\mu t} \\\
+{dy\over dt}\left(e^{\mu t}y(t)\right) &= -{1\over 2}\sigma e^{t(\mu-\sigma)} \\\
+\int {d\over dt} \left(e^{\mu t}y(t)\right)\ dt &= \int -{1\over 2}\sigma e^{t(\mu - \sigma)} \ dt \\\
+e^{\mu t}y(t) &= {-{1\over 2}\sigma \over \mu - \sigma}e^{t(\mu-\sigma)} + C\\\
+y(t) &= -{\sigma \over 2\left(\mu - \sigma\right)}e^{t(\mu-\sigma)}e^{-\mu t} + C(e^{-\mu t}) \\\
+y(t) &= -{\sigma \over 2\left(\mu - \sigma\right)}e^{-\sigma t} + Ce^{-\mu t}
+\end{align}
+$$
+Using the initial condition y(0) = 0:
+$$y(0) = -{\sigma \over 2\left(\mu -\sigma\right)}e^{0(-\sigma)} + Ce^{-\mu 0}$$
+$$0 = -{\sigma \over 2\left(\mu - \sigma\right)} + C$$
+$${\sigma \over 2\left(\mu - \sigma\right)} = C$$
+$$
+\begin{align}
+y(t) &= -{\sigma \over 2\left(\mu - \sigma\right)}e^{-\sigma t} + Ce^{-\mu t} \\\
+y(t) &= -{\sigma \over 2\left(\mu - \sigma\right)}e^{-\sigma t} + {\sigma \over 2\left(\mu - \sigma\right)}e^{-\mu t} \\\
+\therefore y(t) &= \bbox[5px, border:2px solid black]{{\sigma \over 2\left(\mu - \sigma\right)}\left(e^{-\mu t} - e^{-\sigma t}\right)}
+\end{align}
+$$
+
+Solving for $$$z(t)$$$:
+
+
+
 
 
 ####[Part I.](id:part1)
