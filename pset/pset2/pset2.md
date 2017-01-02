@@ -75,12 +75,82 @@ $${\sigma \over 2\left(\mu - \sigma\right)} = C$$
 $$
 \begin{align}
 y(t) &= -{\sigma \over 2\left(\mu - \sigma\right)}e^{-\sigma t} + Ce^{-\mu t} \\\
-y(t) &= -{\sigma \over 2\left(\mu - \sigma\right)}e^{-\sigma t} + {\sigma \over 2\left(\mu - \sigma\right)}e^{-\mu t} \\\
-\therefore y(t) &= \bbox[5px, border:2px solid black]{{\sigma \over 2\left(\mu - \sigma\right)}\left(e^{-\mu t} - e^{-\sigma t}\right)}
+y(t) &= -{\sigma \over 2\left(\mu - \sigma\right)}e^{-\sigma t} + {\sigma \over 2\left(\mu - \sigma\right)}e^{-\mu t} 
+\end{align}
+$$
+$$\therefore \bbox[5px, border:2px solid black]{y(t) = {\sigma \over 2\left(\mu - \sigma\right)}\left(e^{-\mu t} - e^{-\sigma t}\right)}$$
+
+Solving for $$$z(t)$$$:
+$$
+\begin{align}
+{dz\over dt} &= {1\over 2}\sigma x(t) + \mu y(t) \\\
+{dz\over dt} &= {1\over 2}\sigma e^{-\sigma t} + \mu {\sigma \over 2\left(\mu - \sigma\right)}\left(e^{-\mu t} - e^{-\sigma t}\right) \\\
+{dz\over dt} &= {1\over 2}\sigma e^{-\sigma t} + \mu {\sigma \over 2\left(\mu - \sigma\right)}e^{-\mu t} - \mu {\sigma \over 2\left(\mu - \sigma\right)}e^{-\sigma t} \\\
+{dz\over dt} &= \sigma \left({1\over 2} - {\mu \over 2\left(\mu - \sigma\right)}\right)e^{-\sigma t}+ \mu {\sigma \over 2\left(\mu - \sigma\right)}e^{-\mu t}\\\
+\int\ dz &= \int \sigma \left({1\over 2} - {\mu \over 2\left(\mu - \sigma\right)}\right)e^{-\sigma t}+ \mu {\sigma \over 2\left(\mu - \sigma\right)}e^{-\mu t}\ dt \\\
+z(t) &= \sigma \left({1\over 2} - {\mu \over 2\left(\mu - \sigma\right)}\right){1\over -\sigma}e^{-\sigma t} + \mu {\sigma \over 2\left(\mu - \sigma\right)}{1\over -\mu}e^{-\mu t} + C\\\
+z(t) &= -\left({1\over 2} - {\mu \over 2\left(\mu - \sigma\right)}\right)e^{-\sigma t} -{\sigma \over 2\left(\mu - \sigma\right)}e^{-\mu t} + C \\\
+\end{align}
+$$
+Using the initial condition z(0) = 0:
+$$
+\begin{align}
+z(0) &= -\left({1\over 2} - {\mu \over 2\left(\mu - \sigma\right)}\right)e^{-\sigma 0} -{\sigma \over 2\left(\mu - \sigma\right)}e^{-\mu 0} + C \\\
+0 &= -\left({1\over 2} - {\mu \over 2\left(\mu - \sigma\right)}\right) -{\sigma \over 2\left(\mu - \sigma\right)} + C \\\
+C&=\left({1\over 2} - {\mu \over 2\left(\mu - \sigma\right)}\right) + {\sigma \over 2\left(\mu - \sigma\right)} \\\
+C&={1\over 2} + {\sigma - \mu \over 2\left(\mu - \sigma\right)} \\\
+C&={1\over 2} + {-(\mu-\sigma) \over 2\left(\mu - \sigma\right)} \\\
+C&={1\over 2} + {-1 \over 2} \\\
+C&=0
+\end{align}
+$$
+$$\therefore \bbox[5px, border:2px solid black]{z(t) = -\left({1\over 2} - {\mu \over 2\left(\mu - \sigma\right)}\right)e^{-\sigma t} -{\sigma \over 2\left(\mu - \sigma\right)}e^{-\mu t}}$$
+
+######1d)
+$$
+\begin{align}
+{d\over dt}y(t) = 0 \\\
+{1\over 2}\sigma x(t) - \mu y(t) &= 0 \\\
+{1\over 2}\sigma x(t) &= \mu y(t) \\\
+{1\over 2}\sigma\left(e^{-\sigma t}\right) &= \mu \left({\sigma \over 2\left(\mu - \sigma\right)}\left(e^{-\mu t} - e^{-\sigma t}\right)\right) \\\
+e^{-\sigma t} &= \left({\mu \over \mu - \sigma}\left(e^{-\mu t} - e^{-\sigma t}\right)\right) \\\
+e^{-\sigma t} &= {\mu \over \mu - \sigma}e^{-\mu t} - {\mu \over \mu - \sigma}e^{-\sigma t} \\\
+e^{-\sigma t} + {\mu \over \mu - \sigma}e^{-\sigma t} &= {\mu \over \mu - \sigma}e^{-\mu t}  \\\
+e^{-\sigma t}\left(1+ {\mu \over \mu - \sigma}\right) &= {\mu \over \mu - \sigma}e^{-\mu t}  \\\
+e^{t(\mu-\sigma)}\left(1+ {\mu \over \mu - \sigma}\right) &= {\mu \over \mu - \sigma}\\\
+e^{t(\mu-\sigma)} &= {{\mu \over \mu - \sigma} \over 1+ {\mu \over \mu - \sigma}}\\\
+e^{t(\mu-\sigma)} &= {\mu \over 2\mu - \sigma}\\\
+e^{t} &= {\mu \over 2\mu - \sigma}e^{-(\mu-\sigma)}\\\
+t &= ln\left({\mu \over 2\mu - \sigma}e^{-(\mu-\sigma)}\right)\\\
+t &= \bbox[5px, border:2px solid black]{ln(\mu) - ln(2\mu-\sigma) + ln(\sigma - \mu)}
 \end{align}
 $$
 
-Solving for $$$z(t)$$$:
+######1e)
+Analytically, with $$$x(0) = 2$$$:  
+For x(t):
+$$x(0) = Ce^{-\sigma (0)}$$
+$$2 = C$$
+$$ \bbox[5px, border:2px solid black]{x(t) = 2e^{-\sigma t}}$$
+
+For y(t):
+$$ \bbox[5px, border:2px solid black]{y(t) = {\sigma \over \mu - \sigma}\left(e^{-\mu t} - e^{-\sigma t}\right)}$$
+
+For z(t):
+$$ \bbox[5px, border:2px solid black]{z(t) = -\left(1 - {\mu \over \mu - \sigma}\right)e^{-\sigma t} -{\sigma \over \mu - \sigma}e^{-\mu t}}$$
+
+It appears as if doubling $$$x(0)$$$ doubles the values of $$$x(t)$$$, $$$y(t)$$$, and $$$z(t)$$$.
+
+######1f)
+$$t{dx(t)\over dt} + 2x(t) = q(t)$$
+
+Given the particular solution:
+$$x(t) = e^t$$
+
+We can write:
+$${dx(t)\over dt} = te^t$$
+$$t(te^t) + 2e^t = q(t)$$
+$$\therefore \bbox[5px, border:2px solid black]{q(t) = e^t(t^2+2)}$$
 
 
 
