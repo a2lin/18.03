@@ -152,8 +152,25 @@ $${dx(t)\over dt} = te^t$$
 $$t(te^t) + 2e^t = q(t)$$
 $$\therefore \bbox[5px, border:2px solid black]{q(t) = e^t(t^2+2)}$$
 
+To find the general solution we can write:
+$$x_p + Cx_h$$
 
+Where $$$x_p$$$ denotes the particular solution (e.g. $$$x(t) = e^t$$$ and $$$x_h$$$ denotes the homogeneous solution (e.g. the solution when $$$q(t) = 0$$$.
 
+Finding the homogeneous solution:  
+$$
+\begin{align}
+t{dx_h(t)\over dt} + 2x(t) &= 0 \\\
+{dx_h(t)\over dt} &= -{2\over t}x(t) \\\
+\int {1\over x_h(t)}\ dx(t) &= \int -{2\over t}\ dt \\\
+ln(x(t)) &= -2ln(t) + C \\\
+x_h(t) = Ce^{ln(1\over t^2)} \\\
+x_h(t) = C{1\over t^2}
+\end{align}
+$$
+
+Substituting the particular solution and homogeneous solutions in:
+$$\bbox[5px, border:2px solid black]{e^t + {C\over t^2}}$$
 
 
 ####[Part I.](id:part1)
