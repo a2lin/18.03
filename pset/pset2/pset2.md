@@ -17,9 +17,27 @@ $$$\require{cancel}$$$
 |i|$$$i-1$$$|$$$\sqrt2$$$|$$${-\pi\over4}$$$|![image](2_2_i.png =100x100)|
 |ii|$$$\sqrt3+i$$$|$$$2$$$|$$${\pi\over6}$$$|![image](2_2_ii.png =100x100)|
 |iii|$$$-{\sqrt2\over2}-{\sqrt2\over2}i$$$|1|$$${5\pi\over4}$$$|![image](2_2_iii.png =100x100)|
-|iv|0.3|1.39|
-|v|0.3|1.39|
+|iv|$$${1\over2} + {\sqrt3\over2}i$$$|1|$$${\pi\over3}$$$|![image](2_2_iv.png =100x100)|
+|v|$$$0.9982+0.0604i$$$|1|$$${\pi\over52}$$$|![image](2_2_v.png =100x100)
 ######b)
+$$
+\begin{align}
+z^4 + 4 &= 0 \\\
+z^4 &= -4 \\\
+z^4 &= 4e^{\pi i} \\\
+z &= 4^{1\over 4}e^{{\pi\over4}i} \\\
+z &= \bbox[5px, border:2px solid black]{\sqrt2e^{{\pi\over4}+{\pi k\over2}},\ k=\{0,1,2,3\}}\\\
+\end{align}
+$$
+
+For
+$$z^2+2z+2 = 0 $$
+Apply quadratic formula:
+$$-2\pm\sqrt{2^2-4(1)(2)}\over 2$$
+$$-2\pm\sqrt{-4}\over 2$$
+$$-1\pm i$$
+$$\therefore z=\bbox[5px, border:2px solid black]{-1+i,\ -1-i}$$
+
 
 #####Section 1
 ===
