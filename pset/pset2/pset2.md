@@ -21,7 +21,14 @@ $$$\require{cancel}$$$
 |iv|$$$e^{{\pi\over3}i}$$$|
 |v|$$$e^{{\pi\over52}i}$$$|
 ######b)
-
+$$
+\begin{align}
+e^{z} &= -2 \\\
+e^{a+bi} &= e^{a}\left(\cos(b)+i\sin(b)\right)\\\
+-2 &= e^{a}\left(\cos(b)+i\sin(b)\right)\\\
+\end{align}
+$$
+$$\therefore \bbox[5px, border:2px solid black]{z=ln(-2) + 0i,\ z=ln(2) + \pi i}$$
 
 #####Section 1
 ===
