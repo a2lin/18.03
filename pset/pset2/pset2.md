@@ -29,6 +29,17 @@ e^{a+bi} &= e^{a}\left(\cos(b)+i\sin(b)\right)\\\
 \end{align}
 $$
 $$\therefore \bbox[5px, border:2px solid black]{z=ln(-2) + 0i,\ z=ln(2) + \pi i}$$
+######c)
+$$
+\begin{align}
+cos(4t) &= Re\left\\{e^{4it}\right\\} \\\
+Re\left\\{e^{4it}\right\\} &= Re\left\\{\left(e^{it}\right)^4\right\\} \\\
+Re\left\\{\left(e^{it}\right)^4\right\\} &= Re\left\\{\left(cos(t) + i sin(t)\right)^4\right\\} \\\
+Re\left\\{\left(cos(t) + i sin(t)\right)^4\right\\} &= \cos^4t+\cancel{4\cos^3t\cdot i\sin t}+6\cos^2t\cdot i^2\sin^2t+\cancel{4\cos t\cdot i^3\sin^3t}+i^4\sin^4t \\\
+&= \cos^4t - 6\cos^2t\cdot\sin^2t + sin^4t \\\
+\end{align}
+$$
+$$\therefore \cos(4t) = \bbox[5px, border:2px solid black]{\cos^4t - 6\cos^2t\cdot\sin^2t + \sin^4t}$$
 
 #####Section 1
 ===
