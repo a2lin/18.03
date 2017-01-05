@@ -9,38 +9,16 @@ $$$\require{cancel}$$$
 
 ####[Part II.](id:part2)
 ===
-
-#####Section 3
+#####Section 4
 ===
-######a)
-| n | $$$Ae^{i\theta}$$$ |
-|---|---|
-|i|$$$\sqrt2e^{{-\pi\over4}i}$$$|
-|ii|$$$2e^{{\pi\over6}i}$$$|
-|iii|$$$e^{{5\pi\over4}i}$$$|
-|iv|$$$e^{{\pi\over3}i}$$$|
-|v|$$$e^{{\pi\over52}i}$$$|
-######b)
 $$
 \begin{align}
-e^{z} &= -2 \\\
-e^{a+bi} &= e^{a}\left(\cos(b)+i\sin(b)\right)\\\
--2 &= e^{a}\left(\cos(b)+i\sin(b)\right)\\\
+Re\left\\{e^{3it}\over\sqrt3+i\right\\} &= Re\left\\{{\sqrt3-i\over 2}\left(\cos(3t) + i\sin(3t)\right)\right\\} \\\
+&= {\sqrt3\over 2}\cos(3t) + {1\over 2}\sin(3t) \\\
+&= \cos\left(3t-{\pi\over3}\right)
 \end{align}
+&= 
 $$
-$$\therefore \bbox[5px, border:2px solid black]{z=ln(-2) + 0i,\ z=ln(2) + \pi i}$$
-######c)
-$$
-\begin{align}
-cos(4t) &= Re\left\\{e^{4it}\right\\} \\\
-Re\left\\{e^{4it}\right\\} &= Re\left\\{\left(e^{it}\right)^4\right\\} \\\
-Re\left\\{\left(e^{it}\right)^4\right\\} &= Re\left\\{\left(cos(t) + i sin(t)\right)^4\right\\} \\\
-Re\left\\{\left(cos(t) + i sin(t)\right)^4\right\\} &= \cos^4t+\cancel{4\cos^3t\cdot i\sin t}+6\cos^2t\cdot i^2\sin^2t+\cancel{4\cos t\cdot i^3\sin^3t}+i^4\sin^4t \\\
-&= \cos^4t - 6\cos^2t\cdot\sin^2t + sin^4t \\\
-\end{align}
-$$
-$$\therefore \cos(4t) = \bbox[5px, border:2px solid black]{\cos^4t - 6\cos^2t\cdot\sin^2t + \sin^4t}$$
-
 #####Section 1
 ===
 ######1a)
@@ -232,6 +210,53 @@ $$-2\pm\sqrt{2^2-4(1)(2)}\over 2$$
 $$-2\pm\sqrt{-4}\over 2$$
 $$-1\pm i$$
 $$\therefore z=\bbox[5px, border:2px solid black]{-1+i,\ -1-i}$$
+
+#####Section 3
+===
+######a)
+| n | $$$Ae^{i\theta}$$$ |
+|---|---|
+|i|$$$\sqrt2e^{{-\pi\over4}i}$$$|
+|ii|$$$2e^{{\pi\over6}i}$$$|
+|iii|$$$e^{{5\pi\over4}i}$$$|
+|iv|$$$e^{{\pi\over3}i}$$$|
+|v|$$$e^{{\pi\over52}i}$$$|
+######b)
+$$
+\begin{align}
+e^{z} &= -2 \\\
+e^{a+bi} &= e^{a}\left(\cos(b)+i\sin(b)\right)\\\
+-2 &= e^{a}\left(\cos(b)+i\sin(b)\right)\\\
+\end{align}
+$$
+$$\therefore \bbox[5px, border:2px solid black]{z=ln(-2) + 0i,\ z=ln(2) + \pi i}$$
+######c)
+$$
+\begin{align}
+cos(4t) &= Re\left\\{e^{4it}\right\\} \\\
+Re\left\\{e^{4it}\right\\} &= Re\left\\{\left(e^{it}\right)^4\right\\} \\\
+Re\left\\{\left(e^{it}\right)^4\right\\} &= Re\left\\{\left(cos(t) + i sin(t)\right)^4\right\\} \\\
+Re\left\\{\left(cos(t) + i sin(t)\right)^4\right\\} &= \cos^4t+\cancel{4\cos^3t\cdot i\sin t}+6\cos^2t\cdot i^2\sin^2t+\cancel{4\cos t\cdot i^3\sin^3t}+i^4\sin^4t \\\
+&= \cos^4t - 6\cos^2t\cdot\sin^2t + sin^4t \\\
+\end{align}
+$$
+$$\therefore \cos(4t) = \bbox[5px, border:2px solid black]{\cos^4t - 6\cos^2t\cdot\sin^2t + \sin^4t}$$
+######di)
+$$f(t) = \cos(2\pi t)$$
+$$f(t) = Re\left\\{e^{2\pi it}\right\\}$$
+![image](2di.png =400x300)
+######dii)
+$$f(t) = e^{-t}$$
+$$f(t) = e^{\left(-1+0i\right)t}$$
+![image](2dii.png =400x300)
+######diii)
+$$f(t) = e^{-t}cos(2\pi t)$$
+$$f(t) = e^{\left(-1+2\pi i\right)t}$$
+![image](2diii.png =400x300)
+######div)
+$$f(t) = 1$$
+$$f(t) = e^{\left(0+0i\right)t}$$
+![image](2div.png =400x300)
 
 ####[Part I.](id:part1)
 ===
