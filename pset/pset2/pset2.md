@@ -9,18 +9,7 @@ $$$\require{cancel}$$$
 
 ####[Part II.](id:part2)
 ===
-#####Section 4
-===
-$$
-\begin{align}
-Re\left\\{e^{3it}\over\sqrt3+i\right\\} &= Re\left\\{{\sqrt3-i\over 2}\left(\cos(3t) + i\sin(3t)\right)\right\\} \\\
-&= {\sqrt3\over 2}\cos(3t) + {1\over 2}\sin(3t) \\\
-&= \cos\left(3t-{\pi\over3}\right)
-\end{align}
-$$
-$$Modulus(2+2i) = 2\sqrt2$$
-$$Arg(2+2i) = {\pi\over4}$$
-$$2\sqrt2e^{i{\pi\over4}}$$
+
 #####Section 1
 ===
 ######1a)
@@ -259,6 +248,81 @@ $$f(t) = e^{\left(-1+2\pi i\right)t}$$
 $$f(t) = 1$$
 $$f(t) = e^{\left(0+0i\right)t}$$
 ![image](2div.png =400x300)
+
+#####Section 4
+===
+######a)
+First way:
+$$
+\begin{align}
+Re\left\\{e^{3it}\over\sqrt3+i\right\\} &= Re\left\\{{\sqrt3-i\over 4}\left(\cos(3t) + i\sin(3t)\right)\right\\} \\\
+&= {\sqrt3\over 4}\cos(3t) + {1\over 4}\sin(3t) \\\
+&= {1\over 2}\cos\left(3t-{\pi\over6}\right)
+\end{align}
+$$
+Other way:  
+$$
+\begin{align}
+e^{3it}\over\sqrt3 + i &= Be^{i(3t-\phi)} \\\
+e^{3it}\over 2e^{\pi i\over6} &= {1\over2}e^{i(3t-{\pi\over6})}\\\
+\end{align}
+$$
+$$
+Re\left\\{{1\over2}e^{i(3t-{\pi\over6})}\right\\} = {1\over 2} cos\left(3t-{\pi\over6}\right)
+$$
+$$
+\therefore \bbox[5px, border:2px solid black]{{1\over 2} cos\left(3t-{\pi\over6}\right) = {1\over 2} cos\left(3t-{\pi\over6}\right)} \quad\checkmark
+$$
+######b)
+Particular solution:
+$$
+\begin{align}
+{d\over dt}z(t) + 3z(t) &= e^{2it} \\\
+{d\over dt}\omega e^{2it} + 3\omega e^{2it} &= e^{2it} \\\
+2i\omega e^{2it} + 3\omega e^{2it} &= e^{2it}\\\
+\omega(3+2i)e^{2it} &= e^{2it}\\\
+\omega(3+2i) &= 1 \\\
+\omega &= {1\over 3+2i}
+\end {align}
+$$
+$$
+\bbox[5px, border:2px solid black]{{1\over 3+2i}e^{2it}}
+$$
+Homogeneous solution:
+$$
+\begin{align}
+{d\over dt}z(t) + 3z(t) &= 0\\\
+{d\over dt}z(t) &= -3z(t)\\\
+\int {1\over z(t)} dz(t) &= \int -3 dt\\\
+ln(z(t)) &= -3t + C \\\
+z(t) &= Ce^{-3t}\\\
+\end{align}
+$$
+$$
+\bbox[5px, border:2px solid black]{e^{-3t}}
+$$
+General solution:
+$$
+\bbox[5px, border:2px solid black]{{1\over 3 + 2i}e^{2it} + Ce^{-3t}}
+$$
+######c)
+$${d\over dt}x(t) + 3x(t) = cos(2t)$$
+Knowing the equation from (b) and realizing that $$$cos(2t) = Re\left\\{e^{2it}\right\\}$$$:
+$$
+\begin{align}
+Re\left\\{{1\over 3+2i}e^{2it}\right\\} &= Re\left\\{{3-2i\over(3+2i)(3-2i)}e^{2it}\right\\}\\\
+&= Re\left\\{{3-2i\over13}\left(\cos(2t) + i\sin(2t)\right)\right\\}\\\
+&={1\over 13}\left(3\cos(2t) + 2\sin(2t)\right)\\\
+\end{align}
+$$
+$$
+\therefore x(t) = \bbox[5px, border:2px solid black]{{1\over 13}\left(3\cos(2t) + 2\sin(2t)\right)}
+$$
+
+The general solution follows the solution found in (b):
+$$
+\bbox[5px, border:2px solid black]{{1\over 13}\left(3\cos(2t) + 2\sin(2t)\right) + ce^{-3t}}
+$$
 
 ####[Part I.](id:part1)
 ===
