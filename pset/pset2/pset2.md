@@ -17,8 +17,10 @@ Re\left\\{e^{3it}\over\sqrt3+i\right\\} &= Re\left\\{{\sqrt3-i\over 2}\left(\cos
 &= {\sqrt3\over 2}\cos(3t) + {1\over 2}\sin(3t) \\\
 &= \cos\left(3t-{\pi\over3}\right)
 \end{align}
-&= 
 $$
+$$Modulus(2+2i) = 2\sqrt2$$
+$$Arg(2+2i) = {\pi\over4}$$
+$$2\sqrt2e^{i{\pi\over4}}$$
 #####Section 1
 ===
 ######1a)
