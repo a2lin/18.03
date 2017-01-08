@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>18.03</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<p>$$$\require{cancel}$$$</p>
+
+<h1>18.03</h1>
+
+<h3>Recitation 4</h3>
+
+<p><a href="https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/recitations/MIT18_03S10_rec_04.pdf">Problem Source</a></p>
+
+<h5>Section 1</h5>
+
+<hr />
+
+<h6>a)</h6>
+
+<p>If $$$k$$$ is the proportional constant, $$$y(t)$$$ is the height of the ocean, and $$$x(t)$$$ is the height of the bay, we can represent the fact that the change is proportional to the difference between ocean and bay with the following equation:
+$${d\over dt}x(t) = k(y(t)-x(t))$$
+Written in standard form:
+$${d\over dt}x(t) = ky(t)-kx(t)$$
+$$\bbox[5px, border:2px solid black]{\underbrace{{d\over dt}x(t) + k\underbrace{x(t)}_{output}}_{system} = k\underbrace{y(t)}_{input}}$$</p>
+
+<h6>b)</h6>
+
+<p>If we are modeling the tide using
+$$y(t) = cos(\omega t)$$
+and expecting it to have a period of $$$4\pi$$$, which is double the normal period:
+$$\bbox[5px, border:2px solid black]{\omega={1\over 2}}$$</p>
+
+<h6>c)</h6>
+
+<p>$$
+\begin{align}
+{d\over dt}x(t) + kx(t) &amp;= ky(t) \\
+{d\over dt}x(t)e^{kt} + kx(t)e^{kt} &amp;= ky(t)e^{kt}\\
+{d\over dt}\left(x(t)e^{kt}\right) &amp;= ky(t)e^{kt} \\
+\int {d\over dt}\left(x(t)e^{kt}\right)\ dt &amp;= \int ky(t)e^{kt}\ dt\\
+x(t)e^{kt} &amp;= k\left({1\over k^2+\omega^2}e^{kt}\left(k\cos(\omega t)+ \omega\sin(\omega t)\right)+C\right)\\
+x(t) &amp;= \bbox[5px, border:2px solid black]{{k\over k^2+\omega^2}\left(k\cos(\omega t)+ \omega\sin(\omega t)\right)+{C\over e^{k t}}}
+\end{align}
+$$</p>
+
+<h6>d)</h6>
+
+<p>Assuming $$$x(t)=a\cos(\omega t) + b\sin(\omega t)$$$:
+$$
+\begin{align}
+{d\over dt}x(t) &amp;= {d\over dt}\left(a\cos(\omega t) + b\sin(\omega t)\right)\\
+&amp;= -a\omega\sin(\omega t) + b\omega\cos(\omega t)
+\end{align}
+$$
+Plugging this back into the original diffeq and substituting $$$y(t)=\cos(\omega t)$$$:
+$$
+\begin{align}
+ky(t) &amp;= {d\over dt} x(t)+kx(t)\\
+k\cos(\omega t) &amp;= -a\omega\sin(\omega t) + b\omega\cos(\omega t) + k\left(a\cos(\omega t) + b\sin(\omega t)\right)\\
+&amp;= (ka+b\omega)\cos(\omega t) + (kb-\omega a)sin(\omega t)\\
+\end{align}
+$$
+We can see that:<br/>
+$$ka+b\omega = k$$
+$$kb-\omega a = 0$$
+Solving this system of equations:
+$$
+\begin{align}<br/>
+kb - \omega a &amp;= 0\\
+kb &amp;= \omega a\\
+b &amp;= {\omega a\over k}\\
+\end{align}
+$$
+Plugging this b into the other equation:<br/>
+$$
+\begin{align}
+ka + b\omega &amp;= k\\
+ka + {\omega a\over k}\omega &amp;= k\\
+ka + {\omega^2a\over k} &amp;= k\\
+a\left({k+\omega^2\over k}\right) &amp;= k\\
+a = {k^2\over k+\omega^2}\\
+\end{align}
+$$
+Plugging this back into the first equation to get an expression for b:
+$$
+\begin{align}
+b &amp;= {\omega a\over k}\\
+b &amp;= {\omega{k^2\over k + \omega^2}\over k}\\
+b &amp;= \omega{k\over k+\omega^2}
+\end{align}
+$$
+$$\therefore \bbox[5px, border:2px solid black]{a = {k^2\over k+\omega^2},\ b=\omega{k\over k+\omega^2}}$$</p>
+
+<h5>Section 2</h5>
+
+<hr />
+
+<h6>a)</h6>
+
+<p>$$
+\begin{align}
+{d\over dx}y(x) &amp;= x - 2y(x)\\
+{d\over dx}y(x) + 2y(x) &amp;= x\\
+{d\over dx}y(x) e^{2x} + 2y(x)e^{2x} &amp;= xe^{2x}\\
+{d\over dx}\left(y(x)e^{2x}\right) &amp;= xe^{2x}\\
+\int{d\over dx}\left(y(x)e^{2x}\right)\ dx &amp;= \int xe^{2x}\ dx\\
+y(x)e^{2x} &amp;= {x\over 2}e^{2x} - \int{1\over 2}e^{2x}\ dx + C\\
+y(x)e^{2x} &amp;= {x\over 2}e^{2x} - {1\over 4}e^{2x} + C \\
+y(x) &amp;= \bbox[5px, border:2px solid black]{{x\over 2} - {1\over 4} + Ce^{-2x}}\\
+\end{align}
+$$</p>
+
+<h6>b)</h6>
+
+<p>Evidently the straight line is at
+$$
+y(x) = \bbox[5px, border:2px solid black]{{x\over 2} - {1\over 4}}
+$$</p>
+
+<h6>c)</h6>
+
+<p>Given the initial condition $$$y(0) = 1$$$:<br/>
+$$
+\begin{align}
+y(x) &amp;= {x\over 2} - {1\over 4} + Ce^{-2x}\\
+y(0) &amp;= {0\over 2} - {1\over 4} + Ce^{0}\\
+0 &amp;= -{1\over 4} + C\\
+C &amp;= {5\over 4}
+\end{align}
+$$
+$$\therefore y_p(x) = \bbox[5px, border:2px solid black]{{x\over 2} - {1\over 4} + {5\over 4}e^{-2x}}$$</p>
+
+<h5>Section 3</h5>
+
+<hr />
+
+<p>$$
+\begin{align}
+x^2{d\over dx}y(x) + 2xy(x) &amp;= \sin(2x)\\
+{d\over dx}\left(x^2y(x)\right) &amp;= \sin(2x)\\
+\int {d\over dx}\left(x^2y(x)\right)\ dx &amp;= \int \sin(2x)\ dx\\
+x^2y(x) &amp;= -{1\over 2}\cos(2x)+C\\
+y(x) &amp;= {-{1\over 2}\cos(2x)\over x^2} + Cx^{-2}\\
+y(x) &amp;= \bbox[5px, border:2px solid black]{{-\cos(2x)\over 2x^2} + Cx^{-2}}\\
+\end{align}
+$$</p>
+</body>
+</html>
