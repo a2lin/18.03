@@ -22,3 +22,16 @@ Polar coordinates: $$$(1, \sqrt3i)$$$
 ![image](p1.png =400x300)
 #####Section 2
 ===
+From (1) we know that one possible expression is:
+$$2e^{i{\pi\over3}}$$
+Rewriting this in the form $$$e^{a+bi}$$$:
+$$e^{ln(2)}e^{i{\pi\over3}}$$
+$$e^{ln(2)+i{\pi\over3}}$$
+$$\therefore a=ln(2),\ b={\pi\over3}$$
+Fixing b to be as small as possible:
+$$e^{ln(2) + i{\pi\over3}}$$
+
+It's clear that solving for $$$\left(e^{ln(2) + i{\pi\over3}}\right)^{n}$$$ where $$$n$$$ is $$$\\{-4\...4\\}$$$ will result in the same answers as in (1).
+#####Section 3
+===
+
