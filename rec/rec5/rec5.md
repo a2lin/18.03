@@ -47,7 +47,7 @@ $$\cos(\pi t) - \sqrt 3 \sin(\pi t)$$
 Writing in the form of $$$A\cos(\omega t - \phi)$$$:
 $$A = \sqrt{1^2 + {\sqrt3}^2} = 2$$
 $$\phi = -\arctan\left({\sqrt3\over1}\right) = -{\pi\over3}$$
-$$\therefore \cos(\pi t) - \sqrt 3 \sin(\pi t) = \bbox[5px, border:2px solid black]{2\cos\left(\pi t - {\pi\over3}\right)}$$
+$$\therefore \cos(\pi t) - \sqrt 3 \sin(\pi t) = \bbox[5px, border:2px solid black]{2\cos\left(\pi t + {\pi\over3}\right)}$$
 ######c)
 Expression:
 $$Re\left\\{{e^{it}\over 2 + 2i}\right\\}$$
@@ -85,4 +85,30 @@ e^{2t}z(t) &= {1\over 2+2i}e^{t\left(2+2i\right)} + C\\\
 z(t) &= {1\over 2+2i}e^{t\left(2+2i\right)-2t} + Ce^{-2t}\\\
 z(t) &= \bbox[5px, border:2px solid black]{{1\over 2+2i}e^{2it} + Ce^{-2t}}\\\
 \end{align}
+$$
+#####Section 5
+===
+$$
+\begin{align}
+{d\over dt}x(t) + 2x(t) &= \cos(2t)\\\
+{d\over dt}x(t) + 2x(t) &= Re\left\\{e^{2it}\right\\}\\\
+{d\over dt}x(t)e^{2t} + 2x(t)e^{2t} &= Re\left\\{e^{2it}\right\\}e^{2t}\\\
+{d\over dt}\left(x(t)e^{2t}\right) &= Re\left\\{e^{(2+2i)t}\right\\}\\\
+\int {d\over dt}\left(x(t)e^{2t}\right)\ dt &= \int Re\left\\{e^{(2+2i)t}\right\\}\ dt\\\
+x(t)e^{2t} &= Re\left\\{{1\over 2+2i}e^{(2+2i)t}\right\\} + C\\\
+x(t) &= Re\left\\{{1\over 2+2i}e^{(2+2i)t}\right\\}e^{-2t} + Ce^{-2t}\\\
+&= Re\left\\{{1\over 2+2i}{2-2i\over2-2i}e^{2it}\right\\} + Ce^{-2t}\\\
+&= Re\left\\{{2-2i\over8}e^{2it}\right\\} + Ce^{-2t}\\\
+&= Re\left\\{{1-i\over4}\left(\cos(2t)+i\sin(2t)\right)\right\\} + Ce^{-2t}\\\
+&= {1\over 4}Re\left\\{\cos(2t) + \sin(2t) \cancel{- i\cos(2t)} + \cancel{isin(2t)}\right\\} + Ce^{-2t}\\\
+&= \bbox[5px, border:2px solid black]{{1\over 4}\left(\cos(2t) + \sin(2t)\right)} + Ce^{-2t}\\\
+\end{align}
+$$
+The solution for 
+$$
+{d\over dt}x(t) + 2x(t) = sin(2t)
+$$
+is simply the Imaginary part of the prior solution:
+$$
+\bbox[5px, border:2px solid black]{{1\over 4}\left(-\cos(2t) + \sin(2t)\right) + Ce^{-2t}}
 $$
