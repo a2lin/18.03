@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>18.03</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<p>$$$\require{cancel}$$$</p>
+
+<h1>18.03</h1>
+
+<h3>Recitation 5</h3>
+
+<p><a href="https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/recitations/MIT18_03S10_rec_05.pdf">Problem Source</a></p>
+
+<h5>Section 1</h5>
+
+<hr />
+
+<p>Polar coordinates: $$$(1, \sqrt3i)$$$</p>
+
+<table>
+<thead>
+<tr>
+<th> n </th>
+<th> $$$a+bi$$$ </th>
+<th> $$$Ae^{i\theta}$$$ </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-4</td>
+<td>$$${1\over 16}\left(-{\sqrt3\over2} + {1\over2}i\right)$$$</td>
+<td>$$${1\over 16}e^{{-4\pi \over3}i}$$$</td>
+</tr>
+<tr>
+<td>-3</td>
+<td>$$${1\over 8}\left(-1 + 0i\right)$$$</td>
+<td>$$${1\over 8}e^{-\pi i}$$$</td>
+</tr>
+<tr>
+<td>-2</td>
+<td>$$${1\over 4}\left(-{\sqrt3\over2} - {1\over2}i\right)$$$</td>
+<td>$$${1\over 4}e^{{-2\pi \over 3}i}$$$</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>$$${1\over 2}\left({\sqrt3\over2} - {1\over2}i\right)$$$</td>
+<td>$$${1\over 2}e^{{-\pi \over 3}i}$$$</td>
+</tr>
+<tr>
+<td>0</td>
+<td>$$$1+0i$$$</td>
+<td>$$$1$$$</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$$$2\left({\sqrt3\over2} + {1\over2}i\right)$$$</td>
+<td>$$$2e^{{\pi\over3}i}$$$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$$$4\left(-{\sqrt3\over2} + {1\over2}i\right)$$$</td>
+<td>$$$4e^{{2\pi\over3}i}$$$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$$$8\left(-1 + 0i\right)$$$</td>
+<td>$$$8e^{\pi i}$$$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$$$16\left(-{\sqrt3\over2} - {1\over2}i\right)$$$</td>
+<td>$$$16e^{{4\pi\over3}i}$$$</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><img src="p1.png" height="300" width="400" alt="image" /></p>
+
+<h5>Section 2</h5>
+
+<hr />
+
+<p>From (1) we know that one possible expression is:
+$$2e^{i{\pi\over3}}$$
+Rewriting this in the form $$$e^{a+bi}$$$:
+$$e^{ln(2)}e^{i{\pi\over3}}$$
+$$e^{ln(2)+i{\pi\over3}}$$
+$$\therefore a=ln(2),\ b={\pi\over3}$$
+Fixing b to be as small as possible:
+$$e^{ln(2) + i{\pi\over3}}$$</p>
+
+<p>It's clear that solving for $$$\left(e^{ln(2) + i{\pi\over3}}\right)^{n}$$$ where $$$n$$$ is $$$\{-4...4\}$$$ will result in the same answers as in (1).</p>
+
+<h5>Section 3</h5>
+
+<hr />
+
+<h6>a)</h6>
+
+<p>Expression:
+$$\cos(2t) + \sin(2t)$$
+Writing in the form of $$$A\cos(\omega t - \phi)$$$:
+$$A = \sqrt{(1^2+1^2)} = \sqrt2$$
+$$\phi = \arctan({1\over2}) = {\pi\over4}$$
+$$\therefore \cos(2t) + \sin(2t) = \bbox[5px, border:2px solid black]{\sqrt2\cos\left(2t-{\pi\over4}\right)}$$</p>
+
+<h6>b)</h6>
+
+<p>Expression:
+$$\cos(\pi t) - \sqrt 3 \sin(\pi t)$$
+Writing in the form of $$$A\cos(\omega t - \phi)$$$:
+$$A = \sqrt{1^2 + {\sqrt3}^2} = 2$$
+$$\phi = -\arctan\left({\sqrt3\over1}\right) = -{\pi\over3}$$
+$$\therefore \cos(\pi t) - \sqrt 3 \sin(\pi t) = \bbox[5px, border:2px solid black]{2\cos\left(\pi t + {\pi\over3}\right)}$$</p>
+
+<h6>c)</h6>
+
+<p>Expression:
+$$Re\left\{{e^{it}\over 2 + 2i}\right\}$$
+Writing in the form of $$$A\cos(\omega t - \phi)$$$:
+$$
+\begin{align}
+Re\left\{{e^{it}\over 2 + 2i}\right\} &amp;= Re\left\{{e^{it}\over 2\sqrt2e^{{\pi\over4}i}}\right\}\\
+&amp;= Re\left\{2\sqrt 2 e^{it}e^{-{\pi\over4}i}\right\}\\
+&amp;= Re\left\{2\sqrt 2 e^{\left(t-{\pi\over4}\right)i}\right\}\\
+&amp;= \bbox[5px, border:2px solid black]{2\sqrt 2 \cos\left(t-{\pi\over4}\right)}\\
+\end{align}
+$$</p>
+
+<h5>Section 4</h5>
+
+<hr />
+
+<h6>a)</h6>
+
+<p>$$
+\begin{align}
+{d\over dt}x(t) + 2x(t) &amp;= e^{t}\\
+{d\over dt}x(t)e^{2t} + 2x(t)e^{2t} &amp;= e^{3t}\\
+{d\over dt}\left(x(t)e^{2t}\right) &amp;= e^{3t}\\
+\int {d\over dt}\left(x(t)e^{2t}\right)\ dt &amp;= \int e^{3t}\ dt\\
+x(t)e^{2t} &amp;= \int e^{3t}\ dt\\
+x(t)e^{2t} &amp;= {1\over 3} e^{3t} + C\\
+x(t) &amp;= \bbox[5px, border:2px solid black]{{1\over 3}e^{t} + Ce^{-2t}}
+\end{align}
+$$</p>
+
+<h6>b)</h6>
+
+<p>$$
+\begin{align}
+{d\over dt}z(t) + 2z(t) &amp;= e^{2it}\\
+e^{2t}{d\over dt}z(t) + 2e^{2t}z(t) &amp;= e^{2it}e^{t}\\
+\int {d\over dt}\left(e^{2t}z(t)\right)\ dt &amp;= \int e^{2it}e^{2t}\ dt\\
+e^{2t}z(t) &amp;= \int e^{t\left(2+2i\right)}\ dt\\
+e^{2t}z(t) &amp;= {1\over 2+2i}e^{t\left(2+2i\right)} + C\\
+z(t) &amp;= {1\over 2+2i}e^{t\left(2+2i\right)-2t} + Ce^{-2t}\\
+z(t) &amp;= \bbox[5px, border:2px solid black]{{1\over 2+2i}e^{2it} + Ce^{-2t}}\\
+\end{align}
+$$</p>
+
+<h5>Section 5</h5>
+
+<hr />
+
+<p>$$
+\begin{align}
+{d\over dt}x(t) + 2x(t) &amp;= \cos(2t)\\
+{d\over dt}x(t) + 2x(t) &amp;= Re\left\{e^{2it}\right\}\\
+{d\over dt}x(t)e^{2t} + 2x(t)e^{2t} &amp;= Re\left\{e^{2it}\right\}e^{2t}\\
+{d\over dt}\left(x(t)e^{2t}\right) &amp;= Re\left\{e^{(2+2i)t}\right\}\\
+\int {d\over dt}\left(x(t)e^{2t}\right)\ dt &amp;= \int Re\left\{e^{(2+2i)t}\right\}\ dt\\
+x(t)e^{2t} &amp;= Re\left\{{1\over 2+2i}e^{(2+2i)t}\right\} + C\\
+x(t) &amp;= Re\left\{{1\over 2+2i}e^{(2+2i)t}\right\}e^{-2t} + Ce^{-2t}\\
+&amp;= Re\left\{{1\over 2+2i}{2-2i\over2-2i}e^{2it}\right\} + Ce^{-2t}\\
+&amp;= Re\left\{{2-2i\over8}e^{2it}\right\} + Ce^{-2t}\\
+&amp;= Re\left\{{1-i\over4}\left(\cos(2t)+i\sin(2t)\right)\right\} + Ce^{-2t}\\
+&amp;= {1\over 4}Re\left\{\cos(2t) + \sin(2t) \cancel{- i\cos(2t)} + \cancel{isin(2t)}\right\} + Ce^{-2t}\\
+&amp;= \bbox[5px, border:2px solid black]{{1\over 4}\left(\cos(2t) + \sin(2t)\right)} + Ce^{-2t}\\
+\end{align}
+$$
+The solution for
+$$
+{d\over dt}x(t) + 2x(t) = sin(2t)
+$$
+is simply the Imaginary part of the prior solution:
+$$
+\bbox[5px, border:2px solid black]{{1\over 4}\left(-\cos(2t) + \sin(2t)\right) + Ce^{-2t}}
+$$</p>
+</body>
+</html>
