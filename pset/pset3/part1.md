@@ -17,3 +17,5 @@ $$$\require{cancel}$$$
 
 ######1E-1d)
 ![Image](a_p1iv.png =400x300)
+
+######2a)
