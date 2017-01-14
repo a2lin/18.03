@@ -19,3 +19,15 @@ $$$\require{cancel}$$$
 ![Image](a_p1iv.png =400x300)
 
 ######2a)
+$$
+\begin{align}
+{d\over dt} + 2x(t) &= 1 \\\
+{d\over dt} &= 1 - 2x(t)\\\
+\int {1\over 1-2x}\ dx &= \int 1\ dt \\\
+-{1\over 2} ln(1-2x(t)) &= t + C_0\\\
+ln(1-2x(t)) &= -2t + C_0\\\
+1 - 2x(t) &= Ce^{-2t} \\\
+-2x(t) &= Ce^{-2t}-1 \\\
+x(t) &= \bbox[5px, border:2px solid black]{Ce^{-2t}+{1\over2}}\\\
+\end{align}
+$$
