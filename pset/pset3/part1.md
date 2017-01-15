@@ -9,7 +9,28 @@ $$$\require{cancel}$$$
 Seems reasonable because $$${d\over dt}y(t) = (1-y(t))y(t)$$$ indicates that the population count stops changing in two places: in the event that the current population is the stable population (1 kilo-oryx) or zero (there are no oryxes). In the event that the population is greater than one kilo-oryx, we would expect the population to decline to the carrying capacity of 1 kilo-oryx, and in the event that the population is less than one kilo-oryx, we would expect the population to rise to the carrying capacity.
 
 ######1b)
- 
+$$
+\begin{align}
+y(1-y)-a &= 0 \\\
+y(1-y) &= a \\\
+y - y^2 &= a \\\
+-y^2 + y - a = 0 \\\
+\end{align}
+$$
+$$
+\therefore {-1\pm\sqrt{1-4a}\over -2}
+$$
+We can see that:
+$$
+\begin{align}
+&\text{0 roots:}\qquad a > {1\over 4}\\\
+&\text{1 root: }\qquad a={1\over4}\\\
+&\text{2 roots:}\qquad a < {1\over 4}\\\
+\end{align}
+$$
+
+In the 1 root case, the critical point is $$$1\over 2$$$ and this point is semi-stable.
+In the two root case, the critical point occurs at $$$-1\pm\sqrt{1-4a}\over -2$$$ where $$$a<{1\over 4}$$$. The critical point at $$$-1+\sqrt{1-4a}\over -2$$$ is unstable, while the critical point at $$$-1-\sqrt{1-4a}\over -2$$$ is stable.
 #####Section 1
 ===
 ######1E-1a)
