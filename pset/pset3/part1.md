@@ -3,6 +3,13 @@ $$$\require{cancel}$$$
 # 18.03
 ###Pset 3a
 [Problem Source](https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/assignments/MIT18_03S10_ps3a.pdf)
+#####Section 2
+===
+######1a)
+Seems reasonable because $$${d\over dt}y(t) = (1-y(t))y(t)$$$ indicates that the population count stops changing in two places: in the event that the current population is the stable population (1 kilo-oryx) or zero (there are no oryxes). In the event that the population is greater than one kilo-oryx, we would expect the population to decline to the carrying capacity of 1 kilo-oryx, and in the event that the population is less than one kilo-oryx, we would expect the population to rise to the carrying capacity.
+
+######1b)
+ 
 #####Section 1
 ===
 ######1E-1a)
@@ -73,3 +80,5 @@ $$x(t_{n+1}) = h(1-2x(t_n))+x(t_n)$$
 |1|0.3333|0.3333|0.3333|0.1111|
 |2|0.6666|0.4444|0.1112|0.0371|
 |3|0.9999|0.4815|
+
+
