@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>18.03</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<p>$$$\require{cancel}$$$</p>
+
+<h1>18.03</h1>
+
+<h3>Pset 3a</h3>
+
+<p><a href="https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/assignments/MIT18_03S10_ps3a.pdf">Problem Source</a></p>
+
+<h5>Section 1</h5>
+
+<hr />
+
+<h6>1E-1a)</h6>
+
+<p><img src="a_p1i.png" height="300" width="400" alt="Image" /></p>
+
+<h6>1E-1b)</h6>
+
+<p><img src="a_p1ii.png" height="300" width="400" alt="Image" /></p>
+
+<h6>1E-1c)</h6>
+
+<p><img src="a_p1iii.png" height="300" width="400" alt="Image" /></p>
+
+<h6>1E-1d)</h6>
+
+<p><img src="a_p1iv.png" height="300" width="400" alt="Image" /></p>
+
+<h6>2ai)</h6>
+
+<p>$$
+\begin{align}
+{d\over dt} + 2x(t) &amp;= 1 \\
+{d\over dt} &amp;= 1 - 2x(t)\\
+\int {1\over 1-2x}\ dx &amp;= \int 1\ dt \\
+-{1\over 2} ln(1-2x(t)) &amp;= t + C_0\\
+ln(1-2x(t)) &amp;= -2t + C_0\\
+1 - 2x(t) &amp;= Ce^{-2t} \\
+-2x(t) &amp;= Ce^{-2t}-1 \\
+x(t) &amp;= \bbox[5px, border:2px solid black]{Ce^{-2t}+{1\over2}}\\
+\end{align}
+$$</p>
+
+<h6>2aii)</h6>
+
+<p>$$
+\begin{align}
+{d\over dt}x(t) + 2x(t) &amp;= 1 \\
+{d\over dt}x(t)e^{2t} + 2x(t)e^{2t} &amp;= e^{2t} \\
+{d\over dt}\left(x(t)e^{2t}\right) &amp;= e^{2t} \\
+\int {d\over dt}\left(x(t)e^{2t}\right)\ dt &amp;= \int e^{2t}\ dt \\
+x(t)e^{2t} &amp;= {1\over 2}e^{2t} + C \\
+x(t) &amp;= \bbox[5px, border:2px solid black]{{1\over 2} + Ce^{-2t}}\\
+\end{align}
+$$</p>
+
+<h6>2aiii)</h6>
+
+<p>Regard RHS as $$$e^{0t}$$$, and assume solution takes the form $$$Ae^{0t}$$$:<br/>
+$$
+\begin{align}
+{d\over dt}x(t) + 2x(t) &amp;= e^{0t}\\
+{d\over dt}Ae^{0t} + 2Ae^{0t} &amp;= e^{0t}\\
+0 + 2A &amp;= 1 \\
+A &amp;= {1\over 2} \\
+\end{align}
+$$
+$$\therefore x_p = {1\over 2}$$
+Because we know that the solution for an equation of the form
+$$${d\over dt}x(t) + kx(t) = 0$$$ is $$$x(t) = Ce^{-kt}$$$, we can add in a transient, and write the solution as:
+$$
+\bbox[5px, border:2px solid black]{{1\over 2} + Ce^{-2t}}
+$$</p>
+
+<h6>2b)</h6>
+
+<p>This equilibrium is semi-stable.</p>
+
+<h6>2c)</h6>
+
+<p>$$x(t_{n+1}) = h(1-2x(t_n))+x(t_n)$$</p>
+
+<table>
+<thead>
+<tr>
+<th> n </th>
+<th> $$$t_n$$$ </th>
+<th> $$$x(t_n)$$$ </th>
+<th> $$$1-2x(t_n)$$$ </th>
+<th> $$$h(1-2x(t_n))$$$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0.3333</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0.3333</td>
+<td>0.3333</td>
+<td>0.3333</td>
+<td>0.1111</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.6666</td>
+<td>0.4444</td>
+<td>0.1112</td>
+<td>0.0371</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.9999</td>
+<td>0.4815</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<h5>Section 2</h5>
+
+<hr />
+
+<h6>1a)</h6>
+
+<p>Seems reasonable because $$${d\over dt}y(t) = (1-y(t))y(t)$$$ indicates that the population count stops changing in two places: in the event that the current population is the stable population (1 kilo-oryx) or zero (there are no oryxes). In the event that the population is greater than one kilo-oryx, we would expect the population to decline to the carrying capacity of 1 kilo-oryx, and in the event that the population is less than one kilo-oryx, we would expect the population to rise to the carrying capacity.</p>
+
+<h6>1b)</h6>
+
+<p>$$
+\begin{align}
+y(1-y)-a &amp;= 0 \\
+y(1-y) &amp;= a \\
+y - y^2 &amp;= a \\
+-y^2 + y - a = 0 \\
+\end{align}
+$$
+$$
+\therefore {-1\pm\sqrt{1-4a}\over -2}
+$$
+We can see that:
+$$
+\begin{align}
+&amp;\text{0 roots:}\qquad a > {1\over 4}\\
+&amp;\text{1 root: }\qquad a={1\over4}\\
+&amp;\text{2 roots:}\qquad a &lt; {1\over 4}\\
+\end{align}
+$$</p>
+
+<p>In the 1 root case, the critical point is $$$1\over 2$$$ and this point is semi-stable.
+In the two root case, the critical point occurs at $$$-1\pm\sqrt{1-4a}\over -2$$$ where $$$a&lt;{1\over 4}$$$. The critical point at $$$-1+\sqrt{1-4a}\over -2$$$ is unstable, while the critical point at $$$-1-\sqrt{1-4a}\over -2$$$ is stable.</p>
+
+<h6>1c)</h6>
+
+<p>We can write the new equation like:
+$${d\over dt}y(t) = y(1-y)-0.1875$$
+Solving for the zeroes we have:
+$$-y^2+y-0.1875 = 0$$
+$${-1\pm\sqrt{1-4\cdot0.1875}\over -2}$$
+$$\bbox[5px, border:2px solid black]{0.25, 0.75}$$
+And therefore from (1b) we can conclude that the stable population is 750 oryx and the population below which the oryx population will crash is 250 oryx.</p>
+
+<h6>1d)</h6>
+
+<p><img src="2_1d.png" height="300" width="400" alt="Image" /></p>
+
+<h6>1e)</h6>
+
+<p>The equation is simply the equation for $$$a$$$:
+$$\bbox[5px, border:2px solid black]{-y^2+y = a}$$</p>
+
+<h6>2a)</h6>
+
+<p>We can write the roots in a new equation:
+$${d\over dt}y(t) = -\left(y-{3\over 4}\right)\left(y-{1\over 4}\right)$$
+Substituting in terms of $$$u=y-{3\over 4}$$$:
+$$
+\begin{align}
+{d\over dt}u(t) &amp;= {d\over dt}\left(y(t)-{3\over 4}\right)\\
+&amp;= {d\over dt}y(t)\\
+\end{align}
+$$
+So we can directly substitute:
+$$
+\begin{align}
+{d\over dt}u(t) &amp;= -u(t)\left(u(t)+{1\over2}\right)\\
+&amp;= \bbox[5px, border:2px solid black]{-u(t)^2 - {1\over 2} u(t)} \\
+\end{align}
+$$
+By inspection, this is most certainly autonomous, as we can write:
+$$-u(t)^2 - {1\over 2}u(t) = {d\over dt}u(t)$$
+which is in the form:
+$${d\over dt}u(t) = f(u(t))\quad \checkmark$$</p>
+
+<p>If $$$u(t) = 0$$$:
+$$-0^2 - {1\over 2}(0) = 0\quad \checkmark$$</p>
+
+<h6>2b)</h6>
+
+<p>Linearize the equation to get
+$${d\over dt}u(t) = -{1\over 2}u(t)$$
+Solving for $$$u(t)$$$:
+$$
+\begin{align}
+{d\over dt}u(t) &amp;= -{1\over 2}u(t)\\
+\int {1\over u(t)}\ du(t) &amp;= \int-{1\over 2}\ dt\\
+ln(u(t)) &amp;= -{1\over 2}t + C_0 \\
+u(t) &amp;= \bbox[5px, border:2px solid black]{Ce^{-{1\over 2}t}} \\
+\end{align}
+$$</p>
+
+<h6>2c)</h6>
+
+<p>$$
+\begin{align}
+y(10) - {3\over 4} &amp;= Ce^{{-1\over2}10} \\
+&amp;= b\\
+Ce^{-5} &amp;= b \\
+C &amp;= be^{5}\\
+u(t) &amp;= be^{5}e^{-{1\over2}t}\\
+&amp;= be^{-{1\over2}t + 5}\\
+\end{align}
+$$
+Translating $$$u(t)$$$ back to $$$y(t)-y_0$$$:
+$$
+\begin{align}
+u(t) &amp;= be^{-{1\over2}t + 5}\\
+y(t) - {3\over 4} &amp;= be^{-{1\over2}t + 5}\\
+y(t) &amp;= \bbox[5px, border:2px solid black]{be^{-{1\over2}t + 5} + {3\over4}}\\
+\end{align}
+$$
+For the specific (11, 12) case:
+$$
+\begin{align}
+y(11) &amp;= \bbox[5px, border:2px solid black]{be^{-{11\over2} + 5} + {3\over4}}\\
+y(12) &amp;= \bbox[5px, border:2px solid black]{be^{-{12\over2} + 5} + {3\over4}}\\
+\end{align}
+$$</p>
+
+<h6>2d)</h6>
+
+<p>$$$p(t),\ q(t)$$$ must not contain powers of $$$t$$$ greater than $$$$t^0$$$ (must be constant). This is because in order to write $$${d\over dt}x(t) = f(x(t))$$$, we cannot have factors of $$$t$$$ in the RHS.</p>
+</body>
+</html>
