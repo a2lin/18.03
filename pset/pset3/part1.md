@@ -50,7 +50,7 @@ $$\bbox[5px, border:2px solid black]{-y^2+y = a}$$
 
 ######2a)
 We can write the roots in a new equation:
-$${d\over dt}y(t) = \left(y-{3\over 4}\right)\left(y-{1\over 4}\right)$$
+$${d\over dt}y(t) = -\left(y-{3\over 4}\right)\left(y-{1\over 4}\right)$$
 Substituting in terms of $$$u=y-{3\over 4}$$$:
 $$
 \begin{align}
@@ -61,45 +61,55 @@ $$
 So we can directly substitute:
 $$
 \begin{align}
-{d\over dt}u(t) &= u(t)\left(u(t)+{1\over2}\right)\\\
-&= \bbox[5px, border:2px solid black]{u(t)^2 + {1\over 2} u(t)} \\\
+{d\over dt}u(t) &= -u(t)\left(u(t)+{1\over2}\right)\\\
+&= \bbox[5px, border:2px solid black]{-u(t)^2 - {1\over 2} u(t)} \\\
 \end{align}
 $$
 By inspection, this is most certainly autonomous, as we can write: 
-$$u(t)^2 + {1\over 2}u(t) = {d\over dt}u(t)$$
+$$-u(t)^2 - {1\over 2}u(t) = {d\over dt}u(t)$$
 which is in the form:
 $${d\over dt}u(t) = f(u(t))\quad \checkmark$$
 
 If $$$u(t) = 0$$$:
-$$0^2 + {1\over 2}(0) = 0\quad \checkmark$$
+$$-0^2 - {1\over 2}(0) = 0\quad \checkmark$$
 
 ######2b)
 Linearize the equation to get
-$${d\over dt}u(t) = {1\over 2}u(t)$$
+$${d\over dt}u(t) = -{1\over 2}u(t)$$
 Solving for $$$u(t)$$$:
 $$
 \begin{align}
-{d\over dt}u(t) &= {1\over 2}u(t)\\\
-\int {1\over u(t)}\ du(t) &= \int{1\over 2}\ dt\\\
-ln(u(t)) &= {1\over 2}t + C_0 \\\
-u(t) &= \bbox[5px, border:2px solid black]{Ce^{{1\over 2}t}} \\\
+{d\over dt}u(t) &= -{1\over 2}u(t)\\\
+\int {1\over u(t)}\ du(t) &= \int-{1\over 2}\ dt\\\
+ln(u(t)) &= -{1\over 2}t + C_0 \\\
+u(t) &= \bbox[5px, border:2px solid black]{Ce^{-{1\over 2}t}} \\\
 \end{align}
 $$
 
 ######2c)
 $$
 \begin{align}
-u(10) &= b\\\
-Ce^{{1\over 2}10} &= b \\\
-C &= be^{-5}\\\
-u(t) &= be^{-5}e^{{1\over2}t}\\\
-u(t) &= be^{{1\over 2}t-5}\\\
+y(10) - {3\over 4} &= Ce^{{-1\over2}10} \\\
+&= b\\\
+Ce^{-5} &= b \\\
+C &= be^{5}\\\
+u(t) &= be^{5}e^{-{1\over2}t}\\\
+&= be^{-{1\over2}t + 5}\\\
 \end{align}
 $$
+Translating $$$u(t)$$$ back to $$$y(t)-y_0$$$:
 $$
 \begin{align}
-u(11) &= \bbox[5px, border:2px solid black]{be^{{11\over 2}t - 5}}\\\
-u(12) &= \bbox[5px, border:2px solid black]{be^{6t-5}}\\\
+u(t) &= be^{-{1\over2}t + 5}\\\
+y(t) - {3\over 4} &= be^{-{1\over2}t + 5}\\\
+y(t) &= \bbox[5px, border:2px solid black]{be^{-{1\over2}t + 5} + {3\over4}}\\\
+\end{align}
+$$
+For the specific (11, 12) case:
+$$
+\begin{align}
+y(11) &= \bbox[5px, border:2px solid black]{be^{-{11\over2} + 5} + {3\over4}}\\\
+y(12) &= \bbox[5px, border:2px solid black]{be^{-{12\over2} + 5} + {3\over4}}\\\
 \end{align}
 $$
 
