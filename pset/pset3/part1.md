@@ -31,6 +31,27 @@ $$
 
 In the 1 root case, the critical point is $$$1\over 2$$$ and this point is semi-stable.
 In the two root case, the critical point occurs at $$$-1\pm\sqrt{1-4a}\over -2$$$ where $$$a<{1\over 4}$$$. The critical point at $$$-1+\sqrt{1-4a}\over -2$$$ is unstable, while the critical point at $$$-1-\sqrt{1-4a}\over -2$$$ is stable.
+
+######1c)
+We can write the new equation like:
+$${d\over dt}y(t) = y(1-y)-0.1875$$
+Solving for the zeroes we have:
+$$-y^2+y-0.1875 = 0$$
+$${-1\pm\sqrt{1-4\cdot0.1875}\over -2}$$
+$$\bbox[5px, border:2px solid black]{0.25, 0.75}$$
+And therefore from (1b) we can conclude that the stable population is 750 oryx and the population below which the oryx population will crash is 250 oryx.
+
+######1d)
+![Image](2_1d.png =400x300)
+
+######1e)
+The equation is simply the equation for $$$a$$$:
+$$\bbox[5px, border:2px solid black]{-y^2+y = a}$$
+
+
+
+
+
 #####Section 1
 ===
 ######1E-1a)
