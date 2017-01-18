@@ -39,3 +39,46 @@ $$
 The uniqueness theorem only applies to first order equations. The given equation is second order, and thus uniqueness doesn't apply.
 
 ######4)
+$$
+\begin{align}
+x(0) &= x_0 \\\
+\dot{x}(0) &= \dot{x}_0 \\\
+\ddot{x} + \omega^2x &= 0\\\
+\end{align}
+$$
+The characteristic equation here is:
+$$r^2 + \omega^2 = 0$$
+
+with roots $$$\pm i\omega$$$.  
+We know that if the characteristic equation has complex root $$$a+bi$$$, $$$e^{at}cos(bt)$$$ and $$$e^{at}sin(bt)$$$ are solutions, and therefore we can write:
+
+$$
+C_1e^{at}cos(\omega t) + C_2e^{at}sin(\omega t) = x(t)
+$$
+
+Using the initial condition $$$x(0) = x_0$$$:
+
+$$
+\begin{align}
+C_1e^{0}cos(0) + \cancel{C_2e^{0}sin(0)} &= x(0) \\\
+C_1 &= x_0
+\end{align}
+$$
+
+Using the initial condition $$$\dot{x}(0) = \dot{x}_0$$$:
+
+$$
+\begin{align}
+{d\over dt}\left(C_1e^{at}cos(\omega t) + C_2e^{at}sin(\omega t)\right) &= {d\over dt}x(t)\\\
+-C_1e^{at}\omega sin(\omega t) + C_2e^{at}\omega cos(\omega t) &= {d\over dt}x(t)\\\
+\cancel{-C_1e^{0}\omega sin(0)} + C_2e^{0}\omega cos(0) &= {d\over dt}x(0) \\\
+C_2\omega &= \dot{x}(0)\\\
+C_2 &= {\dot{x}(0)\over \omega}\\\
+\end{align}
+$$
+
+Therefore we can write the solution as:
+$$
+x(t) = \bbox[5px, border:2px solid black]{x_0e^{at}cos(\omega t) + {\dot{x}(0)\over \omega}e^{at}sin(\omega t)}
+$$
+And there is only one solution.
