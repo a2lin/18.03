@@ -36,6 +36,6 @@ x &= A cos(\omega t - \phi)\\\
 $$
 
 ######3)
-The uniqueness theorem only applies to first order equations.
+The uniqueness theorem only applies to first order equations. The given equation is second order, and thus uniqueness doesn't apply.
 
 ######4)
