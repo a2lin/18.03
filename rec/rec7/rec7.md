@@ -82,3 +82,20 @@ $$
 x(t) = \bbox[5px, border:2px solid black]{x_0e^{at}cos(\omega t) + {\dot{x}(0)\over \omega}e^{at}sin(\omega t)}
 $$
 And there is only one solution.
+
+######5)
+Assuming $$$e^{rt}$$$ is a solution:
+
+$$
+\begin{align}
+\ddot{x} + kx &= 0 \\\
+{d^2\over dt^2}x(t) + kx(t) &= 0 \\\
+{d^2\over dt^2}e^{rt} + ke^{rt} &= 0 \\\
+r^2e^{rt} + ke^{rt} &= 0 \\\
+r^2 &= -k
+\end{align}
+$$
+
+$$\therefore \bbox[5px, border:2px solid black]{r = i\sqrt{k}}$$
+
+######6)
