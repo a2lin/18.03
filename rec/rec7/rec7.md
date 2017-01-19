@@ -99,3 +99,56 @@ $$
 $$\therefore \bbox[5px, border:2px solid black]{r = i\sqrt{k}}$$
 
 ######6)
+$$
+\begin{align}
+\ddot{x} - a^2x &= 0 \\\
+r^2 - a^2 &= 0 \\\
+r &= \pm a \\\
+C_1e^{at} + C_2e^{-at} &= x(t) \\\
+\end{align}
+$$
+
+With initial conditions $$$x_1(0) = 1,\ \dot{x_1}(0) = 0$$$:
+$$
+\begin{align}
+C_1e^{0} + C_2e^{0} &= x_1(0) \\\
+C_1 + C_2 &= 1 \\\
+\\\
+C_1ae^{0} + C_2(-a)e^{0} &= \dot{x_1}(0) \\\
+C_1a -C_2a &= 0\\\
+a\left(C_1-C_2\right) &= 0 \\\
+C_1 &= C_2 \\\
+\end{align}
+$$
+
+$$
+\begin{align}
+C_1 &= {1\over 2}\\\
+C_2 &= {1\over 2}\\\
+\therefore x_1(t) &= \bbox[5px, border:2px solid black]{{1\over 2}e^{at} + {1\over 2}e^{-at}} \\\
+\end{align}
+$$
+
+With initial conditions $$$x_2(0) = 0, \ \dot{x_2}(0) = 1$$$:
+$$
+\begin{align}
+C_1e^{0} + C_2e^{0} &= x_1(0)\\\
+C_1 + C_2 &= 0 \\\
+\\\
+C_1ae^{0} + C_2(-a)e^{0} &= \dot{x_1}(0)\\\
+C_1a - C_2a &= 1 \\\
+a \left(C_1 - C_2\right) &= 1 \\\
+C_1 - C_2 &= {1\over a}\\\
+C_1 &= {1\over a} + C_2\\\
+\\\
+{1\over a} + C_2 + C_2 &= 0 \\\
+2C_2 &= -{1\over a} \\\
+C_2 &= -{1\over 2a} \\\
+C_1 &= -{1\over 2a} + {1\over a} \\\
+C_1 &= {1\over 2a} \\\
+\end{align}
+$$
+
+$$
+\therefore x_2(t) = \bbox[5px, border:2px solid black]{{1\over 2a}e^{at} - {1\over 2a}e^{-at}}
+$$
