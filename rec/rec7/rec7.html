@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>18.03</title>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<p>$$$\require{cancel}$$$</p>
+
+<h1>18.03</h1>
+
+<h3>Recitation 7</h3>
+
+<p><a href="https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/recitations/MIT18_03S10_rec_07.pdf">Problem Source</a></p>
+
+<h6>1a)</h6>
+
+<p>$$
+\begin{align}
+x = cos(\omega t)\\
+{d^2\over dt^2}x(t) + \omega^2x(t) &amp;= 0\\
+{d^2\over dt^2}cos(\omega t) + \omega^2cos(\omega t) &amp;= 0\\
+-\omega^2 cos(\omega t) + \omega^2cos(\omega t) &amp;= 0 \\
+0 &amp;= 0 \quad \checkmark\\
+\end{align}
+$$</p>
+
+<h6>1b)</h6>
+
+<p>$$
+\begin{align}
+x = sin(\omega t)\\
+{d^2\over dt^2}x(t) + \omega^2x(t) &amp;= 0 \\
+{d^2\over dt^2}sin(\omega t) + \omega^2sin(\omega t) &amp;= 0 \\
+-\omega^2sin(\omega t) + \omega^2 sin(\omega t) &amp;= 0\\
+0 &amp;= 0 \quad \checkmark\\
+\end{align}
+$$</p>
+
+<h6>2)</h6>
+
+<p>$$
+\begin{align}
+x &amp;= A cos(\omega t - \phi)\\
+{d^2\over dt^2}x(t) + \omega^2x(t) &amp;= 0 \\
+{d^2\over dt^2}Acos(\omega t - \phi) + \omega^2Acos(\omega t - \phi) &amp;= 0\\
+-A\omega^2cos(\omega t - \phi) + \omega^2Acos(\omega t - \phi) &amp;= 0\\
+0 &amp;= 0 \quad \checkmark\\
+\end{align}
+$$</p>
+
+<h6>3)</h6>
+
+<p>The uniqueness theorem only applies to first order equations. The given equation is second order, and thus uniqueness doesn't apply.</p>
+
+<h6>4)</h6>
+
+<p>$$
+\begin{align}
+x(0) &amp;= x_0 \\
+\dot{x}(0) &amp;= \dot{x}_0 \\
+\ddot{x} + \omega^2x &amp;= 0\\
+\end{align}
+$$
+The characteristic equation here is:
+$$r^2 + \omega^2 = 0$$</p>
+
+<p>with roots $$$\pm i\omega$$$.<br/>
+We know that if the characteristic equation has complex root $$$a+bi$$$, $$$e^{at}cos(bt)$$$ and $$$e^{at}sin(bt)$$$ are solutions, and therefore we can write:</p>
+
+<p>$$
+C_1e^{at}cos(\omega t) + C_2e^{at}sin(\omega t) = x(t)
+$$</p>
+
+<p>Using the initial condition $$$x(0) = x_0$$$:</p>
+
+<p>$$
+\begin{align}
+C_1e^{0}cos(0) + \cancel{C_2e^{0}sin(0)} &amp;= x(0) \\
+C_1 &amp;= x_0
+\end{align}
+$$</p>
+
+<p>Using the initial condition $$$\dot{x}(0) = \dot{x}_0$$$:</p>
+
+<p>$$
+\begin{align}
+{d\over dt}\left(C_1e^{at}cos(\omega t) + C_2e^{at}sin(\omega t)\right) &amp;= {d\over dt}x(t)\\
+-C_1e^{at}\omega sin(\omega t) + C_2e^{at}\omega cos(\omega t) &amp;= {d\over dt}x(t)\\
+\cancel{-C_1e^{0}\omega sin(0)} + C_2e^{0}\omega cos(0) &amp;= {d\over dt}x(0) \\
+C_2\omega &amp;= \dot{x}(0)\\
+C_2 &amp;= {\dot{x}(0)\over \omega}\\
+\end{align}
+$$</p>
+
+<p>Therefore we can write the solution as:
+$$
+x(t) = \bbox[5px, border:2px solid black]{x_0e^{at}cos(\omega t) + {\dot{x}(0)\over \omega}e^{at}sin(\omega t)}
+$$
+And there is only one solution.</p>
+
+<h6>5)</h6>
+
+<p>Assuming $$$e^{rt}$$$ is a solution:</p>
+
+<p>$$
+\begin{align}
+\ddot{x} + kx &amp;= 0 \\
+{d^2\over dt^2}x(t) + kx(t) &amp;= 0 \\
+{d^2\over dt^2}e^{rt} + ke^{rt} &amp;= 0 \\
+r^2e^{rt} + ke^{rt} &amp;= 0 \\
+r^2 &amp;= -k
+\end{align}
+$$</p>
+
+<p>$$\therefore \bbox[5px, border:2px solid black]{r = i\sqrt{k}}$$</p>
+
+<h6>6)</h6>
+
+<p>$$
+\begin{align}
+\ddot{x} - a^2x &amp;= 0 \\
+r^2 - a^2 &amp;= 0 \\
+r &amp;= \pm a \\
+C_1e^{at} + C_2e^{-at} &amp;= x(t) \\
+\end{align}
+$$</p>
+
+<p>With initial conditions $$$x_1(0) = 1,\ \dot{x_1}(0) = 0$$$:
+$$
+\begin{align}
+C_1e^{0} + C_2e^{0} &amp;= x_1(0) \\
+C_1 + C_2 &amp;= 1 \\
+\\
+C_1ae^{0} + C_2(-a)e^{0} &amp;= \dot{x_1}(0) \\
+C_1a -C_2a &amp;= 0\\
+a\left(C_1-C_2\right) &amp;= 0 \\
+C_1 &amp;= C_2 \\
+\end{align}
+$$</p>
+
+<p>$$
+\begin{align}
+C_1 &amp;= {1\over 2}\\
+C_2 &amp;= {1\over 2}\\
+\therefore x_1(t) &amp;= \bbox[5px, border:2px solid black]{{1\over 2}e^{at} + {1\over 2}e^{-at}} \\
+\end{align}
+$$</p>
+
+<p>With initial conditions $$$x_2(0) = 0, \ \dot{x_2}(0) = 1$$$:
+$$
+\begin{align}
+C_1e^{0} + C_2e^{0} &amp;= x_1(0)\\
+C_1 + C_2 &amp;= 0 \\
+\\
+C_1ae^{0} + C_2(-a)e^{0} &amp;= \dot{x_1}(0)\\
+C_1a - C_2a &amp;= 1 \\
+a \left(C_1 - C_2\right) &amp;= 1 \\
+C_1 - C_2 &amp;= {1\over a}\\
+C_1 &amp;= {1\over a} + C_2\\
+\\
+{1\over a} + C_2 + C_2 &amp;= 0 \\
+2C_2 &amp;= -{1\over a} \\
+C_2 &amp;= -{1\over 2a} \\
+C_1 &amp;= -{1\over 2a} + {1\over a} \\
+C_1 &amp;= {1\over 2a} \\
+\end{align}
+$$</p>
+
+<p>$$
+\therefore x_2(t) = \bbox[5px, border:2px solid black]{{1\over 2a}e^{at} - {1\over 2a}e^{-at}}
+$$</p>
+</body>
+</html>
