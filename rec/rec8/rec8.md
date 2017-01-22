@@ -36,3 +36,15 @@ k &= {37\over 4}m \\\
 $$
 
 ######2b)
+Since we know that $$$e^{-{t\over2}}cos(3t)$$$ is a solution, and that solutions for roots $$$a\pm bi$$$ come in pairs of $$$e^{at}cos(bt)$$$, $$$e^{at}sin(bt)$$$, we can say that another solution is:
+$$
+\bbox[5px, border:2px solid black]{e^{-{t\over2}}sin(3t)}
+$$
+
+######c)
+
+######d)
+We can add the two exponential solutions that we have to arrive at:
+$$
+x(t) = \bbox[5px, border:2px solid black]{C_1e^{-{t\over2}}cos(3t) + C_2e^{-{t\over2}}sin(3t)}
+$$
