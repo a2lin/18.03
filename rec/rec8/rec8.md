@@ -15,8 +15,21 @@ r &= \bbox[5px, border:2px solid black]{\pm i\omega}
 $$
 Exponential solutions:
 $$
- \bbox[5px, border:2px solid black]{C_1cos(\omega t) + C_2sin(\omega t)}
+\bbox[5px, border:2px solid black]{
+C_1e^{i\omega t} + C_2e^{-i\omega t}
+}
 $$
+This results in:
+$$
+\begin{align}
+&C_1\left[cos(\omega t) + isin(\omega t)\right] + C_2\left[cos(-\omega t) + i sin(-\omega t)\right] \\\
+&C_1\left[cos(\omega t) + isin(\omega t)\right] + C_2\left[cos(\omega t) - i sin(\omega t)\right]\\\
+&K_1=C_1+C_2\\\
+&K_2 = C_1-C_2\\\
+&K_1cos(\omega t) + iK_2sin(\omega t)\\\
+\end{align}
+$$
+So the real part is $$$\bbox[5px, border:2px solid black]{K_1cos(\omega t)}$$$ and the imaginary part is $$$\bbox[5px, border:2px solid black]{K_2sin(\omega t)}$$$.
 
 ######2a)
 $$
@@ -42,6 +55,7 @@ $$
 $$
 
 ######c)
+
 
 ######d)
 We can add the two exponential solutions that we have to arrive at:
