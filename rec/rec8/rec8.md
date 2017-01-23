@@ -55,7 +55,10 @@ $$
 $$
 
 ######c)
+![Image](2ci.png =300x300)  
+![Image](2cii.png =300x300)
 
+The second graph (the real part) is the first graph (combined graph)'s x axis (real axis)'s movement over time.
 
 ######d)
 We can add the two exponential solutions that we have to arrive at:
