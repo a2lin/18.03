@@ -54,14 +54,36 @@ $$
 \bbox[5px, border:2px solid black]{e^{-{t\over2}}sin(3t)}
 $$
 
-######c)
+######2c)
 ![Image](2ci.png =300x300)  
 ![Image](2cii.png =300x300)
 
 The second graph (the real part) is the first graph (combined graph)'s x axis (real axis)'s movement over time.
 
-######d)
+######2d)
 We can add the two exponential solutions that we have to arrive at:
 $$
 x(t) = \bbox[5px, border:2px solid black]{C_1e^{-{t\over2}}cos(3t) + C_2e^{-{t\over2}}sin(3t)}
 $$
+
+######3)
+$$
+\begin{align}
+x(t) &= Ae^{-at}cos(\omega t)\\\
+x'(t) &= A\left[\left(e^{-at}\right)'cos(\omega t)+e^{-at}\left(cos(\omega t\right)'\right]\\\
+&= A\left[-ae^{-at}cos(\omega t) + e^{-at}\left(-\omega sin(\omega t)\right)\right]\\\
+&= Ae^{-at}\left[-acos(\omega t) -\omega sin(\omega t)\right]\\\
+\end{align}
+$$
+To find maxima, we set $$$x'(t) = 0$$$.
+$$
+\begin{align}
+x'(t) &= Ae^{-at}\left[-acos(\omega t) -\omega sin(\omega t)\right]\\\
+0 &= Ae^{-at}\left[-acos(\omega t)-\omega sin(\omega t)\right]\\\
+&= -acos(\omega t)-\omega sin(\omega t)\\\
+acos(\omega t) &= -\omega sin(\omega t)\\\
+{a\over -\omega} &= tan(\omega t)\\\
+\end{align}
+$$
+Since $$$tan(\omega t)$$$ has a period of $$$\pi\over \omega$$$, we can expect an extrema to occur every $$$\pi \over \omega$$$. However, since we want _maxima_, we take every other extrema, so $$$\bbox[5px, border:2px solid black]{2\pi \over \omega}$$$.
+Since the LHS is does not depend on $$$t$$$, it does not differ from one pair of maxima to the next.
