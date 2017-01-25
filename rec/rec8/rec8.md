@@ -87,3 +87,17 @@ acos(\omega t) &= -\omega sin(\omega t)\\\
 $$
 Since $$$tan(\omega t)$$$ has a period of $$$\pi\over \omega$$$, we can expect an extrema to occur every $$$\pi \over \omega$$$. However, since we want _maxima_, we take every other extrema, so $$$\bbox[5px, border:2px solid black]{2\pi \over \omega}$$$.
 Since the LHS is does not depend on $$$t$$$, it does not differ from one pair of maxima to the next.
+
+######4)
+$$
+\begin{align}
+x(t_0) &= Ae^{-at_0}cos(\omega t_0)\\\
+x(t_1) &= Ae^{-at_1}cos(\omega t_1)\\\
+{x(t_0)\over x(t_1)} &= {e^{-at_0}cos(\omega t_0)\over e^{-at_1}cos(\omega t_1)}\\\
+{x(t_0)\over x(t_1)} &= e^{-a(t_0-t_1)}\\\
+{x(t_0)\over x(t_1)} &= \bbox[5px, border:2px solid black]{e^{-a{2\pi\over \omega}}}\\\
+\end{align}
+$$
+Using the facts that because $$$t_0$$$ and $$$t_1$$$ are maxima, their cosines should both occur at the cosine peak $$${2\pi\over \omega}$$$, and therefore the cosines are equal and the $$$t_x$$$ are separated by $$${2\pi\over \omega}$$$.
+
+Therefore a method of finding $$$a$$$ is to find two consecutive maxima and calculate $$$\bbox[5px, border:2px solid black]{-ln\left({x(t_0)\omega\over x(t_1)2\pi}\right)}$$$.
