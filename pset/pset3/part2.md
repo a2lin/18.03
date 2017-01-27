@@ -50,3 +50,38 @@ $$
 $$\therefore y(t) = \bbox[5px, border:2px solid black]{{1\over 2}e^{-3t} + {1\over 2}e^{t}}$$
 
 ######2.1 43)
+$$
+y(x) = C_1 + C_2e^{-10x}
+$$
+The characteristic polynomial from the structure of the above equation is:
+$$
+\begin{align}
+&r(r+10)
+&r^2+10r
+\end{align}
+$$
+$$
+\therefore \bbox[5px, border:2px solid black]{y''(x) + 10y'(x) = 0}
+$$
+
+######2.1 44)
+$$
+y(x) = C_1e^{10x} + C_2e^{-10x}
+$$
+The characteristic polynomial from the structure of the above equation is:
+$$
+\begin{align}
+&(r-10)(r+10)\\\
+&r^2-100
+\end{align}
+$$
+$$
+\therefore \bbox[5px, border:2px solid black]{y''(x)-100y(x)}
+$$
+
+######2.1 47)
+$$
+y(x) = c_1 + c_2x
+$$
+The characteristic polynomial from the structure of the above equation is:
+r
