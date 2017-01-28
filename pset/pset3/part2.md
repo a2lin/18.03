@@ -84,4 +84,10 @@ $$
 y(x) = c_1 + c_2x
 $$
 The characteristic polynomial from the structure of the above equation is:
-r
+$$
+\begin{align}
+y(x) &= C_1 + C_2(x)\\\
+y'(x) &= C_2(x)\\\
+y''(x) &= C_2\\\
+\end{align}
+$$
