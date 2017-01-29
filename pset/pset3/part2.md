@@ -83,11 +83,15 @@ $$
 $$
 y(x) = c_1 + c_2x
 $$
-The characteristic polynomial from the structure of the above equation is:
+
+We just need any equation satisfying $$$ay'' + by' + cy = 0$$$:
 $$
 \begin{align}
-y(x) &= C_1 + C_2(x)\\\
-y'(x) &= C_2(x)\\\
-y''(x) &= C_2\\\
+y(x) &= c_1 + c_2x \\\
+y'(x) &= c_2 \\\
+y''(x) &= 0 \\\
 \end{align}
+$$
+$$
+\therefore \bbox[5px, border:2px solid black]{1(y'') + 0y' + 0y = 0}
 $$
