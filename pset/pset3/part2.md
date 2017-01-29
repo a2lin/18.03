@@ -49,7 +49,7 @@ y'(0) &= -3C_1e^{0} + C_2e^{0}\\\
 $$
 $$\therefore y(t) = \bbox[5px, border:2px solid black]{{1\over 2}e^{-3t} + {1\over 2}e^{t}}$$
 
-######2.1 43)
+######2.1 #43)
 $$
 y(x) = C_1 + C_2e^{-10x}
 $$
@@ -64,7 +64,7 @@ $$
 \therefore \bbox[5px, border:2px solid black]{y''(x) + 10y'(x) = 0}
 $$
 
-######2.1 44)
+######2.1 #44)
 $$
 y(x) = C_1e^{10x} + C_2e^{-10x}
 $$
@@ -79,7 +79,7 @@ $$
 \therefore \bbox[5px, border:2px solid black]{y''(x)-100y(x)}
 $$
 
-######2.1 47)
+######2.1 #47)
 $$
 y(x) = c_1 + c_2x
 $$
@@ -94,4 +94,60 @@ y''(x) &= 0 \\\
 $$
 $$
 \therefore \bbox[5px, border:2px solid black]{1(y'') + 0y' + 0y = 0}
+$$
+
+######2.3 #1)
+$$
+\begin{align}
+y'' - 4y &= 0 \\\
+r^2 - 4 &= 0 \\\
+(r+2)(r-2) &= 0 \\\
+\end{align}
+$$
+$$
+\therefore \bbox[5px, border:2px solid black]{C_1e^{-2x} + C_2e^{2x} = 0} 
+$$
+
+######2.3 #2)
+$$
+\begin{align}
+2y'' - 3y' &= 0 \\\
+2r^2 - 3r &= 0 \\\
+r(2r-3) &= 0 \\\
+\end{align}
+$$
+$$
+\therefore \bbox[5px, border:2px solid black]{C_1 + C_2e^{{3\over2}x}}
+$$
+
+######2.3 #7)
+$$
+\begin{align}
+4y'' - 12y' + 9y &= 0 \\\
+4r^2 - 12r + 9 &= 0 \\\
+(2r - 3)(2r - 3) &= 0 \\\
+\end{align}
+$$
+The singular root in this case is $$${3\over2}$$$, so we can write:
+$$
+\therefore 
+\bbox[5px, border:2px solid black]{
+C_1e^{{3\over2}x} + C_2xe^{{3\over2}x}
+}
+$$
+
+######2.3 #15)
+$$
+\begin{align}
+y^{(4)}-8y''+16y &= 0 \\\
+r^4 - 8r^2 + 16 &= 0 \\\
+(r^2-4)(r^2-4) &= 0 \\\
+(r+2)(r-2)(r+2)(r-2) &= 0 \\\
+\end{align}
+$$
+There are two roots here, $$$2$$$ and $$$-2$$$, but we need a total of 4, so we can write down:
+$$
+\bbox[5px, border:2px solid black]{
+C_1e^{2x} + C_2xe^{2x} + C_3e^{-2x} + C_4xe^{-2x}
+}
 $$
