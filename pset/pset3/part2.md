@@ -151,3 +151,134 @@ $$
 C_1e^{2x} + C_2xe^{2x} + C_3e^{-2x} + C_4xe^{-2x}
 }
 $$
+
+######2C-1c)
+$$
+\begin{align}
+y'' + 2y' + 2y &= 0 \\\
+r^2 + 2r + 2 &= 0 \\\
+r &= {-2\pm\sqrt{4-8}\over 2}\\\
+r &= {-2\pm\sqrt{-4}\over 2}\\\
+r &= -1\pm i\\\
+\end{align}
+$$
+$$
+\bbox[5px, border:2px solid black]{
+C_1e^{t{-1+i}} + C_2e^{t{-1-i}}
+}
+$$
+
+######2C-1d)
+$$
+\begin{align}
+y'' - 2y' + 5y &= 0 \\\
+r^2-2r+5 &= 0\\\
+r &= {2\pm\sqrt{4-20}\over2}\\\
+r &= 1\pm2i\\\
+\end{align}
+$$
+$$
+\begin{align}
+C_1e^{t{1+2i}} +C_2e^{t{1-2i}}
+\end{align}
+$$
+But its easier to try with the root $$$1+2i$$$ and the real-imaginary rules.
+Suppose we have an imaginary root:
+$$
+e^{t{a+bi}}
+$$
+Then rewrite as $$$e^{at}e^{bit}$$$, and then
+$$$e^{at}(cos(bt)+ isin(bt))$$$.  
+Since the real and imaginary parts of this root must both be zero for their sum to be zero, we have two potential solutions, $$$e^{at}cos(bt)$$$ and $$$e^{at}sin(bt)$$$.
+We can write these in the form:
+$$C_1e^{at}cos(bt) + C_2e^{at}sin(bt)$$
+
+For our use case, this is:
+$$C_1e^{t}cos(2t) + C_2e^{t}sin(2t)$$
+
+Given that $$$y(0) = 1, y'(0) = -1$$$ we have:
+$$
+\begin{align}
+C_1e^{0}cos(0) + C_2e^{0}sin(0) &= 1\\\
+C_1 &= 1 \\\
+\\\
+C_1\left(e^{t}cos(2t) + -2e^{t}sin(2t)\right) + C_2\left(e^{t}sin(2t) + 2e^{t}cos(2t)\right) &= y'(t) \\\
+C_1\left(e^{0}cos(0) + -2e^{0}sin(0)\right) + C_2\left(e^{0}sin(0) + 2e^{0}cos(0)\right) &= -1 \\\
+C_1(1) + 2C_2(1) &= -1\\\
+1 + 2C_2 &= -1 \\\
+2C_2 & = -2 \\\
+C_2 &= -1
+\end{align}
+$$
+$$
+\therefore \bbox[5px, border:2px solid black]{e^{t}cos(2t) -e^{t}sin(2t)}
+$$
+
+######2C-1e)
+$$
+\begin{align}
+y''-4y'+4y &= 0\\\
+r^2-4r+4 &= 0 \\\
+(r-2)^2 &= 0\\\
+r &= 2\\\
+\end{align}
+$$
+Doubled roots, therefore the solution is:
+$$
+\bbox[5px, border:2px solid black]{C_1e^{2t} + C_2te^{2t}}
+$$
+
+The reason why this works:   
+Assume that $$$e^{rt}$$$ is a solution to:
+$$$y'' + Ay' + By = 0$$$.
+$$
+\begin{align}
+y(t) &= e^{rt}\\\
+y'(t) &= re^{rt}\\\
+y''(t) &= r^2e^{rt}\\\
+\end{align}
+$$
+
+$$
+\begin{align}
+y'' + Ay' + By &= 0 \\\
+r^2e^{rt} + Are^{rt} + Be^{rt} &= 0 \\\
+e^{rt}\left(r^2+Ar+B\right) &= 0 \\\
+\end{align}
+$$
+
+$$
+\begin{align}
+y(t) &= te^{rt}\\\
+y'(t) &= e^{rt} + tre^{rt}\\\
+y''(t) &= re^{rt} + r\left(e^{rt} + tre^{rt}\right)\\\
+y''(t) &= re^{rt} + re^{rt} + r^2te^{rt}\\\
+y''(t) &= 2re^{rt} + r^2te^{rt}\\\
+\end{align}
+$$
+
+$$
+\begin{align}
+y'' + Ay' + By &= 0 \\\
+\left(te^{rt}\right)'' + A\left(te^{rt}\right)' + \left(te^{rt}\right) &= 0 \\\
+2re^{rt} + r^2te^{rt} + A\left(e^{rt} + tre^{rt}\right) + B\left(te^{rt}\right) &= 0 \\\
+2re^{rt} + r^2te^{rt} + Ae^{rt} + Atre^{rt} + Bte^{rt} &= 0 \\\
+te^{rt}(r^2+Ar+B) + e^{rt}(2r+A) &= 0 \\\
+t(0) + e^{rt}(2r+A) &= 0 \\\
+e^{rt}(2r+A) &= 0 \\\
+\end{align}
+$$
+So $$$te^{rt}$$$ is a root if $$$e^{rt}$$$ is a root and $$$r={-A\over2}$$$.   
+By the characteristic equation:
+$$
+\begin{align}
+y'' + Ay' + By &= 0 \\\
+r^2 + Ar + B &= 0 \\\
+r &= {-A \pm \sqrt{A^2-4B}\over 2}\\\
+\end{align}
+$$
+Note that in the case where there is only one root, $$$A^2-4B = 0$$$, so we have:
+$$
+r={-A \over 2}
+$$
+And therefore, for any case in which there is only one root $$$A^2-4B=0$$$, $$$e^{rt},\ te^{rt}$$$ are solutions, with $$$r={-A\over2}$$$.
