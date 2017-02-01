@@ -282,3 +282,81 @@ $$
 r={-A \over 2}
 $$
 And therefore, for any case in which there is only one root $$$A^2-4B=0$$$, $$$e^{rt},\ te^{rt}$$$ are solutions, with $$$r={-A\over2}$$$.
+
+######2G-1i)
+$$
+\begin{align}
+y'' + 2y' + cy &= 0 \\\
+r^2 + 2r + c &= 0 \\\
+{-2\pm\sqrt{4-4c}\over2} &= r\\\
+\end{align}
+$$
+Case 1: 2 real roots:
+$$
+\begin{align}
+4-4c &> 0 \\\
+4 &> 4c\\\
+1 &> c \\\
+\end{align}
+$$
+$$\bbox[5px, border:2px solid black]{c < 1}$$
+
+Case 2: 1 (doubled) real root:
+$$
+\begin{align}
+4-4c &= 0 \\\
+4 &= 4c\\\
+1 &= c \\\
+\end{align}
+$$
+$$\bbox[5px, border:2px solid black]{c = 1}$$
+
+Case 3: 2 imaginary roots:
+$$
+\begin{align}
+4-4c &< 0 \\\
+4 &< 4c\\\
+1 &< c \\\
+\end{align}
+$$
+$$\bbox[5px, border:2px solid black]{c > 1}$$
+
+######2G-1ii)
+$$
+\begin{align}
+{-2\pm\sqrt{4-4c}\over2} &= r\\\
+\end{align}
+$$
+2 real, negative roots:
+$$
+\begin{align}
+-2 + \sqrt{4-4c} &< 0 \\\ 
+\sqrt{4-4c} &< 2 \\\
+4-4c &< 4 \\\
+-4c &< 0 \\\
+c &> 0\\\
+\end{align}
+$$
+$$
+\bbox[5px, border:2px solid black]{0 < c < 1}
+$$
+
+2 real, positive roots:
+$$
+\begin{align}
+-2 - \sqrt{4-4c} &> 0 \\\
+-2 &> \sqrt{4-4c} \\\
+\end{align}
+$$
+$$\bbox[5px, border:2px solid black]{\varnothing}$$
+
+Differing root values:
+$$\bbox[5px, border:2px solid black]{c < 0}$$
+
+######2G-1iii)
+<-1 pos 1 neg->$$$0$$$<-2x positive->$$$1$$$(doubled real)<-2x imaginary->
+
+######2G-1iv)
+
+
+
