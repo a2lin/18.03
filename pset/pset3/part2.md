@@ -354,9 +354,10 @@ Differing root values:
 $$\bbox[5px, border:2px solid black]{c < 0}$$
 
 ######2G-1iii)
-<-1 pos 1 neg->$$$0$$$<-2x positive->$$$1$$$(doubled real)<-2x imaginary->
+<-1 pos 1 neg->$$$0$$$<-2x negative->$$$1$$$(doubled real)<-2x imaginary->
 
 ######2G-1iv)
-
+This is stable if all roots have negative real part; so 2x negative roots.
+It turns out that this is the section of 2x negative and also the doubled real happens to have negative real part. The 2x imaginary roots also have negative real part, so this region is the region $$$\bbox[5px, border:2px solid black]{c > 0}$$$.
 
 
