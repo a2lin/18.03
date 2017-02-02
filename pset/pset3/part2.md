@@ -360,4 +360,91 @@ $$\bbox[5px, border:2px solid black]{c < 0}$$
 This is stable if all roots have negative real part; so 2x negative roots.
 It turns out that this is the section of 2x negative and also the doubled real happens to have negative real part. The 2x imaginary roots also have negative real part, so this region is the region $$$\bbox[5px, border:2px solid black]{c > 0}$$$.
 
+######2.3 #5)
+$$
+\begin{align}
+y'' + 6y' + 9y &= 0 \\\
+r^2 + 6r + 9 &= 0 \\\
+(r+3)^2 &= 0 \\\
+r &= -3\\\
+\end{align}
+$$
+$$
+\bbox[5px, border:2px solid black]{C_1e^{-3t} + C_2te^{-3t}}
+$$
+
+######2.3 #21)
+$$
+\begin{align}
+y'' - 4y' + 3y &= 0 \\\
+r^2 - 4r + 3 &= 0 \\\
+(r-3)(r-1) &= 0 \\\
+\end{align}
+$$
+The general solution is:
+$$
+C_1e^{3t} + C_2e^{t}
+$$
+Using the initial conditions $$$y(0) = 7,\ y'(0) = 11$$$:   
+$$
+\begin{align}
+y(t) &= C_1e^{3t} + C_2e^{t}\\\
+y(0) &= C_1e^{0} + C_2e^{0}\\\
+7 &= C_1 + C_2\\\
+\\\
+y'(t) &= 3C_1e^{3t} + C_2e^{t}\\\
+y'(0) &= 3C_1e^{0} + C_2e^{0}\\\
+11 &= 3C_1 + C_2\\\
+\\\
+11 - 7 &= 3C_1 - C_1 + C_2-C_2\\\
+4 &= 2C_1\\\
+2 &= C_1\\\
+\\\
+7 &= 2 + C_2\\\
+5 &= C_2\\\
+\end{align}
+$$
+$$
+\therefore \bbox[5px, border:2px solid black]{2e^{3t} + 5e^{t}}
+$$
+
+######2.3 #23)
+$$
+\begin{align}
+y'' - 6y' + 25y &= 0 \\\
+r^2 - 6r + 25 &= 0  \\\
+r &= {6\pm \sqrt{36-100}\over 2}\\\
+r &= 3 \pm 4i\\\
+\end{align}
+$$
+Use the solution $$$e^{(3+4i)t}$$$:
+$$
+\begin{align}
+e^{3+4i} &= e^{3t}e^{4it}\\\
+&= e^{3t}\left(cos(4t) + i sin(4t)\right)\\\
+\end{align}
+$$
+$$
+\therefore \bbox[5px, border:2px solid black]{C_1e^{3t}cos(4t) + C_2e^{3t}sin(4t)}
+$$
+Using the initial conditions $$$y(0) = 3,\ y'(0)=1$$$:
+$$
+\begin{align}
+y(t) &= C_1e^{3t}cos(4t) + C_2e^{3t}sin(4t)\\\
+y(0) &= C_1e^{0}cos(0) + C_2e^{0}sin(0)\\\
+3 &= C_1\\\
+\\\
+y'(t) &= C_1\left(3e^{3t}cos(4t) -4sin(4t)e^{3t}\right) + C_2\left(3e^{3t}sin(4t) + e^{3t}cos(4t)\right)\\\
+y'(0) &= C_1\left(3e^{0}cos(0) - \cancel{4sin(0)e^{0}}\right) + C_2\left(\cancel{3e^{0}sin(0)} + e^{0}cos(0)\right)\\\
+1 &= C_1(3) + C_2(1)\\\
+1 &= 3C_1 + C_2\\\
+\\\
+1 &= 3(3) + C_2\\\
+-8 &= C_2\\\
+\end{align}
+$$
+$$
+\therefore \bbox[5px, border:2px solid black]{3e^{3t}cos(4t) -8e^{3t}sin(4t)}\\\
+$$
+
 
