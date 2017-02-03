@@ -1,9 +1,53 @@
 $$$\require{cancel}$$$
 
 # 18.03
-###Pset 3 part 2
+###Pset 3.2
 [Problem Source](https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/assignments/MIT18_03S10_pset_03_II.pdf)
+#####Part 2
+######a)
+$$
+\begin{align}
+m\ddot x + b\dot x + kx &= 0 \\\
+{1\over2}r^2+{3\over2}r+{5\over8}&= 0\\\
+4r^2+12r+5 &= 0\\\
+(2r+5)(2r+1) &= 0 \\\
+\end{align}
+$$
+$$
+\therefore \bbox[5px, border:2px solid black]{r=-2.5,\ r=-0.5}
+$$
+######b)
+$$
+\begin{align}
+x(t) &= C_1e^{-2.5t} + C_2e^{-0.5t}\\\
+x(0) &= C_1e^{0} + C_2e^{0}\\\
+x_0 &= C_1 + C_2\\\
+\\\
+\dot{x(t)} &= -2.5C_1e^{-2.5t} -0.5C_2e^{-0.5t}\\\
+\dot{x(0)} &= -2.5C_1e^{0}-0.5C_2e^{0}\\\
+&= -2.5C_1 -0.5C_2\\\
+\dot{x_0} &= -2.5C_1-0.5C_2\\\
+\\\
+C_1 &= C_2-x_0\\\
+\dot{x_0} &= -2.5(C_2-x_0)-0.5C_2\\\
+\dot{x_0} &= -3C_2-2.5x_0\\\
+C_2 &= {-2.5x_0 - \dot{x_0}\over 3}\\\
+C_1 &= {-5.5x_0 - \dot{x_0}\over 3}\\\
+\end{align}
+$$
+$$
+\therefore \bbox[5px, border:2px solid black]{{-5.5x_0 - \dot{x_0}\over 3}e^{-2.5t} + {-2.5x_0 - \dot{x_0}\over 3}e^{-0.5t}}
+$$
 
+######c)
+It looks like this is the case if
+$$$\bbox[5px, border:2px solid black]{-5.5x_0 = \dot{x_0}}$$$ or $$$\bbox[5px, border:2px solid black]{-2.5x_0 = \dot{x_0}}$$$.
+
+######d)
+
+
+
+#####Part 1
 ######2C-1a)
 $$
 \begin{align}
