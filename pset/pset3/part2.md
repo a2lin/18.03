@@ -44,7 +44,7 @@ It looks like this is the case if
 $$$\bbox[5px, border:2px solid black]{-5.5x_0 = \dot{x_0}}$$$ or $$$\bbox[5px, border:2px solid black]{-2.5x_0 = \dot{x_0}}$$$.
 
 ######d)
-
+$$x(0) = x_0$$
 
 
 #####Part 1
