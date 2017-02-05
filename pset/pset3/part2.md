@@ -19,32 +19,57 @@ $$
 ######b)
 $$
 \begin{align}
-x(t) &= C_1e^{-2.5t} + C_2e^{-0.5t}\\\
+x(t) &= C_1e^{-{5\over2}t} + C_2e^{-{1\over2}t}\\\
 x(0) &= C_1e^{0} + C_2e^{0}\\\
 x_0 &= C_1 + C_2\\\
 \\\
-\dot{x(t)} &= -2.5C_1e^{-2.5t} -0.5C_2e^{-0.5t}\\\
-\dot{x(0)} &= -2.5C_1e^{0}-0.5C_2e^{0}\\\
-&= -2.5C_1 -0.5C_2\\\
-\dot{x_0} &= -2.5C_1-0.5C_2\\\
+\dot{x(t)} &= -C_1e^{-2.5t} -0.5C_2e^{-0.5t}\\\
+\dot{x(0)} &= -{5\over2}C_1e^{0}-{1\over2}C_2e^{0}\\\
+&= -{5\over2}C_1 -{1\over2}C_2\\\
+\dot{x_0} &= -{5\over2}C_1-{1\over2}C_2\\\
 \\\
-C_1 &= C_2-x_0\\\
-\dot{x_0} &= -2.5(C_2-x_0)-0.5C_2\\\
-\dot{x_0} &= -3C_2-2.5x_0\\\
-C_2 &= {-2.5x_0 - \dot{x_0}\over 3}\\\
-C_1 &= {-5.5x_0 - \dot{x_0}\over 3}\\\
+2\dot{x_0} &= -5C_1-C_2\\\
+x_0 + 2\dot{x_0} &= -4C_1\\\
+-{x_0 + 2\dot{x_0}\over 4} &= C_1\\\
+{5x_0 + 2\dot{x_0}\over 4} &= C_2\\\
 \end{align}
 $$
 $$
-\therefore \bbox[5px, border:2px solid black]{{-5.5x_0 - \dot{x_0}\over 3}e^{-2.5t} + {-2.5x_0 - \dot{x_0}\over 3}e^{-0.5t}}
+\therefore \bbox[5px, border:2px solid black]{{-x_0-2\dot{x_0}\over 4}e^{-{5\over2}t} + {5x_0+2\dot{x_0}\over 4}e^{-{1\over2}t}}\\\
 $$
 
 ######c)
-It looks like this is the case if
-$$$\bbox[5px, border:2px solid black]{-5.5x_0 = \dot{x_0}}$$$ or $$$\bbox[5px, border:2px solid black]{-2.5x_0 = \dot{x_0}}$$$.
+This is the case in the event that:
+$$
+\begin{align}
+{-x_0 - 2\dot{x_0}\over4} &= 0\\\
+-x_0 - 2\dot{x_0} &= 0\\\
+-2\dot{x_0} &= x_0\\\
+\dot{x_0} &= \bbox[5px, border:2px solid black]{-{1\over2}x_0}\\\
+\end{align}
+$$
+or
+$$
+\begin{align}
+{5x_0 + 2\dot{x_0}\over4} &= 0 \\\
+5x_0 + 2\dot{x_0} &= 0 \\\
+2\dot{x_0} &= -5x_0\\\
+\dot{x_0} &= \bbox[5px, border:2px solid black]{-{5\over2}x_0}\\\
+\end{align}
+$$
 
 ######d)
-$$x(0) = x_0$$
+$$
+\begin{align}
+{-x_0-2\dot{x_0}\over 4}e^{-{5\over2}t} + {5x_0+2\dot{x_0}\over 4}e^{-{1\over2}t} &= 0\\\
+\left(-x_0-2\dot{x_0}\right)e^{-{5\over2}t} + \left(5x_0 + 2\dot{x_0}\right)e^{-{1\over2}t} &= 0 \\\
+\left(5x_0 + 2\dot{x_0}\right)e^{-{1\over2}t} &= \left(x_0+2\dot{x_0}\right)e^{-{5\over2}t}\\\
+\left(5x_0 + 2\dot{x_0}\right)e^{2t} &= x_0+2\dot{x_0}\\\
+5x_0e^{2t}+2\dot{x_0}e^{2t} &= x_0+2\dot{x_0}\\\
+5x_0e^{2t}-x_0 &= 2\dot{x_0}-2\dot{x_0}e^{2t}\\\
+x_0\left(
+\end{align}
+$$
 
 
 #####Part 1
