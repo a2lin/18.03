@@ -3,101 +3,6 @@ $$$\require{cancel}$$$
 # 18.03
 ###Pset 3.2
 [Problem Source](https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/assignments/MIT18_03S10_pset_03_II.pdf)
-#####Part 2
-######1a)
-$$
-\begin{align}
-m\ddot x + b\dot x + kx &= 0 \\\
-{1\over2}r^2+{3\over2}r+{5\over8}&= 0\\\
-4r^2+12r+5 &= 0\\\
-(2r+5)(2r+1) &= 0 \\\
-\end{align}
-$$
-$$
-\therefore \bbox[5px, border:2px solid black]{r=-2.5,\ r=-0.5}
-$$
-######1b)
-$$
-\begin{align}
-x(t) &= C_1e^{-{5\over2}t} + C_2e^{-{1\over2}t}\\\
-x(0) &= C_1e^{0} + C_2e^{0}\\\
-x_0 &= C_1 + C_2\\\
-\\\
-\dot{x(t)} &= -C_1e^{-2.5t} -0.5C_2e^{-0.5t}\\\
-\dot{x(0)} &= -{5\over2}C_1e^{0}-{1\over2}C_2e^{0}\\\
-&= -{5\over2}C_1 -{1\over2}C_2\\\
-\dot{x_0} &= -{5\over2}C_1-{1\over2}C_2\\\
-\\\
-2\dot{x_0} &= -5C_1-C_2\\\
-x_0 + 2\dot{x_0} &= -4C_1\\\
--{x_0 + 2\dot{x_0}\over 4} &= C_1\\\
-{5x_0 + 2\dot{x_0}\over 4} &= C_2\\\
-\end{align}
-$$
-$$
-\therefore \bbox[5px, border:2px solid black]{{-x_0-2\dot{x_0}\over 4}e^{-{5\over2}t} + {5x_0+2\dot{x_0}\over 4}e^{-{1\over2}t}}\\\
-$$
-
-######1c)
-This is the case in the event that:
-$$
-\begin{align}
-{-x_0 - 2\dot{x_0}\over4} &= 0\\\
--x_0 - 2\dot{x_0} &= 0\\\
--2\dot{x_0} &= x_0\\\
-\dot{x_0} &= \bbox[5px, border:2px solid black]{-{1\over2}x_0}\\\
-\end{align}
-$$
-or
-$$
-\begin{align}
-{5x_0 + 2\dot{x_0}\over4} &= 0 \\\
-5x_0 + 2\dot{x_0} &= 0 \\\
-2\dot{x_0} &= -5x_0\\\
-\dot{x_0} &= \bbox[5px, border:2px solid black]{-{5\over2}x_0}\\\
-\end{align}
-$$
-
-######1d)
-$$
-\begin{align}
-C_1e^{-{1\over2}t} + C_2e^{-{-5\over2}t} & = 0 \\\
-C_2e^{-{5\over2}t} &= -C_1e^{-{1\over2}t}\\\
-{-C_2\over C_1} &= e^{2t}\\\
-\end{align}
-$$
-Given that $$$t$$$ is positive, there are two cases to consider:  
-Case 1: $$$C_1$$$ is negative.  
-We know that $$${-C_2\over C_1} > 1$$$ because $$$e^{2t} > 1$$$ if $$$t$$$ is positive, and therefore $$$-C_2 < C_1$$$ since $$$C_1$$$ is negative.  
-$$
--C_2 < C_1 < 0
-$$
-Case 2: $$$C_1$$$ is positive. By similar reasoning to Case 1, we can say that $$$-C_2 > C_1$$$ and write:
-$$
--C_2 > C_1 > 0
-$$
-
-Therefore substituting values for $$$C_1, C_2$$$ from part b):
-
-Case 1:
-$$
-\begin{align}
--{-x_0-2\dot{x_0}\over 4} &< {5x_0 + 2\dot{x_0}\over 4} < 0\\\
-5x_0 + 2\dot{x_0} &< 0\\\
-5x_0 &< -2\dot{x_0}\\\
-x_0 &< -{2\over5}\dot{x_0}\\\
-\end{align}
-$$
-
-Case 2:
-$$
-\begin{align}
--{-x_0-2\dot{x_0}\over 4} &> {5x_0 + 2\dot{x_0}\over 4} > 0\\\
-5x_0 + 2\dot{x_0} &> 0\\\
-5x_0 &> -2\dot{x_0}\\\
-x_0 &> -{2\over5}\dot{x_0}\\\
-\end{align}
-$$
 
 #####Part 1
 ######2C-1a)
@@ -543,4 +448,185 @@ $$
 \therefore \bbox[5px, border:2px solid black]{3e^{3t}cos(4t) -8e^{3t}sin(4t)}\\\
 $$
 
+#####Part 2
+######1a)
+$$
+\begin{align}
+m\ddot x + b\dot x + kx &= 0 \\\
+{1\over2}r^2+{3\over2}r+{5\over8}&= 0\\\
+4r^2+12r+5 &= 0\\\
+(2r+5)(2r+1) &= 0 \\\
+\end{align}
+$$
+$$
+\therefore \bbox[5px, border:2px solid black]{r=-2.5,\ r=-0.5}
+$$
+######1b)
+$$
+\begin{align}
+x(t) &= C_1e^{-{5\over2}t} + C_2e^{-{1\over2}t}\\\
+x(0) &= C_1e^{0} + C_2e^{0}\\\
+x_0 &= C_1 + C_2\\\
+\\\
+\dot{x(t)} &= -C_1e^{-2.5t} -0.5C_2e^{-0.5t}\\\
+\dot{x(0)} &= -{5\over2}C_1e^{0}-{1\over2}C_2e^{0}\\\
+&= -{5\over2}C_1 -{1\over2}C_2\\\
+\dot{x_0} &= -{5\over2}C_1-{1\over2}C_2\\\
+\\\
+2\dot{x_0} &= -5C_1-C_2\\\
+x_0 + 2\dot{x_0} &= -4C_1\\\
+-{x_0 + 2\dot{x_0}\over 4} &= C_1\\\
+{5x_0 + 2\dot{x_0}\over 4} &= C_2\\\
+\end{align}
+$$
+$$
+\therefore \bbox[5px, border:2px solid black]{{-x_0-2\dot{x_0}\over 4}e^{-{5\over2}t} + {5x_0+2\dot{x_0}\over 4}e^{-{1\over2}t}}\\\
+$$
 
+######1c)
+This is the case in the event that:
+$$
+\begin{align}
+{-x_0 - 2\dot{x_0}\over4} &= 0\\\
+-x_0 - 2\dot{x_0} &= 0\\\
+-2\dot{x_0} &= x_0\\\
+\dot{x_0} &= \bbox[5px, border:2px solid black]{-{1\over2}x_0}\\\
+\end{align}
+$$
+or
+$$
+\begin{align}
+{5x_0 + 2\dot{x_0}\over4} &= 0 \\\
+5x_0 + 2\dot{x_0} &= 0 \\\
+2\dot{x_0} &= -5x_0\\\
+\dot{x_0} &= \bbox[5px, border:2px solid black]{-{5\over2}x_0}\\\
+\end{align}
+$$
+
+######1d)
+$$
+\begin{align}
+C_1e^{-{1\over2}t} + C_2e^{-{-5\over2}t} & = 0 \\\
+C_2e^{-{5\over2}t} &= -C_1e^{-{1\over2}t}\\\
+{-C_2\over C_1} &= e^{2t}\\\
+\end{align}
+$$
+Given that $$$t$$$ is positive, there are two cases to consider:  
+Case 1: $$$C_1$$$ is negative.  
+We know that $$${-C_2\over C_1} > 1$$$ because $$$e^{2t} > 1$$$ if $$$t$$$ is positive, and therefore $$$-C_2 < C_1$$$ since $$$C_1$$$ is negative.  
+$$
+-C_2 < C_1 < 0
+$$
+Case 2: $$$C_1$$$ is positive. By similar reasoning to Case 1, we can say that $$$-C_2 > C_1$$$ and write:
+$$
+-C_2 > C_1 > 0
+$$
+
+Therefore substituting values for $$$C_1, C_2$$$ from part b):
+
+Case 1:
+$$
+\begin{align}
+-{-x_0-2\dot{x_0}\over 4} &< {5x_0 + 2\dot{x_0}\over 4} < 0\\\
+5x_0 + 2\dot{x_0} &< 0\\\
+5x_0 &< -2\dot{x_0}\\\
+x_0 &< -{2\over5}\dot{x_0}\\\
+\end{align}
+$$
+
+Case 2:
+$$
+\begin{align}
+-{-x_0-2\dot{x_0}\over 4} &> {5x_0 + 2\dot{x_0}\over 4} > 0\\\
+5x_0 + 2\dot{x_0} &> 0\\\
+5x_0 &> -2\dot{x_0}\\\
+x_0 &> -{2\over5}\dot{x_0}\\\
+\end{align}
+$$
+
+######2a)
+$$
+\begin{align}
+m\ddot{x} + b\dot{x} + kx &= 0\\\
+{1\over2}\ddot{x} + b\dot{x} + {5\over8}x &= 0\\\
+\end{align}
+$$
+The roots are equal when $$$b^2-{5\over4} = 0$$$ because of the root equations:
+$$
+r = {-b\pm\sqrt{b^2-{5\over4}}\over 2}
+$$
+Thus, the roots are equal at:
+$$
+\begin{align}
+b^2-{5\over4} &= 0\\\
+b^2 &= {5\over4}\\\
+b &= \pm\sqrt{5\over4}\\\
+b &\approx \pm1.12
+\end{align}
+$$
+Picking $$$b>0$$$ gives 
+$$
+\bbox[5px, border:2px solid black]{b \approx 1.12}
+$$
+This is also the conclusion that is reached using the mathlet.
+
+For the general solution:
+$$
+r = {-1.12\over2} = -0.56
+$$
+Using the rule for doubled roots:
+$$
+\bbox[5px, border:2px solid black]{C_1e^{-0.56t} + C_2te^{-0.56t}}
+$$
+
+######2b)
+Picking the initial conditions $$$x_0=1,\ \dot{x_0}=1$$$ the graph seems to take a spiral trajectory. 
+$$
+\begin{align}
+{1\over2}\ddot{x} + {1\over4}\dot{x} + {5\over8}x &= 0\\\
+{-{1\over4}\pm\sqrt{{1\over16}-{20\over16}}\over 1} &= r\\\
+-{1\over4}\pm i{\sqrt{19}\over 4} &= r \\\
+\end{align}
+$$
+Lazily using roots:
+$$C_1e^{{-1+i\sqrt{19}\over4}t} + C_2e^{{-1-i\sqrt{19}\over4}t}$$
+
+Using one root and converting to sincos:
+$$
+C_1e^{-1\over4}cos({\sqrt{19}\over4}t) + C_2e^{-1\over4}sin({\sqrt{19}\over4}t) = x(t)
+$$
+######2c)
+Theory:
+The period of the solution from 2b) is $$${2\pi \over {\sqrt{19}\over4}}$$$, but we realize that we want L+R to equal each other, which can happen every $$${\pi\over {\sqrt{19}\over 4}}$$$. 
+Simplifying this we get the analytical solution: 
+$$
+{4\pi \over \sqrt{19}}
+$$
+
+Thus the door actually doesn't oscillate faster or slower, but rather oscillates just the same. The pseudo-period is above.
+
+Measuring the distance for initial conditions $$$x(0) = 0, 
+\dot{x}(0) = 1 $$$ we find zeros at:
+$$
+0.00, 2.93, 5.81, 8.69, 11.57
+$$
+
+With successive distances between each zero as:
+
+$$
+2.93, 2.88, 2.88, 2.88
+$$
+
+Which is in agreement with the prediction of
+$$${4\pi\over\sqrt{19}}\approx2.88292$$$.
+
+Using different initial conditions $$$x(0) = 1, \dot{x}(0) = 0 $$$ we find zeros at:
+$$
+2.20, 5.13, 8.06, 10.89, 13.82
+$$
+With successive distances between each zero as:
+$$
+2.83,2.93,2.83,2.93
+$$
+
+Leading to the conclusion that this is the same rough behavior as the first case.
