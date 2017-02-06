@@ -61,16 +61,12 @@ $$
 ######d)
 $$
 \begin{align}
-{-x_0-2\dot{x_0}\over 4}e^{-{5\over2}t} + {5x_0+2\dot{x_0}\over 4}e^{-{1\over2}t} &= 0\\\
-\left(-x_0-2\dot{x_0}\right)e^{-{5\over2}t} + \left(5x_0 + 2\dot{x_0}\right)e^{-{1\over2}t} &= 0 \\\
-\left(5x_0 + 2\dot{x_0}\right)e^{-{1\over2}t} &= \left(x_0+2\dot{x_0}\right)e^{-{5\over2}t}\\\
-\left(5x_0 + 2\dot{x_0}\right)e^{2t} &= x_0+2\dot{x_0}\\\
-5x_0e^{2t}+2\dot{x_0}e^{2t} &= x_0+2\dot{x_0}\\\
-5x_0e^{2t}-x_0 &= 2\dot{x_0}-2\dot{x_0}e^{2t}\\\
-x_0\left(
+C_1e^{-{1\over2}t} + C_2e^{-{-5\over2}t} & = 0 \\\
+C_2e^{-{5\over2}t} &= -C_1e^{-{1\over2}t}\\\
+{-C_2\overC_1} &= e^{2t}\\\
 \end{align}
 $$
-
+There are two cases
 
 #####Part 1
 ######2C-1a)
