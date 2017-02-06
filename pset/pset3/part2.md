@@ -4,7 +4,7 @@ $$$\require{cancel}$$$
 ###Pset 3.2
 [Problem Source](https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/assignments/MIT18_03S10_pset_03_II.pdf)
 #####Part 2
-######a)
+######1a)
 $$
 \begin{align}
 m\ddot x + b\dot x + kx &= 0 \\\
@@ -16,7 +16,7 @@ $$
 $$
 \therefore \bbox[5px, border:2px solid black]{r=-2.5,\ r=-0.5}
 $$
-######b)
+######1b)
 $$
 \begin{align}
 x(t) &= C_1e^{-{5\over2}t} + C_2e^{-{1\over2}t}\\\
@@ -38,7 +38,7 @@ $$
 \therefore \bbox[5px, border:2px solid black]{{-x_0-2\dot{x_0}\over 4}e^{-{5\over2}t} + {5x_0+2\dot{x_0}\over 4}e^{-{1\over2}t}}\\\
 $$
 
-######c)
+######1c)
 This is the case in the event that:
 $$
 \begin{align}
@@ -58,15 +58,46 @@ $$
 \end{align}
 $$
 
-######d)
+######1d)
 $$
 \begin{align}
 C_1e^{-{1\over2}t} + C_2e^{-{-5\over2}t} & = 0 \\\
 C_2e^{-{5\over2}t} &= -C_1e^{-{1\over2}t}\\\
-{-C_2\overC_1} &= e^{2t}\\\
+{-C_2\over C_1} &= e^{2t}\\\
 \end{align}
 $$
-There are two cases
+Given that $$$t$$$ is positive, there are two cases to consider:  
+Case 1: $$$C_1$$$ is negative.  
+We know that $$${-C_2\over C_1} > 1$$$ because $$$e^{2t} > 1$$$ if $$$t$$$ is positive, and therefore $$$-C_2 < C_1$$$ since $$$C_1$$$ is negative.  
+$$
+-C_2 < C_1 < 0
+$$
+Case 2: $$$C_1$$$ is positive. By similar reasoning to Case 1, we can say that $$$-C_2 > C_1$$$ and write:
+$$
+-C_2 > C_1 > 0
+$$
+
+Therefore substituting values for $$$C_1, C_2$$$ from part b):
+
+Case 1:
+$$
+\begin{align}
+-{-x_0-2\dot{x_0}\over 4} &< {5x_0 + 2\dot{x_0}\over 4} < 0\\\
+5x_0 + 2\dot{x_0} &< 0\\\
+5x_0 &< -2\dot{x_0}\\\
+x_0 &< -{2\over5}\dot{x_0}\\\
+\end{align}
+$$
+
+Case 2:
+$$
+\begin{align}
+-{-x_0-2\dot{x_0}\over 4} &> {5x_0 + 2\dot{x_0}\over 4} > 0\\\
+5x_0 + 2\dot{x_0} &> 0\\\
+5x_0 &> -2\dot{x_0}\\\
+x_0 &> -{2\over5}\dot{x_0}\\\
+\end{align}
+$$
 
 #####Part 1
 ######2C-1a)
