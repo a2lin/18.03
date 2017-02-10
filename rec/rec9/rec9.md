@@ -51,6 +51,9 @@ $$
 Seems like resonance is achieved at w=2?
 
 ######3)
-
-
+$$
+\begin{align}
+r^4-1 &= e^{-2t}
+\end{align}
+$$
 
