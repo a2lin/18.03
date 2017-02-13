@@ -59,4 +59,10 @@ r^4-1 &= e^{-2t}\\\
 $$
 
 ######4)
+$$
+\begin{align}
+{d^4x\over dt^4}-x &= cos(2t)\\\
+r^4-1 &= cos(2t)\\\
+\end{align}
+$$	
 
