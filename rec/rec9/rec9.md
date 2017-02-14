@@ -54,9 +54,26 @@ Seems like resonance is achieved at w=2?
 $$
 \begin{align}
 {d^4x\over dt^4}-x &= e^{-2t}\\\
-r^4-1 &= e^{-2t}\\\
+p(D)x &= e^{-2t}\\\
+x_p &= {e^{-2t}\over p(-2)}\\\
+x_p &= {e^{-2t} \over (-2)^4-1}\\\
+x_p &= {e^{-2t}\over 15}\\\ 
 \end{align}
 $$
+
+Homogenous solution:
+$$
+\begin{align}
+{d^4x\over dt^4}-x &= 0\\\
+r^4-1 &= 0\\\
+r &= \pm 1,\ \pm i\\\
+x_g &= C_1e^{t} + C_2 e^{-t} + C_3e^{it} + C_4e^{-it}\\\
+\end{align}
+$$
+
+Overall solution:
+$$\bbox[5px, border:2px solid black]{x(t) = C_1e^{t} + C_2e^{-t} + C_3e^{it} + C_4e^{-it} + {e^{-2t} \over 15}}$$
+
 
 ######4)
 $$
