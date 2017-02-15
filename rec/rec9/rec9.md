@@ -61,7 +61,7 @@ x_p &= {e^{-2t}\over 15}\\\
 \end{align}
 $$
 
-Homogenous solution:
+Homogeneous solution:
 $$
 \begin{align}
 {d^4x\over dt^4}-x &= 0\\\
@@ -82,4 +82,17 @@ $$
 r^4-1 &= cos(2t)\\\
 \end{align}
 $$	
+
+Homogeneous solution:
+$$
+\begin{align}
+{d^4x\over dt^4} - x &= 0 \\\
+r^4 - 1 &= 0 \\\
+r &= \pm 1,\ \pm i\\\
+x_g &= C_1e^{t} + C_2e^{-t} + C_3e^{it} + C_4e^{-it}\\\
+\end{align}
+$$
+
+Particular solution:
+
 
