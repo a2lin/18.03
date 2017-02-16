@@ -94,5 +94,19 @@ x_g &= C_1e^{t} + C_2e^{-t} + C_3e^{it} + C_4e^{-it}\\\
 $$
 
 Particular solution:
+$$
+\begin{align}
+{d^4x\over dt^4} - x &= cos(2t)\\\
+p(D) &= D^4-1\\\
+x(t) &= Re\left\\{{e^{2t}\over p(2)}\right\\}\\\
+x(t) &= \bbox[5px, border:2px solid black]{{cos(2t)\over 15}}\\\
+\end{align}
+$$
 
+General Solution:
+$$
+\bbox[5px, border:2px solid black]{x(t) = {cos(2t)\over 15} + C_1e^{t} + C_2e^{-t} + C_3e^{it} + C_4e^{-it}}
+$$
 
+######5)
+See General Solution for (#3, #4).
