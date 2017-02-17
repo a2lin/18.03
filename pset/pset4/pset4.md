@@ -22,3 +22,14 @@ y(x) &= Re\left\\{{2e^{ix} \over -2i+1}\right\\}\\\
 \end{align}
 $$
 
+######2F6c)
+$$
+\begin{align}
+y'' - 2y' + 4y &= e^{x}cos(x) \\\
+p(D) &= r^2-2r+4 \\\
+p(D)_{y(x)} &= Re\left\\{e^{x}e^{ix}\right\\}\\\
+y(x) &= {e^{(i+1)x} \over (i+1)^2-2(i+1)+4}\\\
+y(x) &= {e^{(i+1)x} \over -1+2i+1-2i-2+4}\\\
+y(x) &= \bbox[5px, border:2px solid black]{{e^{(i+1)x} \over 2}}\\\
+\end{align}
+$$
