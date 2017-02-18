@@ -36,4 +36,55 @@ $$
 
 ######2F6d)
 Notice that in this case the $$$p(\alpha) = 0$$$, and so
-the rule $$${e^{\alpha x}\over p(\alpha)$$$ is invalid for this equation.
+the rule $$${e^{\alpha x}\over p(\alpha)}$$$ is invalid for this equation.
+
+The formula in the case of a double root is:
+$$
+\begin{align}
+x_p &= {x^2e^{\alpha x}\over p''(\alpha)}\\\
+\end{align}
+$$
+
+We can see that this is the case for $$$p(D) = (D-\alpha)(D-\alpha)$$$ through the following calculation:
+
+$$
+\begin{align}
+p(D)e^{\alpha x}f(x) &= e^{\alpha x}p(D+\alpha)f(x)\\\
+D\left(e^{\alpha x}f(x)\right) &= e^{\alpha x}Df(x) + \alpha e^{\alpha x}f(x) \\\
+&= e^{\alpha x}(D+\alpha)f(x)\\\
+\end{align}
+$$
+Applying the last equation repeatedly allows the first conversion (aka 'exponential shift rule') to hold.
+
+To see that the double root formula holds (at least for second-order differential equations):
+$$
+\begin{align}
+&p(D) = (D-\alpha)(D-\alpha)\\\
+&p'(D) = 2(D-\alpha)\\\
+&p''(D) = 2\\\
+\end{align}
+$$
+$$
+\begin{align}
+p(D){x^2e^{\alpha x}\over p''(\alpha)} &= e^{\alpha x}\\\
+&= {e^{\alpha x}p(D+\alpha)x^2\over p''(\alpha)}\\\
+&= {e^{\alpha x}D^2x^2\over 2}\\\
+&= {e^{\alpha x}2\over 2}\\\
+&= e^{\alpha x}
+\end{align}
+$$
+
+Applying the formula to the particular problem in this case:
+$$
+\begin{align}
+y'' - 6y' + 9y &= e^{3x}\\\
+y(x)_p &= \bbox[5px, border:2px solid black]{{x^2e^{3x}\over 2}}
+\end{align}
+$$
+
+######14)
+$$
+\begin{align}
+
+\end{align}
+$$
