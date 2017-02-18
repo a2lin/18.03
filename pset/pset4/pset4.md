@@ -85,6 +85,11 @@ $$
 ######14)
 $$
 \begin{align}
-
+{d^3x\over dt^3}-x &= e^{2t}\\\
+p(D) &= r^3-1\\\
+x_p &= e^{2t}\over p(2)\\\
+x_p &= \bbox[5px, border:2px solid black]{e^{2t}\over 7}
 \end{align}
 $$
+
+######2C-8)
