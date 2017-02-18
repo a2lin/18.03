@@ -33,3 +33,7 @@ y(x) &= {e^{(i+1)x} \over -1+2i+1-2i-2+4}\\\
 y(x) &= \bbox[5px, border:2px solid black]{{e^{(i+1)x} \over 2}}\\\
 \end{align}
 $$
+
+######2F6d)
+Notice that in this case the $$$p(\alpha) = 0$$$, and so
+the rule $$${e^{\alpha x}\over p(\alpha)$$$ is invalid for this equation.
