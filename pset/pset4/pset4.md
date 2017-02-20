@@ -196,3 +196,112 @@ C_2 &= {1\over 2}\\\
 $$
 $$\therefore \bbox[5px, border:2px solid black]{y(x) = -x^2-2 + {3\over 2}e^{-x} + {1\over 2}e^{x}}$$
 
+######2.5 #2)
+$$
+\begin{align}
+y'' - y' - 2y &= 3x+4\\\
+y_p &= Ax+B\\\
+y_p'(x) &= A \\\
+y_p''(x) &= 0 \\\
+-A -2Ax-2B &= 3x+4\\\
+-A-2B &= 4\\\
+-2A &= 3\\\
+A &= {-3\over 2}\\\
+B &= {-5\over 4}\\\
+y_p &= \bbox[5px, border:2px solid black]{-{3\over 2}x - {5\over 4}}
+\end{align}
+$$
+
+######2.5 #8)
+$$
+\begin{align}
+y'' - 4y &= cosh 2x\\\
+y'' - 4y &= {e^{x}+e^{-x} \over 2}\\\
+\end{align}
+$$
+Split this into two equations and add them (linearity):
+$$
+\begin{align}
+{y'' - 4y\over 2} &= {e^{x}\over 2}\\\
+{y'' - 4y\over 2} &= {e^{-x}\over 2}\\\
+\end{align}
+$$
+
+Solving the first one:
+$$
+\begin{align}
+{y'' - 4y\over 2} &= {e^{x}\over 2} \\\
+y'' - 4y &= e^{x}\\\
+y_p(x) &= {e^{x}\over p(1)}\\\
+p(D) &= D^2 - 4\\\
+p(1) &= 1 - 4\\\
+p(1) &= -3\\\
+y_p(x) &= {e^{x}\over -3}
+\end{align}
+$$
+
+Solving the second one:
+$$
+\begin{align}
+{y'' - 4y\over 2} &= {e^{-x}\over 2}\\\
+y'' - 4y &= e^{-x}\\\
+y_p(x) &= {e^{-x}\over p(1)}\\\
+p(D) &= D^2-4\\\
+p(1) &= (1)^2-4\\\
+p(1) &= -3\\\
+y_p(x) &= {e^{-x}\over -3}\\\
+\end{align}
+$$
+
+Combining the first and second (ensuring the equation has the right values):
+$$
+\bbox[5px, border:2px solid black]{y_p(x) = {e^{x} + e^{-x}\over -6}}
+$$
+
+######2.5 #11)
+$$
+\begin{align}
+y''' + 4y' &= 3x - 1\\\
+p(D) &= D^3+4D\\\
+p(D)y_p &= 3x - 1\\\
+y_p &= Ax^2 + Bx\\\
+y_p(x) &= Ax^2 + Bx\\\
+y_p'(x) &= 2Ax + B\\\
+y_p''(x) &= 2A\\\
+y_p'''(x) &= 0\\\
+0 + 8Ax + 4B &= 3x - 1\\\
+A &= {3\over 8}\\\
+B &= -1\over 4 \\\
+y_p(x) &= \bbox[5px, border:2px solid black]{{3\over 8}x^2 - {1\over 4}x}\\\
+\end{align}
+$$
+
+######2.5 #14)
+$$
+\begin{align}
+y^{(4)} - 2y'' + y &= xe ^{x}\\\
+p(D) &= D^4 - 2D^2 + 1\\\
+p(D)u(x) &= xe^{x}\\\
+u(x) &= e^{x}f(x)\\\
+p(D)e^{x}f(x) &= e^{x}p(D+1)f(x)\\\
+e^{x}p(D+1)f(x) &= xe^{x}\\\
+p(D+1)f(x) &= x\\\
+(D+1)^4 &= D^4 + 4D^3 + 6D^2 + 4D + 1\\\
+(D+1)^2 &= D^2 + 2D + 1\\\
+p(D+1) &= D^4 + 4D^3 + 6D^2 + 4D + 1 -2( D^2 + 2D + 1)+ 1\\\
+p(D+1) &= D^4 + 4D^3 + 6D^2 + 4D + 1 - 2D^2 -4D - 2 + 1\\\
+p(D+1) &= D^4 + 4D^3 + 4D^2\\\
+f(x) &= Ax^3 + Bx^2\\\
+f'(x) &= 3Ax^2 + 2Bx\\\
+f''(x) &= 6Ax + 2B\\\
+f'''(x) &= 6A\\\
+f''''(x) &= 0\\\
+p(D+1)f(x) &= D^4f(x) + 4(D^3f(x)) + 4(D^2f(x))\\\
+p(D+1)f(x) &= 0 + 4(6A) + 4(6Ax+2B)\\\
+p(D+1)f(x) &= 24A + 24Ax + 8B\\\
+A &= {1\over 24}
+B &= {-1\over 8}
+f(x) &= {1\over 24}x^3 - {1\over8}x^2\\\
+y_p(x) &= \bbox[5px, border:2px solid black]{e^{x}\left({1\over 24}x^3 - {1\over 8}x^2\right)}\\\  
+\end{align}
+$$
