@@ -92,4 +92,107 @@ x_p &= \bbox[5px, border:2px solid black]{e^{2t}\over 7}
 \end{align}
 $$
 
-######2C-8)
+To get the general solution, notice that:
+$$
+\begin{align}
+{d^3x\over dt^3}-x &= 0\\\
+r^3-1 &= 0\\\
+(r+i)(r-i)(r-1) &= 0\\\
+\end{align}
+$$
+
+And therefore we can write that the general solution is:
+$$
+\bbox[5px, border:2px solid black]{C_1e^{-it} + C_2e^{it} + C_3e^{t} + {e^{2t}\over 7}}
+$$
+
+######2C-8c)
+$$
+\begin{align}
+y'' + y' + y &= 2xe^{x}\\\
+p(D) &= D^2 + D + 1\\\
+p(D)y &= 2xe^{x}\\\
+y_p &= f(x)e^{x}\\\
+p(D)f(x)e^{x} &= e^{x}p(D+1)f(x)\\\
+e^{x}p(D+1)f(x) &= 2xe^{x}\\\
+p(D+1)f(x) &= 2x\\\
+p(D+1) &= (D+1)^2 + (D+1) + 1\\\
+p(D+1) &= D^2 + 2D + 1 + (D+1) + 1\\\
+p(D+1) &= D^2 + 3D + 3\\\
+f(x) &= Ax + B\\\
+f'(x) &= A\\\
+f''(x) &= 0\\\
+p(D+1)f(x) &= 2x\\\
+D^2f(x) + 3Df(x) + 3f(x) &= 2x\\\
+0 + 3A + (3Ax+3B) &= 2x\\\
+3Ax + 3A + 3B &= 2x\\\
+3A + 3B &= 0\\\
+3A &= 2\\\
+A &= {2\over 3}\\\
+B &= -{2\over 3}\\\
+y_p &= \bbox[5px, border:2px solid black]{e^{x}\left({2\over 3}x - {2\over 3}\right)}
+\end{align}
+$$
+
+For the general solution, we need to find the associated equation:
+$$
+\begin{align}
+y''+ y' + y &= 0\\\
+r^2 + r + 1 &= 0 \\\
+\left(r-{-1+i\sqrt3\over2}\right)\left(r-{-1-i\sqrt3\over2}\right) &= 0 \\\
+\end{align}
+$$
+$$\bbox[5px, border:2px solid black]{y(x) = C_1e^{1-i\sqrt3\over2} + C_2e^{1+i\sqrt3\over2} + e^{x}\left({2\over3}x-{2\over3}\right)}$$
+
+######2C-8d)
+Step 1: Find a particular solution $$$y_p$$$:
+$$
+\begin{align}
+y'' - y &= x^2\\\
+p(D) &= D^2-1\\\
+p(D)u(x) &= x^2\\\
+u(x) &= Ax^2+Bx+C\\\
+u'(x) &= 2Ax+B\\\
+u''(x) &= 2A\\\
+p(D)u(x) &= x^2\\\
+D^2u(x)-u(x) &= x^2\\\
+2A-Ax^2+Bx+C &= x^2\\\
+A &= -1\\\
+B &= 0\\\
+C &= -2\\\
+u(x) &= -x^2-2\\\
+\end{align}
+$$
+
+Step 2: Find a complementary solution $$$y_c$$$:
+$$
+\begin{align}
+y'' - y &= 0\\\
+r^2-1 &= 0\\\
+(r+1)(r-1) &= 0\\\
+y(x) &= C_1e^{-x} + C_2e^{x}\\\
+\end{align}
+$$
+
+$$\therefore \bbox[5px, border:2px solid black]{y(x) = -x^2-2+C_1e^{-x}+C_2e^{x}}$$
+
+Step 3: Include the initial conditions:
+$$
+\begin{align}
+y(0) &= 0\\\
+y'(0) &= -1\\\
+y(x) &= -x^2-2+C_1e^{-x}+C_2e^{x}\\\
+y(0) &= -(0)^2-2+C_1e^{0}+C_2e^{0}\\\
+0 &= -2 + C_1 + C_2\\\
+y'(x) &= -2x - C_1e^{-x}+C_2e^{x}\\\
+y'(0) &= -2(0) - C_1e^{0}+C_2e^{0}\\\
+-1 &= -C_1 + C_2\\\
+C_1-1 &= C_2\\\
+0 &= -2 + C_1 + C_1-1\\\
+3 &= 2C_1\\\
+C_1 &= {3\over 2}\\\
+C_2 &= {1\over 2}\\\
+\end{align}
+$$
+$$\therefore \bbox[5px, border:2px solid black]{y(x) = -x^2-2 + {3\over 2}e^{-x} + {1\over 2}e^{x}}$$
+
