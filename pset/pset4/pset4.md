@@ -305,3 +305,11 @@ f(x) &= {1\over 24}x^3 - {1\over8}x^2\\\
 y_p(x) &= \bbox[5px, border:2px solid black]{e^{x}\left({1\over 24}x^3 - {1\over 8}x^2\right)}\\\  
 \end{align}
 $$
+
+######2.6 #17)
+$$
+\begin{align}
+mx'' + cx' + kx &= F_0cos(\omega t)\\\
+x'' + 6x' + 45x &= 50cos(\omega t)\\\
+\end{align}
+$$
