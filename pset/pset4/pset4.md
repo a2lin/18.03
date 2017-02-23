@@ -312,6 +312,6 @@ $$
 mx'' + cx' + kx &= F_0cos(\omega t)\\\
 x'' + 6x' + 45x &= 50cos(\omega t)\\\
 p(D)x &= 50 cos(\omega t)\\\
-
 \end{align}
 $$
+Looking for a combined $$$\omega$$$ value...
