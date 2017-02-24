@@ -310,8 +310,27 @@ $$
 $$
 \begin{align}
 mx'' + cx' + kx &= F_0cos(\omega t)\\\
-mx'' + cx' + kx &= F_0Re\\{cos(\omega t)\\}\\\
-
+mx'' + cx' + kx &= F_0Re\\{e^{i\omega t}\\}\\\
+x'' + {c\over m}x' + {k\over m}x &= F_0Re\\{e^{i\omega t}\\}\\\
+p(d) &= D^2 + 2pD + w_1^2\\\
+x_p &= {F_0e^{i\omega_0 t}\over i\omega_0^2+2pi\omega_0 + \omega_1^2}\\\
+&= {F_0e^{i\omega_0 t}\over \omega_1^2-\omega_0^2+2pi\omega_0}\\\
+&= {F_0\left(cos(\omega_0 t) + isin(\omega_0 t)\right)\left((\omega_1^2-\omega_0^2)-2pi\omega_0\right)\over (\omega_1^2-\omega_0^2)^2 + (2p\omega_0)^2}\\\
+&= {F_0\left((\omega_1^2-\omega_0^2)(cos(\omega_0 t)) + 2p\omega_0 sin(\omega_0 t)\right) \over (\omega_1^2-\omega_0^2)^2 + (2p\omega_0)^2}\\\
+&= F_0\left({\omega_1^2-\omega_0^2 \over (\omega_1^2-\omega_0^2)^2+(2p\omega_0)^2}cos(\omega_0 t) + {2p\omega_0\over (\omega_1^2-\omega_0^2)^2 + (2p\omega_0)^2}sin(\omega_0 t)\right)\\\
 \end{align}
 $$
-Looking for a combined $$$\omega$$$ value...
+Let:
+$$
+\begin{align}
+A = F_0{\omega_1^2-\omega_0^2 \over (\omega_1^2-\omega_0^2)^2+(2p\omega_0)^2}\\\
+B = F_0{2p\omega_0\over (\omega_1^2-\omega_0^2)^2 + (2p\omega_0)^2}
+\end{align}
+$$
+Then:
+$$
+\begin{align}
+C&=\sqrt{A^2+B^2}\\\
+\omega_r &= \omega_0 - {tan}^{-1}\left({B\over A}\right)\\\
+\end{align}
+$$
