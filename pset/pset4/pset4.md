@@ -334,3 +334,5 @@ C&=\sqrt{A^2+B^2}\\\
 \omega_r &= \omega_0 - {tan}^{-1}\left({B\over A}\right)\\\
 \end{align}
 $$
+
+We know that the practical resonance frequency can be found through taking the derivative of the amplitude and looking for maxima, as the practical resonance frequency is defined as 
