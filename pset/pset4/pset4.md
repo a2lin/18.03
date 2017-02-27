@@ -335,4 +335,4 @@ C&=\sqrt{A^2+B^2}\\\
 \end{align}
 $$
 
-We know that the practical resonance frequency can be found through taking the derivative of the amplitude and looking for maxima, as the practical resonance frequency is defined as 
+We know that the practical resonance frequency can be found through taking the derivative of the amplitude and looking for maxima, as the practical resonance frequency is defined as the maxima of the 
