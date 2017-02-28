@@ -337,11 +337,29 @@ $$
 
 We know that the practical resonance frequency can be found through taking the derivative of the amplitude and looking for maxima, as the practical resonance frequency is defined as the maximal $$$\omega$$$ in the amplitude graph $$$C(\omega)$$$.
 
-Plugging in the values given: $$$m=1$$$, $$$c=6$$$, $$$k=45$$$, $$$F_0=50$$$:
-$$$\omega_0^2 = 45$$$, $$$2p = 6$$$:
-
 $$
 \begin{align}
 A &= F_0{\omega_1^2-\omega_0^2 \over (\omega_1^2-\omega_0^2)^2+(2p\omega_0)^2}\\\
 B &= F_0{2p\omega_0\over (\omega_1^2-\omega_0^2)^2 + (2p\omega_0)^2} \\\
+A^2+B^2 &= F_0^2\left({\left(\omega_1^2-\omega_0^2\right)^2+\left(2p\omega_0\right)^2\over \left((\omega_1^2-\omega_0^2)^2+(2p\omega_0)^2\right)^2}\right)\\\
+&= F_0^2\left({1\over(\omega_1^2-\omega_0^2)^2 + (2p\omega_0)^2}\right)\\\
+\sqrt{A^2+B^2} &= F_0\sqrt{{1\over(\omega_1^2-\omega_0^2)^2 + (2p\omega_0)^2}}\\\
+\end{align}
+$$
+
+So $$C(\omega_1) = F_0\sqrt{{1\over(\omega_1^2-\omega_0^2)^2 + (2p\omega_0)^2}}$$
+
+Plugging in the values given: $$$m=1$$$, $$$c=6$$$, $$$k=45$$$: 
+
+$$$F_0=50$$$
+
+$$${k\over m} = \omega_0^2 = 45$$$
+
+$$${c\over m} = 2p = 6$$$:
+
+$$C(\omega_1) = F_0\sqrt{{1\over(\omega_1^2-45)^2 + (6\cdot45)^2}}$$
+$$
+\begin{align}
+C'(\omega_1) &= {d\over d\omega_1}F_0\sqrt{{1\over(\omega_1^2-45)^2 + (270)^2}}\\\
+\end{align}
 $$
