@@ -335,4 +335,13 @@ C&=\sqrt{A^2+B^2}\\\
 \end{align}
 $$
 
-We know that the practical resonance frequency can be found through taking the derivative of the amplitude and looking for maxima, as the practical resonance frequency is defined as the maxima of the 
+We know that the practical resonance frequency can be found through taking the derivative of the amplitude and looking for maxima, as the practical resonance frequency is defined as the maximal $$$\omega$$$ in the amplitude graph $$$C(\omega)$$$.
+
+Plugging in the values given: $$$m=1$$$, $$$c=6$$$, $$$k=45$$$, $$$F_0=50$$$:
+$$$\omega_0^2 = 45$$$, $$$2p = 6$$$:
+
+$$
+\begin{align}
+A &= F_0{\omega_1^2-\omega_0^2 \over (\omega_1^2-\omega_0^2)^2+(2p\omega_0)^2}\\\
+B &= F_0{2p\omega_0\over (\omega_1^2-\omega_0^2)^2 + (2p\omega_0)^2} \\\
+$$
