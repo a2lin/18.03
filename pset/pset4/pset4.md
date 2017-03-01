@@ -358,6 +358,7 @@ $$${k\over m} = \omega_0^2 = 45$$$
 $$${c\over m} = 2p = 6$$$:
 
 $$C(\omega_1) = F_0\sqrt{{1\over(\omega_1^2-45)^2 + (6\cdot45)^2}}$$
+![Image](fig_1.png =400x300)
 $$
 \begin{align}
 C'(\omega_1) &= {d\over d\omega_1}F_0\sqrt{{1\over(\omega_1^2-45)^2 + (270)^2}}\\\
