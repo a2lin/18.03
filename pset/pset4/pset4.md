@@ -331,7 +331,7 @@ Then:
 $$
 \begin{align}
 C&=\sqrt{A^2+B^2}\\\
-\omega_r &= \omega_0 - {tan}^{-1}\left({B\over A}\right)\\\
+\omega_r &= \omega_0t - {tan}^{-1}\left({B\over A}\right)\\\
 \end{align}
 $$
 
@@ -357,10 +357,26 @@ $$${k\over m} = \omega_0^2 = 45$$$
 
 $$${c\over m} = 2p = 6$$$:
 
-$$C(\omega_1) = F_0\sqrt{{1\over(\omega_1^2-45)^2 + (6\cdot45)^2}}$$
+$$C(\omega_1) = 50\sqrt{{1\over(\omega_1^2-45)^2 + (6\cdot45)^2}}$$
 ![Image](fig_1.png =400x300)
 $$
 \begin{align}
-C'(\omega_1) &= {d\over d\omega_1}F_0\sqrt{{1\over(\omega_1^2-45)^2 + (270)^2}}\\\
+C'(\omega_1) &= {d\over d\omega_1}50\sqrt{{1\over(\omega_1^2-45)^2 + (270)^2}}\\\
+&= {d\over d\omega_1}50\left((\omega_1^2-45)^2+270^2\right)^{-{1\over2}}\\\
+&= {d\over d\omega_1}50\left(\omega_1^4-90\omega_1^2 + 2025 + 72900\right)^{-{1\over2}}\\\
+&= {d\over d\omega_1}50\left(\omega_1^4-90\omega_1^2+74925\right)^{-{1\over2}}\\\
+&= 50\left(-{1\over2}\left(\omega_1^4-90\omega_1^2+74925\right)^{-{3\over2}}\right)\left(4\omega_1^3-180\omega_1\right)\\\
+\end{align}
+$$
+Setting $$$C'(\omega_1)=0$$$ in order to find the practical resonance frequency:
+$$
+\begin{align}
+C'(\omega_1) &= 50\left(-{1\over2}\left(\omega_1^4-90\omega_1^2+74925\right)^{-{3\over2}}\right)\left(4\omega_1^3-180\omega_1\right)\\\
+0 &= 50\left(-{1\over2}\left(\omega_1^4-90\omega_1^2+74925\right)^{-{3\over2}}\right)(4\omega_1^3) - 50\left(-{1\over2}\left(\omega_1^4-90\omega_1^2+74925\right)^{-{3\over2}}\right)(180\omega_1)\\\
+50\left(-{1\over2}\left(\omega_1^4-90\omega_1^2+74925\right)^{-{3\over2}}\right)(180\omega_1) &= 50\left(-{1\over2}\left(\omega_1^4-90\omega_1^2+74925\right)^{-{3\over2}}\right)(4\omega_1^3)\\\
+180\omega_1 &= 4\omega_1^3\\\
+{180\over 4} &= \omega_1^2\\\
+\sqrt{45} &= \omega_1\\\
+\omega_1 &= \pm \bbox[5px, border:2px solid black]{6.7082}\\\
 \end{align}
 $$
