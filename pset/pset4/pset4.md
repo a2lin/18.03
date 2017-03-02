@@ -34,19 +34,9 @@ x_p &= Re\left\\{{e^{it}\over (i)^2+i
 x_p &= Re\left\\{{e^{it}\over i
 +1}\right\\}\\\
 x_p &= Re\left\\{{\left(cos(t) + isin(t)\right)\left(i-1\right)\over (i-1)(i+1)}\right\\}\\\
-x_p &= {-cos(t)-sin(t)\over 0}
-\end{align}
-$$
-The above strategy did not work, so we need the alternate formula for $$$x_p$$$:
-$$
-\begin{align}
-x_p &= Re\left\\{{te^{it}\over p'(i)}\right\\}\\\
-p'(D) &= 2D + 1\\\
-p'(i) &= 2i + 1\\\
-x_p &= Re\left\\{{te^{it}\over 2i+1}\right\\}\\\
-x_p &= Re\left\\{{t(cos(t) + isin(t))(2i-1)\over (2i+1)(2i-1)}\right\\}\\\
-x_p &= {-t\over 5}\left(cos(t) - 2sin(t)\right)\\\
-x_p &= \bbox[5px, border:2px solid black]{{-t\over 5}\sqrt{5}cos(t-{tan}^{-1}(2))}\\\
+x_p &= {-cos(t)-sin(t)\over -2}\\\
+x_p &= \bbox[5px, border:2px solid black]{{cos(t) + sin(t) \over 2}}\\\
+x_p &= \bbox[5px, border:2px solid black]{{1\over 2}cos\left(t-{\pi\over 4}\right)}\\\
 \end{align}
 $$
 
