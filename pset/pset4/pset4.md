@@ -3,6 +3,52 @@ $$$\require{cancel}$$$
 # 18.03
 ###Pset 4
 [Problem Source](https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/assignments/MIT18_03S10_ps4.pdf)
+#####Part 2.
+######13a)
+$$
+\begin{align}
+\dot{x} + 2x &= e^{3t}cos(4t)\\\
+{dx\over dt} + 2x &= Re\\{e^{3t}e^{4it}\\}\\\
+{dx\over dt} + 2x &= Re\\{e^{(3+4i)t}\\}\\\
+x_p &= Re\left\\{{e^{(3+4i)t}\over p(3+4i)}\right\\}\\\
+p(D) &= D + 2\\\
+p(3+4i) &= 3 + 4i + 2\\\
+&= 5 + 4i\\\
+x_p &= Re\left\\{{e^{(3+4i)t}\over 5+4i}\right\\}\\\
+x_p &= Re\left\\{e^{3t}{cos(4t)+isin(4t)\over 5+4i}\right\\}\\\
+x_p &= Re\left\\{e^{3t}{cos(4t)+isin(4t)\over 5+4i}\right\\}\\\
+x_p &= Re\left\\{e^{3t}{\left(cos(4t)+isin(4t)\right)\left(5-4i\right)\over(5+4i)(5-4i)}\right\\}\\\
+x_p &= \bbox[5px, border:2px solid black]{e^{3t}{5cos(4t)-4sin(4t)\over 41}}
+\end{align}
+$$
+
+######13b)
+$$
+\begin{align}
+\ddot{x} + \dot{x} + 2x &= cos(t)\\\
+\ddot{x} + \dot{x} + 2x &= Re\\{e^{it}\\}\\\
+p(D) &= D^2 + D + 2\\\
+x_p &= Re\left\\{{e^{it}\over p(i)}\right\\}\\\
+x_p &= Re\left\\{{e^{it}\over (i)^2+i
++2}\right\\}\\\
+x_p &= Re\left\\{{e^{it}\over i
++1}\right\\}\\\
+x_p &= Re\left\\{{\left(cos(t) + isin(t)\right)\left(i-1\right)\over (i-1)(i+1)}\right\\}\\\
+x_p &= {-cos(t)-sin(t)\over 0}
+\end{align}
+$$
+The above strategy did not work, so we need the alternate formula for $$$x_p$$$:
+$$
+\begin{align}
+x_p &= Re\left\\{{te^{it}\over p'(i)}\right\\}\\\
+p'(D) &= 2D + 1\\\
+p'(i) &= 2i + 1\\\
+x_p &= Re\left\\{{te^{it}\over 2i+1}\right\\}\\\
+x_p &= Re\left\\{{t(cos(t) + isin(t))(2i-1)\over (2i+1)(2i-1)}\right\\}\\\
+x_p &= {-t\over 5}\left(cos(t) - 2sin(t)\right)\\\
+x_p &= \bbox[5px, border:2px solid black]{{-t\over 5}\sqrt{5}cos(t-{tan}^{-1}(2))}\\\
+\end{align}
+$$
 
 #####Part 1.
 ######2F6b)
