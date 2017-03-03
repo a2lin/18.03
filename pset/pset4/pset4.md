@@ -18,7 +18,15 @@ x_p &= Re\left\\{{e^{(3+4i)t}\over 5+4i}\right\\}\\\
 x_p &= Re\left\\{e^{3t}{cos(4t)+isin(4t)\over 5+4i}\right\\}\\\
 x_p &= Re\left\\{e^{3t}{cos(4t)+isin(4t)\over 5+4i}\right\\}\\\
 x_p &= Re\left\\{e^{3t}{\left(cos(4t)+isin(4t)\right)\left(5-4i\right)\over(5+4i)(5-4i)}\right\\}\\\
-x_p &= \bbox[5px, border:2px solid black]{e^{3t}{5cos(4t)-4sin(4t)\over 41}}
+x_p &= \bbox[5px, border:2px solid black]{e^{3t}{5cos(4t)-4sin(4t)\over 41}}\\\
+\dot{x_h} + 2x_h &= 0\\\
+{dx_h\over dt} + 2x_h &= 0\\\
+{dx_h\over dt} &= -2x_h\\\
+\int {1\over -2x_h} dx_h &= \int dt\\\
+-{1\over 2}ln(x_h) &= t\\\
+x_h &= \bbox[5px, border:2px solid black]{e^{-2t}}\\\
+x &= x_p + x_h\\\
+x &= \bbox[5px, border:2px solid black]{e^{3t}{5cos(4t)-4sin(4t)\over 41} + e^{-2t}}\\\
 \end{align}
 $$
 
@@ -37,8 +45,21 @@ x_p &= Re\left\\{{\left(cos(t) + isin(t)\right)\left(i-1\right)\over (i-1)(i+1)}
 x_p &= {-cos(t)-sin(t)\over -2}\\\
 x_p &= \bbox[5px, border:2px solid black]{{cos(t) + sin(t) \over 2}}\\\
 x_p &= \bbox[5px, border:2px solid black]{{1\over 2}cos\left(t-{\pi\over 4}\right)}\\\
+\ddot{x_h} + \dot{x_h} + 2x_h &= 0\\\
+r^2 + r + 2 &= 0\\\
+r &= {-1\pm\sqrt{1-8}\over 2}\\\
+r &= {-1\pm\sqrt{-7}\over 2}\\\
+x_h &= \bbox[5px, border:2px solid black]{C_1e^{{-1+i\sqrt{7}\over 2}t} + C_2e^{{-1-i\sqrt{7}\over 2}t}}\\\
+x &= x_p + x_h\\\
+x &= \bbox[5px, border:2px solid black]{{1\over 2}cos\left(t-{\pi\over 4}\right) + C_1e^{{-1+i\sqrt{7}\over 2}t} + C_2e^{{-1-i\sqrt{7}\over 2}t}} \\\
 \end{align}
 $$
+
+######13c)
+From the graph we see that the pseudoperiod is roughly:
+$$$6.22-1.41=4.81$$$.
+
+The predicted pseudoperiod was $$$2\pi$$$.
 
 #####Part 1.
 ######2F6b)
