@@ -58,7 +58,7 @@ Let's rewrite $$$x_h$$$ in the cosine form:
 $$
 \begin{align}
 x_h &= C_1e^{{-1+i\sqrt{7}\over 2}t} + C_2e^{{-1-i\sqrt{7}\over 2}t}\\\
-&= C_1e^{-1\over 2}\left(cos\left({\sqrt7\over 2}t\right) + isin\left({\sqrt7\over 2}t\right)\right) + C_2e^{-1\over 2}\left(cos\left({\sqrt7\over 2}t\right) - isin\left({\sqrt7\over 2}t\right)\right)\\\
+&= C_1e^{{-1\over 2}t}\left(cos\left({\sqrt7\over 2}t\right) + isin\left({\sqrt7\over 2}t\right)\right) + C_2e^{{-1\over 2}t}\left(cos\left({\sqrt7\over 2}t\right) - isin\left({\sqrt7\over 2}t\right)\right)\\\
 \end{align}
 $$
 We'd prefer a solution that doesn't have 'sin' in it, so let's use different homogenous solutions:  
@@ -91,7 +91,54 @@ $$$6.22-1.41=4.81$$$.
 This was with the forcing coefficient $$$A=0$$$, so we look at $$$x_h$$$, and notice that the frequency is $$${\sqrt{7}\over2}$$$, making the period $$${2\pi\over{\sqrt{7}\over2}}={4\pi\over{\sqrt{7}}}\approx{4.84}$$$.
 
 ######13d)
+The steady-state equation is:
+$$
+x_p = {\sqrt2\over 2}cos\left(t-{\pi\over 4}\right)
+$$
+so the expected value at $$$t=0$$$ is:
+$$
+\begin{align}
+x_p(0) &= {\sqrt2\over2}cos\left({-\pi\over4}\right) \\\
+x_p(0) &= {\sqrt2\over2}{\sqrt2\over2}\\\
+x_p(0) &= {1\over2}
+\end{align}
+$$
+Amplitude should be simply $$$\sqrt2\over2$$$.   
+This seems to agree with the graph.  
+Calculating $$$\dot{x_p}(0)$$$:   
+$$
+\begin{align}
+\dot{x_p}(t) &= -{\sqrt2\over2}sin\left({t-{\pi\over4}}\right)\\\
+\dot{x_p}(0) &= -{\sqrt2\over2}sin\left(-{\pi\over4}\right)\\\
+&= {\sqrt2\over2}sin\left({\pi\over4}\right)\\\
+&= 0.5\\\
+\end{align}
+$$
 
+######13e)
+Notice that for $$$x(0) = 0$$$ and $$$\dot{x}(0)= 0$$$, since $$$x(t) = x_h + x_p$$$, $$$x(0) = x_h(0) + x_p(0)$$$, and also $$$\dot{x}(0) = \dot{x_h}(0) + \dot{x_p}(0)$$$.
+
+From (d): $$$x_p(0) = {1\over 2}$$$, and $$$\dot{x_p}(0) = {1\over2}$$$, and therefore:
+$$$x_h(0) = -{1\over2}$$$ and $$$\dot{x_h}(0) = -{1\over2}$$$.
+
+We can use the following form of $$$x_h$$$:
+$$
+\begin{align}
+x_h &= C_1Re\left\\{e^{{-1\over2}t}e^{{i\sqrt7\over2}t}\right\\} + C_2Im\left\\{e^{{-1\over2}t}e^{{i\sqrt7\over2}t}\right\\}\\\
+&= C_1e^{{-1\over2}t}\left(cos\left({\sqrt7\over2}t\right)\right) + C_2e^{{-1\over2}t}\left(sin\left({\sqrt7\over2}t\right)\right)\\\
+x_h(0) &= C_1e^{{-1\over2}(0)}\left(cos\left({\sqrt7\over2}(0)\right)\right) + C_2e^{{-1\over2}(0)}\left(sin\left({\sqrt7\over2}(0)\right)\right)\\\
+{-1\over2} &= C_1\\\
+\dot{x_h}(t) &= C_1\left(-{1\over2}e^{{-1\over2}t}cos\left({\sqrt7\over2}t\right) - {\sqrt7\over2}e^{{-1\over2}t}sin\left({\sqrt7\over2}t\right)\right) + C_2\left(-{1\over2}e^{{-1\over2}t}sin\left({\sqrt7\over2}\right) + e^{{-1\over2}t}cos\left({\sqrt{7}\over2}t\right)\right)\\\
+\dot{x_h}(0) &= C_1\left(-{1\over2}e^{{-1\over2}(0)}cos\left({\sqrt7\over2}(0)\right) - {\sqrt7\over2}e^{{-1\over2}(0)}sin\left({\sqrt7\over2}(0)\right)\right) + C_2\left(-{1\over2}e^{{-1\over2}(0)}sin\left({\sqrt7\over2}\right) + e^{{-1\over2}(0)}cos\left({\sqrt{7}\over2}(0)\right)\right)\\\
+-{1\over2} &= C_1\left(-{1\over2}e^{{-1\over2}(0)}cos\left({\sqrt7\over2}(0)\right) - {\sqrt7\over2}e^{{-1\over2}(0)}sin\left({\sqrt7\over2}(0)\right)\right) + C_2\left(-{1\over2}e^{{-1\over2}(0)}sin\left({\sqrt7\over2}\right) + e^{{-1\over2}(0)}cos\left({\sqrt{7}\over2}(0)\right)\right)\\\
+-{1\over2} &= -{1\over2}C_1 + {\sqrt7\over2}C_2\\\
+-1 &= -C_1 + \sqrt7C_2\\\
+-1 &= {1\over2} + \sqrt7C_2\\\
+-{3\over2} &= \sqrt7C_2\\\
+C_2 &= -{3\over2\sqrt7}\\\
+x_h &= {-1\over2}e^{{-1\over2}t}\left(cos\left({\sqrt7\over2}t\right)\right) -{3\over2\sqrt7}e^{{-1\over2}t}\left(sin\left({\sqrt7\over2}t\right)\right)\\\
+\end{align}
+$$
 
 #####Part 1.
 ######2F6b)
