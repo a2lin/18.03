@@ -44,14 +44,43 @@ x_p &= Re\left\\{{e^{it}\over i
 x_p &= Re\left\\{{\left(cos(t) + isin(t)\right)\left(i-1\right)\over (i-1)(i+1)}\right\\}\\\
 x_p &= {-cos(t)-sin(t)\over -2}\\\
 x_p &= \bbox[5px, border:2px solid black]{{cos(t) + sin(t) \over 2}}\\\
-x_p &= \bbox[5px, border:2px solid black]{{1\over 2}cos\left(t-{\pi\over 4}\right)}\\\
+x_p &= \bbox[5px, border:2px solid black]{{\sqrt2\over 2}cos\left(t-{\pi\over 4}\right)}\\\
 \ddot{x_h} + \dot{x_h} + 2x_h &= 0\\\
 r^2 + r + 2 &= 0\\\
 r &= {-1\pm\sqrt{1-8}\over 2}\\\
 r &= {-1\pm\sqrt{-7}\over 2}\\\
 x_h &= \bbox[5px, border:2px solid black]{C_1e^{{-1+i\sqrt{7}\over 2}t} + C_2e^{{-1-i\sqrt{7}\over 2}t}}\\\
 x &= x_p + x_h\\\
-x &= \bbox[5px, border:2px solid black]{{1\over 2}cos\left(t-{\pi\over 4}\right) + C_1e^{{-1+i\sqrt{7}\over 2}t} + C_2e^{{-1-i\sqrt{7}\over 2}t}} \\\
+x &= \bbox[5px, border:2px solid black]{{\sqrt2\over 2}cos\left(t-{\pi\over 4}\right) + C_1e^{{-1+i\sqrt{7}\over 2}t} + C_2e^{{-1-i\sqrt{7}\over 2}t}} \\\
+\end{align}
+$$
+Let's rewrite $$$x_h$$$ in the cosine form:
+$$
+\begin{align}
+x_h &= C_1e^{{-1+i\sqrt{7}\over 2}t} + C_2e^{{-1-i\sqrt{7}\over 2}t}\\\
+&= C_1e^{-1\over 2}\left(cos\left({\sqrt7\over 2}t\right) + isin\left({\sqrt7\over 2}t\right)\right) + C_2e^{-1\over 2}\left(cos\left({\sqrt7\over 2}t\right) - isin\left({\sqrt7\over 2}t\right)\right)\\\
+\end{align}
+$$
+We'd prefer a solution that doesn't have 'sin' in it, so let's use different homogenous solutions:  
+First, use the real part of the first root's solution:
+$$
+\begin{align}
+Re\left\\{e^{{-1+i\sqrt{7}\over2}t}\right\\} &= e^{{-1\over2}t}cos\left({\sqrt{7}\over2}t\right)\\\
+\end{align}
+$$
+
+We can take the 't'-multiplied form of the second solution:
+$$
+\begin{align}
+Re\left\\{{te}^{{-1+i\sqrt{7}\over2}t}\right\\} &=
+{te}^{{-1\over2}t}cos\left({\sqrt{7}\over2}t\right)\\\
+\end{align}
+$$
+
+These are clearly not linear combinations of each other (this is evident from the factor of $$$t$$$ present in the second solution), and so we can write a new $$$x_h$$$:
+$$
+\begin{align}
+C_1e^{{-1\over2}t}cos\left({\sqrt{7}\over2}t\right) + C_2{te}^{{-1\over2}t}cos\left({\sqrt{7}\over2}t\right)
 \end{align}
 $$
 
@@ -59,7 +88,10 @@ $$
 From the graph we see that the pseudoperiod is roughly:
 $$$6.22-1.41=4.81$$$.
 
-The predicted pseudoperiod was $$$2\pi$$$.
+This was with the forcing coefficient $$$A=0$$$, so we look at $$$x_h$$$, and notice that the frequency is $$${\sqrt{7}\over2}$$$, making the period $$${2\pi\over{\sqrt{7}\over2}}={4\pi\over{\sqrt{7}}}\approx{4.84}$$$.
+
+######13d)
+
 
 #####Part 1.
 ######2F6b)
