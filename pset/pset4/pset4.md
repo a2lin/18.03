@@ -140,6 +140,22 @@ x_h &= {-1\over2}e^{{-1\over2}t}\left(cos\left({\sqrt7\over2}t\right)\right) -{3
 \end{align}
 $$
 
+######14a)
+$$
+\begin{align}
+\ddot{x} + b\dot{x} + kx &= kcos(\omega t)\\\
+\ddot{x} + 0.5\dot{x} + 4x &= 4cos(2t)\\\
+\ddot{x} + 0.5\dot{x} + 4x &= Re\left\\{4e^{i2t}\right\\}\\\
+p(D) &= D^2 + 0.5D + 4\\\
+x &= 4Re\left\\{{e^{i2t}\over p(2i)}\right\\}\\\
+x &= 4Re\left\\{{cos(2t) + i sin(2t) \over (2i)^2 + 0.5(2i) + 4}\right\\}\\\
+x &= 4Re\left\\{{cos(2t) + i sin(2t) \over -4 + i + 4}\right\\}\\\
+x &= 4sin(2t)\\\
+x &= 4cos\left(2t-{\pi\over2}\right)\\\
+\end{align}
+$$
+
+
 #####Part 1.
 ######2F6b)
 $$
