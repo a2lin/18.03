@@ -154,7 +154,8 @@ x &= 4sin(2t)\\\
 x &= 4cos\left(2t-{\pi\over2}\right)\\\
 \end{align}
 $$
-
+Since the amplitude of the system response is the gain, the gain in this case is $$$4$$$.  
+The time lag (t_0) is simply $$$ \phi\over\omega $$$, or $$${{\pi\over2}\over2} = {\pi\over4}$$$.
 
 #####Part 1.
 ######2F6b)
