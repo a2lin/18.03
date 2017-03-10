@@ -158,7 +158,20 @@ Since the amplitude of the system response is the gain, the gain in this case is
 The time lag (t_0) is simply $$$ \phi\over\omega $$$, or $$${{\pi\over2}\over2} = {\pi\over4}$$$.
 
 ######14b)
-
+$$
+\begin{align}
+x'' + bx' + kx &= kcos(\omega t)\\\
+x'' + bx' + kx &= Re\left\\{k e^{i\omega t}\right\\}\\\
+p(D) &= D^2 + bD + k\\\
+x_p &= {ke^{i\omega t}\over p(i\omega)}\\\
+x_p &= {ke^{i\omega t}\over (i\omega)^2 + b(i\omega) + k}\\\
+x_p &= {ke^{i\omega t}\over -\omega^2 + bi\omega + k}\\\
+\end{align}
+$$
+Therefore the complex gain is:
+$$
+{k\over -\omega^2 + bi\omega + k}
+$$
 
 #####Part 1.
 ######2F6b)
