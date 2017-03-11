@@ -170,8 +170,9 @@ x_p &= {ke^{i\omega t}\over -\omega^2 + bi\omega + k}\\\
 $$
 Therefore the complex gain is:
 $$
-{k\over -\omega^2 + bi\omega + k}
+H(\omega) &= {k\over -\omega^2 + bi\omega + k}\\\
 $$
+
 
 #####Part 1.
 ######2F6b)
