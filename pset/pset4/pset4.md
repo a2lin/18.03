@@ -170,7 +170,40 @@ x_p &= {ke^{i\omega t}\over -\omega^2 + bi\omega + k}\\\
 $$
 Therefore the complex gain is:
 $$
-H(\omega) &= {k\over -\omega^2 + bi\omega + k}\\\
+\bbox[5px, border:2px solid black]{H(\omega) = {k\over -\omega^2 + bi\omega + k}}
+$$
+
+Multiplying the conjugate of the denominator against the numerator and denominator of the gain gives:
+$$
+\begin{align}
+{k\over k-\omega^2 + ib\omega} &= {k((k-\omega^2) - ib\omega)\over ((k-\omega^2) + ib\omega)((k-\omega^2) - ib\omega)}\\\
+&= {k((k-\omega^2)-ib\omega) \over (k-\omega^2)^2 + (b\omega)^2}\\\
+\end{align}
+$$
+
+So based on this $$$|H(\omega)|$$$:
+$$
+\begin{align}
+|H(\omega)| &= \sqrt{\left({k((k-\omega^2)\over (k-\omega^2)^2 + (b\omega)^2}\right)^2 + \left({kb\omega \over (k-\omega^2)^2 + (b\omega)^2}\right)^2}\\\
+&= \sqrt{{k^2\over (k-\omega^2)^2 + (b\omega)^2}}\\\
+\end{align}
+$$
+Plugging in the values $$$b=0.5, k=4.00$$$:
+$$
+\begin{align}
+|H(\omega)| &= \sqrt{{4.00^2\over (4.00-\omega^2)^2 + (0.5*\omega)^2}}\\\
+&= \bbox[5px, border:2px solid black]{4.00\over\sqrt{(4.00-\omega^2)^2 + (0.5\omega)^2}}\\\
+\end{align}
+$$
+
+Finding $$$tan(Arg(H(\omega)))$$$:
+$$
+\begin{align}
+tan(Arg(H(\omega))) &= tan\left(arctan\left(k{{b\omega\over (k-\omega^2)^2 + (b\omega)^2} \over {k-\omega^2\over (k-\omega^2)^2+(b\omega)^2}}\right)\right)\\\
+&= tan\left(arctan\left({b\omega\over (k-\omega^2)}\right)\right)\\\
+&= {b\omega\over (k-\omega^2)}\\\
+&= \bbox[5px, border:2px solid black]{{0.5*\omega\over 4-\omega^2}}\\\
+\end{align}
 $$
 
 
