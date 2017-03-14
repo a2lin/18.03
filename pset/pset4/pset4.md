@@ -206,6 +206,38 @@ tan(Arg(H(\omega))) &= tan\left(arctan\left(k{{b\omega\over (k-\omega^2)^2 + (b\
 \end{align}
 $$
 
+######15a)
+$$
+\begin{align}
+\dot{x} + x &= e^{-t}\\\
+p(D) &= D + 1\\\
+p'(D) &= 1\\\
+x_p &= {te^{-t}\over p'(i)}\\\
+x_p &= \bbox[5px, border:2px solid black]{te^{-t}}\\\
+\end{align}
+$$
+
+######15b)
+$$
+\begin{align}
+{d^3x\over dt^3} - {dx\over dt} &= t^2+1\\\
+p(D) &= D^3-D\\\
+x_p &= At^3 + Bt^2 + Ct + D\\\
+x_p' &= 3At^2 + 2Bt + C\\\
+x_p'' &= 6At + 2B\\\
+x_p''' &= 6A + 2\\\
+{d^3x_p \over dt^3} - {dx_p\over dt} &= t^2 + 1\\\
+6A + 2 - 3At^2 + 2Bt + C &= t^2 + 1\\\
+-3At^2 + 2Bt + C + 6A + 2 &= t^2 + 1\\\
+-3({-1\over3})t^2 + 2(0)t + C + 6({-1\over3}) + 2 &= t^2 + 1\\\
+t^2 + C - 2 + 2 &= t^2 + 1\\\
+t^2 + 1 &= t^2 + 1\\\
+A &= {-1\over3}\\\
+B &= 0 \\\
+C &= 1\\\
+x_p &= {-1\over3}t^3 + t\\\
+\end{align}
+$$
 
 #####Part 1.
 ######2F6b)
