@@ -235,7 +235,7 @@ t^2 + 1 &= t^2 + 1\\\
 A &= {-1\over3}\\\
 B &= 0 \\\
 C &= 1\\\
-x_p &= {-1\over3}t^3 + t\\\
+x_p &= \bbox[5px, border:2px solid black]{{-1\over3}t^3 + t}\\\
 \end{align}
 $$
 
@@ -245,42 +245,38 @@ $$
 2\ddot{x} + \dot{x} &= \left(t^2 + 1\right)e^{2t}\\\
 p(D) &= 2D^2 + D\\\
 p(D)(e^{\alpha t}f(t)) &= e^{\alpha t}p(D+\alpha)f(t)\\\
-f(t) &= At^3 + Bt^2 + Ct + D\\\
-f'(t) &= 3At^2 + 2Bt + C\\\
-f''(t) &= 6At + 2B\\\
+f(t) &= At^2 + Bt + C\\\
+f'(t) &= 2At + B\\\
+f''(t) &= 2A\\\
 p(D+\alpha)f(t) &= 2(D+\alpha)^2(f(t)) + (D+\alpha)(f(t))\\\
-p(D+\alpha)f(t) &= 2(D^2 + 2D\alpha + \alpha)f(t) + (D+\alpha)(f(t))\\\
-&= 2D^2f(t) + 2\alpha Df(t) + 4\alpha f(t) + Df(t) + \alpha f(t)\\\
-&= 2(6At + 2B) + 4\alpha(3At^2 + 2Bt + C) + 3\alpha(At^3 + Bt^2 + Ct + D)\\\
-&= 12At + 4B +  \alpha At^2 + 4\alpha Bt + 2\alpha C + 3\alpha At^3 + 3\alpha Bt^2 + 3\alpha Ct + 3\alpha D\\\
-&= t^3 3\alpha A + t^2(6\alpha A + 3\alpha B) + t(12A + 4\alpha B + 3\alpha C) + (4B + 2\alpha C + 3\alpha D)\\\
-A &= 0\\\
-t^2 +1 &= t^3 2\alpha(0) + t^2(6\alpha(0) + 3\alpha B) + t(12(0) + 4\alpha B + 3\alpha C) + (4B + 2\alpha C + 3\alpha D)\\\
-&= t^2 3\alpha B + t(4\alpha B + 3\alpha C) + (4B + 2\alpha C + 3\alpha D)\\\
-B &= {1\over3\alpha}\\\
-t^2 + 1 &= t^2 3\alpha\left({1\over3\alpha}\right) + t\left(4\alpha\left({1\over3\alpha}\right) + 3\alpha C\right) + \left(4\left({1\over3\alpha}\right) + 2\alpha C + 3\alpha D\right)\\\
-t^2 + 1 &= t^2 + t\left({4\over 3} + 3\alpha C\right) + {4\over3\alpha} + 2\alpha C + 3\alpha D\\\
-C &= -{4\over3\alpha}\\\
-t^2 + 1 &= t^2 + t\left({4\over 3} + 3\alpha \left(-{4\over3\alpha}\right)\right) + {4\over 3\alpha} + 2\alpha\left(-{4\over3\alpha}\right) + 2\alpha D\\\
-&= t^2 + t\left({4\over3} - {4\alpha\over3\alpha}\right) + {4\over3\alpha} - 2 + 2\alpha D\\\
-&= t^2 + {2\over\alpha} - 2 + 2\alpha D\\\
+p(D+\alpha)f(t) &= 2(D^2 + 2D\alpha + \alpha^2)f(t) + (D+\alpha)(f(t))\\\
+&= 2D^2f(t) + 4\alpha Df(t) + 2\alpha^2 f(t) + Df(t) + \alpha f(t)\\\
 \alpha &= 2\\\
-t^2 + 1 &= t^2 + {2\over 2} - 2 + 2(2)D\\\
-&= t^2 -1 + 4D\\\
-D &= {1\over2}\\\
-t^2 + 1 &= t^2 - 1 + 2\\\
-&= t^2 + 1\qquad \checkmark\\\
+p(D+2)f(t) &= 2D^2f(t) + 4(2)Df(t) + 2(2)^2f(t) + Df(t) + 2f(t)\\\
+&= 2D^2f(t) + 8Df(t) + 8f(t) + Df(t) + 2f(t)\\\
+&= 2D^2f(t) + 9Df(t) + 10f(t)\\\
+&= 2(2A) + 9(2At + B) + 10(At^2 + Bt + C)\\\
+&= 4A + 18At + 9B + 10At^2 + 10Bt + 10C\\\
+&= 10At^2 + t(18A + 10B) + 4A + 9B + 10C\\\
+A &=  \bbox[5px, border:2px solid black]{{1\over10}}\\\
+t^2 + 1 &= 10\left({1\over10}\right)t^2 + t\left(18\left({1\over10}\right) + 10B\right) + 4\left({1\over10}\right) + 9B + 10C\\\
+&= t^2 + t\left({18\over10} + 10B\right) + {4\over10} + 9B + 10C\\\
+{18\over10} + 10B &= 0\\\
+10B &= -{18\over10}\\\
+B &= -{18\over100}\\\
+&=  \bbox[5px, border:2px solid black]{-{9\over50}}\\\
+t^2 + 1 &= t^2 + t\left({18\over10} + 10\left(-{9\over50}\right)\right) + {4\over10} + 9\left(-{9\over50}\right) + 10C\\\
+&= t^2 + {4\over10} -{81\over50} + 10C\\\
+1 &= {4\over10} - {81\over50} + 10C\\\
+&= {20\over50}-{81\over50} + 10C\\\
+{50\over50} &= -{61\over50} + 10C\\\
+{111\over50} &= 10C\\\
+C &=  \bbox[5px, border:2px solid black]{{111\over 500}}\\\
+f(t) &=  \bbox[5px, border:2px solid black]{{1\over10}t^2 - {9\over50}t + {111\over500}}\\\
 \end{align}
 $$
 $$
-A = 0,\ B= {1\over 4},\ C = -{1\over2},\ D = {1\over2}
-$$
-$$
-\begin{align}
-f(t) &= {1\over4}t^2 - {1\over2}t + {1\over2}\\\
-x_p &= e^{2t}f(t)\\\
-x_p &= e^{2t}\left( {1\over4}t^2 - {1\over2}t + {1\over2}                                                                                           \right)\\\
-\end{align}
+x_p = \bbox[5px, border:2px solid black]{e^{2t}\left({1\over10}t^2 - {9\over50}t + {111\over500}\right)}
 $$
 #####Part 1.
 ######2F6b)
