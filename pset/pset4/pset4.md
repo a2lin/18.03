@@ -239,6 +239,49 @@ x_p &= {-1\over3}t^3 + t\\\
 \end{align}
 $$
 
+######15c)
+$$
+\begin{align}
+2\ddot{x} + \dot{x} &= \left(t^2 + 1\right)e^{2t}\\\
+p(D) &= 2D^2 + D\\\
+p(D)(e^{\alpha t}f(t)) &= e^{\alpha t}p(D+\alpha)f(t)\\\
+f(t) &= At^3 + Bt^2 + Ct + D\\\
+f'(t) &= 3At^2 + 2Bt + C\\\
+f''(t) &= 6At + 2B\\\
+p(D+\alpha)f(t) &= 2(D+\alpha)^2(f(t)) + (D+\alpha)(f(t))\\\
+p(D+\alpha)f(t) &= 2(D^2 + 2D\alpha + \alpha)f(t) + (D+\alpha)(f(t))\\\
+&= 2D^2f(t) + 2\alpha Df(t) + 4\alpha f(t) + Df(t) + \alpha f(t)\\\
+&= 2(6At + 2B) + 4\alpha(3At^2 + 2Bt + C) + 3\alpha(At^3 + Bt^2 + Ct + D)\\\
+&= 12At + 4B +  \alpha At^2 + 4\alpha Bt + 2\alpha C + 3\alpha At^3 + 3\alpha Bt^2 + 3\alpha Ct + 3\alpha D\\\
+&= t^3 3\alpha A + t^2(6\alpha A + 3\alpha B) + t(12A + 4\alpha B + 3\alpha C) + (4B + 2\alpha C + 3\alpha D)\\\
+A &= 0\\\
+t^2 +1 &= t^3 2\alpha(0) + t^2(6\alpha(0) + 3\alpha B) + t(12(0) + 4\alpha B + 3\alpha C) + (4B + 2\alpha C + 3\alpha D)\\\
+&= t^2 3\alpha B + t(4\alpha B + 3\alpha C) + (4B + 2\alpha C + 3\alpha D)\\\
+B &= {1\over3\alpha}\\\
+t^2 + 1 &= t^2 3\alpha\left({1\over3\alpha}\right) + t\left(4\alpha\left({1\over3\alpha}\right) + 3\alpha C\right) + \left(4\left({1\over3\alpha}\right) + 2\alpha C + 3\alpha D\right)\\\
+t^2 + 1 &= t^2 + t\left({4\over 3} + 3\alpha C\right) + {4\over3\alpha} + 2\alpha C + 3\alpha D\\\
+C &= -{4\over3\alpha}\\\
+t^2 + 1 &= t^2 + t\left({4\over 3} + 3\alpha \left(-{4\over3\alpha}\right)\right) + {4\over 3\alpha} + 2\alpha\left(-{4\over3\alpha}\right) + 2\alpha D\\\
+&= t^2 + t\left({4\over3} - {4\alpha\over3\alpha}\right) + {4\over3\alpha} - 2 + 2\alpha D\\\
+&= t^2 + {2\over\alpha} - 2 + 2\alpha D\\\
+\alpha &= 2\\\
+t^2 + 1 &= t^2 + {2\over 2} - 2 + 2(2)D\\\
+&= t^2 -1 + 4D\\\
+D &= {1\over2}\\\
+t^2 + 1 &= t^2 - 1 + 2\\\
+&= t^2 + 1\qquad \checkmark\\\
+\end{align}
+$$
+$$
+A = 0,\ B= {1\over 4},\ C = -{1\over2},\ D = {1\over2}
+$$
+$$
+\begin{align}
+f(t) &= {1\over4}t^2 - {1\over2}t + {1\over2}\\\
+x_p &= e^{2t}f(t)\\\
+x_p &= e^{2t}\left( {1\over4}t^2 - {1\over2}t + {1\over2}                                                                                           \right)\\\
+\end{align}
+$$
 #####Part 1.
 ######2F6b)
 $$
