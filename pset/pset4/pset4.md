@@ -300,6 +300,42 @@ $$
 $$$1.9685$$$ is pretty close to the value $$$2$$$.
 
 ######16b)
+Seems like a value of $$$\omega=1.95$$$ generates a phase lag of about $$$\pi\over4$$$.
+
+$$
+\begin{align}
+tan(\phi) &= {0.5\omega\over 4 - \omega^2}\\\
+tan({\pi\over4}) &= {0.5\omega\over4 - \omega^2}\\\
+1 &= {0.5\omega\over4 - \omega^2}\\\
+4-\omega^2 &= 0.5\omega\\\
+0 &= \omega^2 + 0.5\omega - 4\\\
+\omega &= {-0.5\pm\sqrt{0.25+16}\over2}\\\
+&= {-0.5\pm\sqrt{16.25}\over2}\\\
+&\approx 1.77\\\
+\end{align}
+$$
+
+Seems to have a slight difference: $$$1.95$$$ isn't exactly the same as $$$1.77$$$.
+
+######16c)
+![Image](fig_2.png =400x300)
+
+######16d)
+The yellow strut moves up the imaginary axis.
+
+For $$$k=2$$$, $$$\omega\approx 1.4$$$.
+
+From $$$14$$$, we have:
+$$
+H(\omega) = {k\over -\omega^2 + bi\omega + k}
+$$
+Seems like $$$\phi={\pi\over2}$$$ means that the system is in practical resonance, so the complex gain should be at a maximum.
+
+Looking at the angle formula:
+$$
+tan(\phi) = {b\omega\over (k-\omega^2)}
+$$
+We can see that b actually doesn't affect the value for $$$tan(\phi)$$$, for $$$\phi = {\pi\over2}$$$, since $$$\inf = {b\omega\over(k-\omega^2)}$$$, so $$$k = \omega^2$$$, and $$$b$$$ doesn't affect the lag in this case.
 
 #####Part 1.
 ######2F6b)
