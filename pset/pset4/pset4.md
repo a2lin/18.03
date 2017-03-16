@@ -278,6 +278,29 @@ $$
 $$
 x_p = \bbox[5px, border:2px solid black]{e^{2t}\left({1\over10}t^2 - {9\over50}t + {111\over500}\right)}
 $$
+
+######16a)
+Yes, from the bode plot it appears as if there is a practical resonance peak at $$$\omega=2$$$.
+
+$$
+\begin{align}
+|H(\omega)| &= {4\over\sqrt{(4-\omega^2)^2 + (0.5\omega)^2}}\\\
+Min_{\omega}(|H(\omega)|) &= ((4-\omega^2)^2 + (0.5\omega)^2)'\\\
+&= (16-8\omega^2 + \omega^4 + 0.25\omega^2)'\\\
+&= (16-7.75\omega^2 + \omega^4)' \\\
+&= -15.5\omega + 4\omega^3\\\
+&= \omega(4\omega^2-15.5)\\\
+4\omega^2-15.5 &= 0\\\
+4\omega^2 &= 15.5\\\
+\omega^2 &= {15.5\over 4}\\\
+\omega &\approx 1.9685\\\
+\end{align}
+$$
+
+$$$1.9685$$$ is pretty close to the value $$$2$$$.
+
+######16b)
+
 #####Part 1.
 ######2F6b)
 $$
