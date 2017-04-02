@@ -100,7 +100,18 @@ $$
 $$
 \therefore \bbox[5px, border:2px solid black]{{1\over C} = L\omega^2}
 $$
+
 ######17c)
+$$
+\begin{align}
+\omega &= 100 \text{rad/s}\\\
+Amp\left\\{I(t)\right\\}_{max} &= 5 A\\\
+\phi &= 0\\\
+I(t) &= 5sin(\omega t)\\\
+\end{align}
+$$
+
+######17d)
 
 
 
