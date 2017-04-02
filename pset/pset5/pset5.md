@@ -2,7 +2,7 @@ $$$\require{cancel}$$$
 
 # 18.03
 ###Pset 5
-[Problem Source](https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/assignments/MIT18_03S10_ps5.pdf)
+[Problem Source](https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/assignments/MIT18_03S10_ps5a.pdf)
 
 #####Part I
 ######a) 2.5 8)
@@ -49,7 +49,39 @@ x\_p &= \bbox[5px, border:2px solid black]{t^2 - 2 - {cos(2t-1)\over 3}}\\\
 $$
 
 #####Part II
-######17)
+######17a)
+$$
+\begin{align}
+&R=  100\Omega\\\
+&L= 500mH\\\
+&C= 50\mu F\\\
+&V_0= 250V\\\
+&\omega= 200 rad/s\\\
+\end{align}
+$$
+In terms of putting I in phase with V, it seems like only changes in $$$C$$$ have effect, if $$$L$$$ and $$$\omega$$$ are fixed.
+
+######17b)
+$$
+\begin{align}
+V(t) &= V_0sin(\omega t)\\\
+{dV(t)\over dt} &= {d\over dt}V_0sin(\omega t)\\\
+&= V_0\omega cos(\omega t)\\\
+&= Re\left\\{V_0\omega e^{i\omega t}\right\\}\\\
+L{d^2I(t)\over dt^2} + R{dI(t)\over dt} + {1\over C}I(t) &= {dV(t)\over dt}\\\
+p(D) &= {LD}^2 + RD + {1\over C}\\\
+p(D)I(t) &= Re\left\\{V_0\omega e^{i\omega t}\right\\}\\\
+I(t) &= Re\left\\{{e^{i\omega t} \over p(i\omega)}\right\\}\\\
+&= Re\left\\{{e^{i\omega t}\over L(i\omega)^2 + R(i\omega) + {1\over C}}\right\\}\\\
+&= Re\left\\{{e^{i\omega t}\over \left({1\over C} - L\omega^2\right) + i\left(R\omega\right)}\right\\}\\\
+&= Re\left\\{{e^{i\omega t}\left(\left({1\over C} - L\omega^2\right) - i\left(R\omega\right)\right)\over \left(\left({1\over C} - L\omega^2\right) + i\left(R\omega\right)\right)\left(\left({1\over C} - L\omega^2\right) - i\left(R\omega\right)\right)}\right\\} \\\
+&= Re\left\\{{e^{i\omega t}\left(\left({1\over C} - L\omega^2\right) - i\left(R\omega\right)\right)\over \left({1\over C} - L\omega^2\right)^2 + \left(R\omega\right)^2}\right\\}\\\
+\end{align}
+$$
+$$
+{1\over C} = L\omega^2
+$$
+
 
 
 
