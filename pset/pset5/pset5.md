@@ -76,11 +76,31 @@ I(t) &= Re\left\\{{e^{i\omega t} \over p(i\omega)}\right\\}\\\
 &= Re\left\\{{e^{i\omega t}\over \left({1\over C} - L\omega^2\right) + i\left(R\omega\right)}\right\\}\\\
 &= Re\left\\{{e^{i\omega t}\left(\left({1\over C} - L\omega^2\right) - i\left(R\omega\right)\right)\over \left(\left({1\over C} - L\omega^2\right) + i\left(R\omega\right)\right)\left(\left({1\over C} - L\omega^2\right) - i\left(R\omega\right)\right)}\right\\} \\\
 &= Re\left\\{{e^{i\omega t}\left(\left({1\over C} - L\omega^2\right) - i\left(R\omega\right)\right)\over \left({1\over C} - L\omega^2\right)^2 + \left(R\omega\right)^2}\right\\}\\\
+&= Re\left\\{{\left(cos(\omega t) + isin(\omega t)\right)\left(\left({1\over C} - L\omega^2\right) - i\left(R\omega\right)\right)\over \left({1\over C} - L\omega^2\right)^2 + \left(R\omega\right)^2}\right\\}\\\
+&= {\left({1\over C} - L\omega^2\right)cos(\omega t) + R\omega sin(\omega t)\over \left({1\over C} - L\omega^2\right)^2 + \left(R\omega\right)^2}\\\
+&= {\sqrt{\left({1\over C} - L\omega^2\right)^2 + \left(R\omega\right)^2}\left(cos\left(\omega t - \arctan\left({R\omega\over{1\over C}- L\omega^2}\right)\right)\right)\over \left({1\over C} - L\omega^2\right)^2 + \left(R\omega\right)^2}
+\end{align}
+$$
+For the case where $$$I(t)$$$ and $$$V(t)$$$ are in phase, note that:
+$$
+\begin{align}
+V(t) &= V_0sin(\omega t)\\\
+&= V_0cos\left(\omega t - \pi\over2\right)\\\
+\end{align}
+$$
+Therefore:
+$$
+\begin{align}
+{\pi\over2} &= \arctan\left({R\omega\over{1\over C}- L\omega^2}\right)\\\
+tan\left({\pi\over2}\right) &= {R\omega\over{1\over C}- L\omega^2}\\\
+\infty &= {R\omega\over{1\over C}- L\omega^2}\\\
+0 &= {1\over C} - L\omega^2\\\
 \end{align}
 $$
 $$
-{1\over C} = L\omega^2
+\therefore \bbox[5px, border:2px solid black]{{1\over C} = L\omega^2}
 $$
+######17c)
 
 
 
