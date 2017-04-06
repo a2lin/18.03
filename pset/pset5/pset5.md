@@ -107,12 +107,11 @@ $$
 \omega &= 100 \text{rad/s}\\\
 Amp\left\\{I(t)\right\\}_{max} &= 5 A\\\
 \phi &= 0\\\
-I(t) &= 5sin(\omega t)\\\
 \end{align}
 $$
 
-######17d)
-
+######17d)	
+Verification:
 
 
 
