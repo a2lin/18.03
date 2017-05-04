@@ -116,8 +116,15 @@ $$
 \begin{align}
 I(t) &= Re\left\\{V_0\omega{e^{i\omega t}\over \left({1\over C} - L\omega^2\right) + i\left(R\omega\right)}\right\\}\\\
 {1\over I(t)} &= Re\left\\{{\left({1\over C} - L\omega^2\right) + i\left(R\omega\right)\over V_0 \omega e^{i\omega t}}\right\\}\\\
+{1\over I(t)} &= Re\left\\{{\left({1\over C\omega} - L\omega\right) + iR\over V_0 e^{i\omega t}}\right\\}\\\
+\left|{1\over I(t)}\right| &= Re\left\\{{\left({1\over C\omega} - L\omega\right) + iR\over V_0 }\right\\}\\\
+0 &= {1\over C\omega} - L\omega\\\
+L\omega &= {1\over C\omega}\\\
+\omega^2 &= {1\over CL}\\\
+\omega &= \sqrt{1\over CL}\\\
 \end{align}
 $$
+
 
 
 
