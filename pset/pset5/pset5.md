@@ -113,9 +113,11 @@ $$
 ######17d)	
 Verification:
 $$
-\left|{e^{i\omega}\over p(i\omega)}\right|
+\begin{align}
+I(t) &= Re\left\\{V_0\omega{e^{i\omega t}\over \left({1\over C} - L\omega^2\right) + i\left(R\omega\right)}\right\\}\\\
+{1\over I(t)} &= Re\left\\{{\left({1\over C} - L\omega^2\right) + i\left(R\omega\right)\over V_0 \omega e^{i\omega t}}\right\\}\\\
+\end{align}
 $$
-restart--
 
 
 
