@@ -124,6 +124,10 @@ L\omega &= {1\over C\omega}\\\
 \omega &= \sqrt{1\over CL}\\\
 \end{align}
 $$
+Max amplitude is thus: 
+$$
+I(t) = 
+$$
 
 
 
