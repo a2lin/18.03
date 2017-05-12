@@ -126,7 +126,10 @@ L\omega &= {1\over C\omega}\\\
 $$
 Max amplitude is thus: 
 $$
-I(t) = 
+\begin{align}
+I(t) &= \left|{\omega \over \left({1\over C} - L\omega^2\right) + Ri\omega}\right|
+I(t) &= \left|{\left({1\over C} - L{1\over LC}\right)}\right|
+\end{align}
 $$
 
 
