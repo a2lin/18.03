@@ -133,7 +133,7 @@ I(t) &= \left|{\left({1\over C} - L{1\over LC}\right)}\right|
 $$
 
 ######18)
-LF
+LFC
 
 
 
