@@ -133,7 +133,10 @@ I(t) &= \left|{\left({1\over C} - L{1\over LC}\right)}\right|
 $$
 
 ######18)
-LFC
+$$w_n = \sqrt{k\over m}$$
+$$m\ddot{x} + b\dot{x} + kx = 0$$
+
+Critical damping at $$b\over m = 2w_n$$.
 
 
 
