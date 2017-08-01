@@ -138,6 +138,10 @@ $$m\ddot{x} + b\dot{x} + kx = 0$$
 
 Critical damping at $$b\over m = 2w_n$$.
 
+$$$\zeta > 1$$$ overdamped, $$$\zeta < 1 underdamped$$$.
+
+$$$\alpha = {ln2\over 2\pi}$$$
+
 
 
 
